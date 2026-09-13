@@ -4977,10 +4977,11 @@ body.ks-contact-page .ks-contact-form-wrap .section-about-title {
     display: grid;
     grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
     grid-template-areas:
-      "intro aside"
+      "intro intro"
       "fields aside"
       "submit .";
     column-gap: 2rem;
+    row-gap: 1.15rem;
     align-items: start;
   }
 
@@ -4991,7 +4992,8 @@ body.ks-contact-page .ks-contact-form-wrap .section-about-title {
     padding-right: 0;
   }
 
-  .ks-contact-form-wrap {
+  .ks-contact-form-wrap,
+  .ks-contact-form {
     display: contents;
   }
 
@@ -4999,7 +5001,7 @@ body.ks-contact-page .ks-contact-form-wrap .section-about-title {
     grid-area: intro;
   }
 
-  .ks-contact-form {
+  .ks-contact-fields {
     grid-area: fields;
   }
 
@@ -5007,10 +5009,29 @@ body.ks-contact-page .ks-contact-form-wrap .section-about-title {
     grid-area: submit;
   }
 
+  /* Height follows the fields only — aside must not enlarge that row */
   .ks-contact-aside {
     grid-area: aside;
-    align-self: end;
+    align-self: stretch;
+    height: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
     padding-left: 0;
+  }
+
+  .ks-contact-aside .ks-contact-panel {
+    flex: 1 1 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.35rem 0.25rem;
+  }
+
+  .ks-contact-aside .ks-contact-row {
+    flex: 1 1 0;
+    align-items: center;
   }
 }
 
@@ -5051,6 +5072,10 @@ body.ks-contact-page .ks-contact-form-wrap .section-about-title {
   margin-bottom: 0.85rem;
 }
 
+.ks-contact-form-wrap .ks-contact-fields > .form-group:last-child {
+  margin-bottom: 0;
+}
+
 .ks-hp {
   position: absolute;
   left: -100vw;
@@ -5059,6 +5084,11 @@ body.ks-contact-page .ks-contact-form-wrap .section-about-title {
   overflow: hidden;
   opacity: 0;
   pointer-events: none;
+}
+
+/* Keep honeypots out of the contact CSS grid when the form uses display: contents */
+.ks-contact-form > .ks-hp {
+  display: none;
 }
 
 .ks-contact-form input,
@@ -5079,6 +5109,8 @@ body.ks-contact-page .ks-contact-form-wrap .section-about-title {
 
 .ks-contact-form textarea,
 .ks-contact-form textarea.input-gray {
+  display: block;
+  width: 100%;
   height: 11.5rem;
   padding: 0.95rem 1rem;
   resize: vertical;
