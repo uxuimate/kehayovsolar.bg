@@ -3209,6 +3209,46 @@ header.navbar.boxed .navbar-toggle {
   scroll-margin-top: calc(var(--ks-page-offset) + 1rem);
 }
 
+.ks-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem 1.25rem;
+  margin: 1.75rem 0 0;
+}
+
+.ks-stats__item {
+  margin: 0;
+  padding-top: 0.85rem;
+  border-top: 1px solid rgba(15, 23, 42, 0.12);
+}
+
+.ks-stats__num {
+  display: block;
+  color: #1a1d21;
+  font-size: clamp(1.85rem, 3vw, 2.35rem);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.ks-stats__label {
+  display: block;
+  margin-top: 0.35rem;
+  color: #475569;
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+@media (max-width: 479px) {
+  .ks-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ks-projects-page .ks-proof__intro {
+  margin-bottom: 0.35rem;
+}
+
 .ks-projects-grid {
   margin-top: 2.5rem;
 }
@@ -3221,15 +3261,30 @@ header.navbar.boxed .navbar-toggle {
   margin: 0;
   overflow: hidden;
   border-radius: var(--nt-card-radius);
-  background: #1a1d21;
+  background: #fff;
   box-shadow: var(--nt-card-shadow);
+  height: 100%;
 }
 
 .ks-projects-grid__item img {
   display: block;
   width: 100%;
-  height: 16rem;
+  height: 15.5rem;
   object-fit: cover;
+  transition: transform 0.55s var(--nt-ease-out);
+}
+
+.ks-projects-grid__item:hover img {
+  transform: scale(1.035);
+}
+
+.ks-projects-grid__item figcaption {
+  margin: 0;
+  padding: 0.75rem 0.95rem 0.9rem;
+  background: #fff;
+  color: #475569;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
 }
 
 /* --- Страница детайл на екскурзия (project-detail.html) --- */
@@ -5748,6 +5803,63 @@ body.ks-services-hub .ks-system-stage-wrap {
 
 .ks-offer__note p:last-child {
   margin: 0;
+}
+
+.ks-system-links {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem 1rem;
+  margin-top: 1.5rem;
+}
+
+.ks-card-grid + .ks-offer__note {
+  margin-top: 1.75rem;
+}
+
+.ks-system-links__item {
+  display: block;
+  padding: 0.85rem 1rem;
+  color: #1a1d21;
+  background: #f6f7f4;
+  border-radius: var(--nt-card-radius);
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.35;
+  text-decoration: none;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.ks-system-links__item:hover,
+.ks-system-links__item:focus {
+  color: var(--nt-orange);
+  background: #eef0ea;
+  text-decoration: none;
+}
+
+.ks-section-more {
+  margin-top: 1.75rem;
+  margin-bottom: 0;
+}
+
+.ks-contact-panel__note {
+  margin: 1rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(26, 29, 33, 0.08);
+  color: #5a6169;
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 991px) {
+  .ks-system-links {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 479px) {
+  .ks-system-links {
+    grid-template-columns: 1fr;
+  }
 }
 
 .ks-proof__intro {
