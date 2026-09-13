@@ -51,7 +51,21 @@
   --nt-body-size: 1.0625rem;
   --nt-body-line: 1.7;
   --nt-body-color: #4a5160;
+  --ks-space-xs: 0.5rem;
+  --ks-space-sm: 0.75rem;
+  --ks-space-md: 1rem;
+  --ks-space-lg: 1.5rem;
+  --ks-space-xl: 2.25rem;
+  --ks-space-2xl: 3.25rem;
+  --ks-gutter: 1.25rem;
   --ks-section-y: clamp(4.75rem, 7vw, 6.25rem);
+  --ks-stack: 1.25rem;
+  --ks-grid-gap: 1.5rem;
+  --ks-navbar-pad-y: 1.15rem;
+  --ks-navbar-min-h: 8.5rem;
+  --ks-page-offset: 9.25rem;
+  --ks-logo-max: 6.75rem;
+  --ks-footer-logo: 7.2rem;
 }
 
 @font-face {
@@ -380,15 +394,46 @@ blockquote {
   transform: scale(1.02) translateY(-1px);
 }
 
+.animsition .btn-quiet {
+  background: transparent;
+  color: #1a1d21;
+  border: 1px solid rgba(26, 29, 33, 0.18);
+  box-shadow: none;
+}
+
+.animsition .btn-quiet:hover,
+.animsition .btn-quiet:focus {
+  background: #1a1d21;
+  color: #fff;
+  border-color: #1a1d21;
+  box-shadow: none;
+}
+
+.nistravel-contact-cta-banner .btn-quiet,
+.ks-final-cta .btn-quiet {
+  background: transparent;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.55);
+}
+
+.nistravel-contact-cta-banner .btn-quiet:hover,
+.nistravel-contact-cta-banner .btn-quiet:focus,
+.ks-final-cta .btn-quiet:hover,
+.ks-final-cta .btn-quiet:focus {
+  background: #fff;
+  color: #1a1d21;
+  border-color: #fff;
+}
+
 /* Статичен hero (като първи слайд на index, без Revolution) */
 .animsition > .wrapper.boxed > main.jumbotron {
   margin: 0;
   padding: 0;
-  min-height: calc(100vh - 9.25rem);
+  min-height: calc(100vh - var(--ks-page-offset));
 }
 
 .animsition > .wrapper.boxed > main.jumbotron .rev_slider_wrapper {
-  min-height: calc(100vh - 9.25rem);
+  min-height: calc(100vh - var(--ks-page-offset));
 }
 
 /*
@@ -1068,7 +1113,7 @@ body.nistravel-page--about .nistravel-contact-cta-banner .nistravel-contact-cta-
   vertical-align: middle;
   width: auto;
   height: auto;
-  max-height: 6.75rem;
+  max-height: var(--ks-logo-max);
   max-width: min(32rem, 62vw);
   object-fit: contain;
   object-position: left center;
@@ -1082,14 +1127,14 @@ header.navbar.boxed {
   justify-content: flex-start;
   gap: 0.65rem 1rem;
   box-sizing: border-box;
-  padding-top: 1.15rem;
-  padding-bottom: 1.15rem;
+  padding-top: var(--ks-navbar-pad-y);
+  padding-bottom: var(--ks-navbar-pad-y);
   height: auto;
-  min-height: 8.5rem;
+  min-height: var(--ks-navbar-min-h);
 }
 
 .animsition > .wrapper.boxed {
-  padding-top: 9.25rem;
+  padding-top: var(--ks-page-offset);
 }
 
 header.navbar.boxed .brand {
@@ -1377,6 +1422,12 @@ header.navbar.boxed .navbar-toggle {
 @media (max-width: 1199px) {
   header.navbar.boxed .navbar-main {
     display: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  header.navbar.boxed .navbar-tools,
+  header.navbar.boxed .navbar-spacer {
+    display: none;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2670,6 +2721,21 @@ header.navbar.boxed .navbar-toggle {
   transition-duration: 0.12s;
 }
 
+.ks-final-cta .nistravel-contact-cta-banner__btn.btn-quiet {
+  background: transparent;
+  color: #fff !important;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: none;
+}
+
+.ks-final-cta .nistravel-contact-cta-banner__btn.btn-quiet:hover,
+.ks-final-cta .nistravel-contact-cta-banner__btn.btn-quiet:focus {
+  background: #fff !important;
+  color: #1a1d21 !important;
+  border-color: #fff;
+  box-shadow: none;
+}
+
 /* --- Get in touch (като post-gallery comment form, фон #fff) --- */
 .nistravel-get-in-touch.section-comments {
   margin-top: 0;
@@ -2949,8 +3015,8 @@ header.navbar.boxed .navbar-toggle {
 /* Override .section { padding: 10.28rem 0 } — that + padding-bottom:0 caused huge top gap */
 .nistravel-footer.footer {
   border-top: 1px solid rgba(15, 23, 42, 0.12);
-  padding-top: clamp(1.75rem, 3.5vw, 2.5rem);
-  padding-bottom: clamp(1.25rem, 2.5vw, 1.75rem);
+  padding-top: clamp(2.35rem, 4.5vw, 3.75rem);
+  padding-bottom: clamp(1.25rem, 2.5vw, 1.85rem);
 }
 
 .nistravel-footer .footer-flex {
@@ -2978,7 +3044,7 @@ header.navbar.boxed .navbar-toggle {
 
 .nistravel-footer .brand.brand--logo-only img {
   display: block;
-  height: 7.2rem;
+  height: var(--ks-footer-logo);
   width: auto;
   max-height: none;
   max-width: min(28rem, 75vw);
@@ -3042,6 +3108,105 @@ header.navbar.boxed .navbar-toggle {
 .nistravel-footer__credit a:not(.nistravel-footer__credit-brand):focus {
   color: #1a1d21;
   text-decoration: underline;
+}
+
+.ks-footer {
+  display: grid;
+  grid-template-columns: minmax(14rem, 1.15fr) minmax(0, 2.85fr);
+  gap: clamp(1.75rem, 3vw, 2.75rem) clamp(1.5rem, 3.5vw, 3.25rem);
+  align-items: start;
+}
+
+.ks-footer__brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.95rem;
+  max-width: 22rem;
+}
+
+.ks-footer .brand.brand--logo-only {
+  display: block;
+  height: auto;
+  align-self: flex-start;
+}
+
+.ks-footer .brand.brand--logo-only img {
+  height: clamp(3.35rem, 5.5vw, 4.5rem);
+  max-width: 15.5rem;
+  max-height: none;
+}
+
+.ks-footer__tagline {
+  margin: 0;
+  color: var(--nt-body-color, #4a5160);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.ks-footer__cta {
+  margin-top: 0.15rem;
+}
+
+.ks-footer__nav {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem 1.25rem;
+}
+
+.ks-footer__heading {
+  margin: 0 0 0.85rem;
+  color: #1a1d21;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.ks-footer__col ul,
+.ks-footer__address {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+}
+
+.ks-footer__col li {
+  margin: 0 0 0.55rem;
+}
+
+.ks-footer__col li:last-child {
+  margin-bottom: 0;
+}
+
+.ks-footer__col a {
+  display: inline-block;
+  color: #334155;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.ks-footer__col a:hover,
+.ks-footer__col a:focus {
+  color: #1a1d21;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.ks-footer__col a:focus-visible {
+  outline: 2px solid #1a1d21;
+  outline-offset: 3px;
+}
+
+.ks-footer__col li:not(:has(a)) {
+  color: #334155;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.ks-package-card {
+  scroll-margin-top: calc(var(--ks-page-offset) + 1rem);
 }
 
 .ks-projects-grid {
@@ -5545,5 +5710,681 @@ body.ks-services-hub .ks-system-stage-wrap {
 @media (max-width: 575px) {
   .ks-process__wrapper {
     grid-template-columns: 1fr;
+  }
+}
+
+.ks-offer__step {
+  margin: 2.35rem 0 0;
+  color: #1a1d21;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.ks-offer .ks-card-grid {
+  margin-top: 1rem;
+}
+
+.ks-offer__types .nistravel-tour-card__media {
+  height: 9.5rem;
+}
+
+.ks-offer__note {
+  margin-top: 0.5rem;
+  padding: 1.5rem 1.75rem;
+  background: #f6f7f4;
+  border-radius: var(--nt-card-radius);
+}
+
+.ks-offer__note-label {
+  margin: 0 0 0.45rem;
+  color: var(--nt-orange);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.ks-offer__note p:last-child {
+  margin: 0;
+}
+
+.ks-proof__intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1.25rem 2.5rem;
+  align-items: end;
+}
+
+.ks-proof__copy .section-about-title {
+  max-width: 22ch;
+}
+
+.ks-proof__copy p {
+  max-width: 42rem;
+  margin-bottom: 0;
+}
+
+.ks-proof__stat {
+  margin: 0;
+  text-align: right;
+}
+
+.ks-proof__stat-number {
+  display: block;
+  color: #1a1d21;
+  font-size: clamp(3.4rem, 6vw, 5.25rem);
+  font-weight: 600;
+  line-height: 0.88;
+  letter-spacing: -0.04em;
+}
+
+.ks-proof__stat-label {
+  display: block;
+  margin-top: 0.45rem;
+  color: #475569;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.ks-proof-slider {
+  position: relative;
+  margin-top: var(--ks-space-xl);
+}
+
+.ks-proof-slide {
+  margin: 0;
+  overflow: hidden;
+  border-radius: var(--nt-card-radius);
+  background: #fff;
+  box-shadow: var(--nt-card-shadow);
+}
+
+.ks-proof-slide img {
+  display: block;
+  width: 100%;
+  height: 16.5rem;
+  object-fit: cover;
+}
+
+.ks-proof-slide figcaption,
+.ks-projects-grid__item figcaption {
+  margin: 0;
+  padding: 0.7rem 0.9rem 0.85rem;
+  background: #fff;
+  color: #475569;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+}
+
+.ks-proof-slider .owl-nav .owl-prev,
+.ks-proof-slider .owl-nav .owl-next {
+  position: absolute;
+  top: 42%;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 8px 22px -12px rgba(15, 23, 42, 0.45);
+  color: #1a1d21;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.ks-proof-slider .owl-nav .owl-prev {
+  left: 0.65rem;
+}
+
+.ks-proof-slider .owl-nav .owl-next {
+  right: 0.65rem;
+}
+
+.ks-proof-slider .owl-nav .owl-prev:hover,
+.ks-proof-slider .owl-nav .owl-next:hover {
+  background: var(--nt-orange);
+}
+
+.ks-proof-slider .owl-dots {
+  margin-top: 1.1rem;
+  text-align: center;
+}
+
+.ks-proof-slider .owl-dot {
+  display: inline-block;
+  margin: 0 0.22rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.ks-proof-slider .owl-dot span {
+  display: block;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: rgba(15, 23, 42, 0.16);
+}
+
+.ks-proof-slider .owl-dot.active span,
+.ks-proof-slider .owl-dot:hover span {
+  background: #1a1d21;
+}
+
+.ks-proof__cta {
+  margin-top: 1.35rem;
+}
+
+@media (max-width: 767px) {
+  .ks-proof__intro {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .ks-proof__copy .section-about-title {
+    max-width: none;
+  }
+
+  .ks-proof__stat {
+    text-align: left;
+  }
+
+  .ks-proof-slide img {
+    height: 15rem;
+  }
+}
+
+.ks-brands-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-top: 2.25rem;
+}
+
+.ks-brands-grid .ks-brands-slide {
+  height: clamp(18rem, 38vh, 26rem);
+}
+
+@media (max-width: 767px) {
+  .ks-brands-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ------------------------------------------------------------------
+   Responsive spacing system
+   Tokens shrink on tablet / phone. Desktop values stay in :root.
+   ------------------------------------------------------------------ */
+
+@media (min-width: 992px) {
+  :root {
+    --ks-gutter: 4.2857rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  :root {
+    --ks-gutter: 1.65rem;
+    --ks-section-y: 3.65rem;
+    --ks-stack: 1.05rem;
+    --ks-grid-gap: 1.2rem;
+    --ks-navbar-pad-y: 0.7rem;
+    --ks-navbar-min-h: 5.35rem;
+    --ks-page-offset: 5.6rem;
+    --ks-logo-max: 4.35rem;
+    --ks-footer-logo: 5.1rem;
+    --nt-tour-media-height: 12rem;
+    --nt-body-size: 1.02rem;
+    --nt-reveal-offset: 1.15rem;
+    --nt-enter-offset: 0.9rem;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --ks-gutter: 1.15rem;
+    --ks-section-y: 2.75rem;
+    --ks-stack: 0.85rem;
+    --ks-grid-gap: 1rem;
+    --ks-navbar-pad-y: 0.55rem;
+    --ks-navbar-min-h: 4.35rem;
+    --ks-page-offset: 4.55rem;
+    --ks-logo-max: 3.35rem;
+    --ks-footer-logo: 4.15rem;
+    --nt-tour-media-height: 11rem;
+    --nt-body-size: 1rem;
+    --nt-body-line: 1.62;
+    --nt-reveal-offset: 0.9rem;
+    --nt-enter-offset: 0.7rem;
+  }
+}
+
+@media (max-width: 479px) {
+  :root {
+    --ks-gutter: 1rem;
+    --ks-section-y: 2.35rem;
+    --ks-navbar-min-h: 4.1rem;
+    --ks-page-offset: 4.25rem;
+    --ks-logo-max: 3.05rem;
+    --nt-tour-media-height: 10.25rem;
+  }
+}
+
+.boxed,
+.animsition > .wrapper.boxed {
+  padding-left: var(--ks-gutter);
+  padding-right: var(--ks-gutter);
+}
+
+.left-boxed {
+  left: var(--ks-gutter);
+}
+
+.right-boxed {
+  right: var(--ks-gutter);
+}
+
+.section:not(.footer):not(.nistravel-footer),
+.section-about,
+.content > section:not(.footer),
+.content > .section:not(.footer),
+.content > .section-about,
+.content > .ks-scope-section,
+.content > .ks-consult-band,
+.nistravel-contact-cta-banner.section,
+.ks-final-cta.nistravel-contact-cta-banner.section,
+.ks-editorial.section,
+.ks-scope-section,
+.ks-consult-band,
+.nistravel-faq-section,
+.nistravel-section-booking,
+#ekskurzii.nistravel-tours-home {
+  padding-top: var(--ks-section-y);
+  padding-bottom: var(--ks-section-y);
+}
+
+.nistravel-contact-cta-banner.section,
+.ks-final-cta.nistravel-contact-cta-banner.section {
+  padding-top: var(--ks-section-y) !important;
+  padding-bottom: var(--ks-section-y) !important;
+}
+
+.content .title-uppercase,
+.content .section-about-title {
+  margin-bottom: var(--ks-stack);
+}
+
+.nistravel-booking-lead {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+.ks-card-grid {
+  margin-top: var(--ks-space-xl);
+}
+
+.ks-card-grid > [class*='col-'] {
+  margin-bottom: var(--ks-grid-gap);
+}
+
+.ks-process__wrapper,
+.ks-brands-grid,
+.ks-proof-slider,
+body.ks-services-hub .ks-system-stage-wrap {
+  margin-top: var(--ks-space-xl);
+}
+
+@media (max-width: 991px) {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  .wrapper {
+    overflow-x: hidden;
+  }
+
+  header.navbar.boxed {
+    gap: 0.45rem 0.7rem;
+  }
+
+  header.navbar.boxed .navbar-toggle {
+    margin-left: 0.55rem;
+  }
+
+  .section-about {
+    padding-top: var(--ks-section-y);
+    padding-bottom: var(--ks-section-y);
+  }
+
+  .content p {
+    margin-bottom: 1rem;
+  }
+
+  .nistravel-contact-cta-banner__inner {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .nistravel-contact-cta-banner__title {
+    font-size: clamp(1.55rem, 5.4vw, 2.1rem);
+    margin-bottom: 0.75rem;
+  }
+
+  .nistravel-contact-cta-banner__text,
+  .content .nistravel-contact-cta-banner__text,
+  .ks-final-cta .nistravel-contact-cta-banner__text {
+    font-size: 1rem;
+    max-width: 36rem;
+  }
+
+  .nistravel-contact-cta-banner__actions,
+  .ks-final-cta__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem 0.85rem;
+    margin-top: 1.25rem;
+  }
+
+  .ks-breadcrumb {
+    margin-bottom: 0.85rem;
+  }
+
+  .ks-offer__step {
+    margin-top: 1.75rem;
+  }
+
+  .ks-offer__note {
+    margin-top: 0.25rem;
+    padding: 1.2rem 1.25rem;
+  }
+
+  .ks-card-grid .card.nistravel-tour-card .card-block {
+    padding: 1.15rem 1.15rem 1.25rem;
+  }
+
+  .ks-card-grid .nistravel-tour-card .card-title {
+    min-height: 0;
+  }
+
+  .ks-scope-head {
+    margin-bottom: 1.25rem;
+    padding-bottom: 1.15rem;
+    gap: 1rem 1.25rem;
+  }
+
+  .ks-scope-tiles {
+    gap: 0.7rem;
+  }
+
+  .ks-consult-band__inner {
+    padding: 1.25rem 1.3rem;
+  }
+
+  .ks-consult-band__title {
+    font-size: 1.2rem;
+  }
+
+  .ks-editorial__body {
+    margin-top: 1.35rem;
+  }
+
+  .ks-editorial .icon-quote {
+    font-size: 2.6rem;
+    margin-bottom: 0.85rem;
+  }
+
+  .ks-process__wrapper {
+    gap: 1.75rem 1.15rem;
+  }
+
+  .ks-footer {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ks-footer__nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.75rem 1.5rem;
+  }
+
+  .ks-footer__brand {
+    max-width: 28rem;
+  }
+
+  .nistravel-footer__credit,
+  .boxed .nistravel-footer__credit {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 1.15rem;
+    padding-top: 1rem;
+  }
+
+  .ks-contact-panel {
+    margin-top: 1.5rem;
+  }
+
+  .nistravel-faq {
+    margin-top: 1.5rem;
+  }
+
+  .rev_slider .slider-title,
+  .rev_slider .tp-caption.slider-title {
+    line-height: 1.15;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .ks-card-grid > .col-md-4,
+  .ks-card-grid > .col-sm-6 {
+    width: 50%;
+  }
+
+  .ks-offer__types .col-sm-6,
+  .ks-offer__types .col-md-3 {
+    width: 50%;
+  }
+
+  .ks-projects-grid > [class*='col-'] {
+    width: 50%;
+  }
+
+  .ks-footer__nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ks-about-company__media {
+    min-height: 24rem;
+    margin-top: 1.5rem;
+  }
+
+  .ks-about-company__thumb--back {
+    width: min(58%, 16rem);
+    height: 18rem;
+  }
+
+  .ks-about-company__thumb--front {
+    top: 4.5rem;
+    width: min(74%, 19rem);
+    height: 19.5rem;
+  }
+
+  .ks-brands-grid .ks-brands-slide {
+    height: clamp(16rem, 32vh, 22rem);
+  }
+
+  body.ks-services-hub .ks-sys-card {
+    flex: 0 0 46vw;
+    max-width: 20rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .ks-card-grid {
+    margin-top: 1.35rem;
+  }
+
+  .ks-card-grid > [class*='col-'] {
+    width: 100%;
+    float: none;
+    margin-bottom: 1rem;
+  }
+
+  .ks-offer__types .col-sm-6,
+  .ks-offer__types .col-md-3,
+  .ks-projects-grid > [class*='col-'] {
+    width: 100%;
+    float: none;
+  }
+
+  .ks-projects-grid {
+    margin-top: 1.5rem;
+  }
+
+  .ks-projects-grid__item {
+    margin-bottom: 1rem;
+  }
+
+  .nistravel-contact-cta-banner__actions .btn,
+  .ks-final-cta__actions .btn,
+  .ks-consult-band__inner .btn,
+  .nistravel-contact-cta-banner__actions .link-arrow {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .ks-final-cta .nistravel-contact-cta-banner__title {
+    max-width: none;
+  }
+
+  .ks-process__icon {
+    width: 7.1rem;
+    height: 7.1rem;
+    margin-bottom: 0.95rem;
+  }
+
+  .ks-process__text {
+    max-width: 22rem;
+  }
+
+  .ks-offer__step:first-of-type {
+    margin-top: 1.35rem;
+  }
+
+  .ks-brands-grid {
+    margin-top: 1.35rem;
+    gap: 0.9rem;
+  }
+
+  .ks-brands-grid .ks-brands-slide {
+    height: 16.5rem;
+  }
+
+  .ks-scope-tiles li {
+    padding: 1.15rem 1.1rem 1.1rem;
+  }
+
+  .ks-consult-band__inner {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .ks-footer {
+    grid-template-columns: 1fr;
+    gap: 1.65rem;
+  }
+
+  .ks-footer__nav {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.45rem 1.15rem;
+  }
+
+  .ks-footer__brand {
+    max-width: none;
+  }
+
+  .ks-about-company__thumb--back,
+  .ks-about-company__thumb--front {
+    height: 14.5rem;
+  }
+
+  .dots-image,
+  .dots-image-2 {
+    margin-bottom: 0;
+  }
+
+  .dots-image img,
+  .dots-image-2 img,
+  .about-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .ks-explain__photos {
+    margin-top: 0.25rem;
+  }
+
+  body.ks-contact-page .ks-contact-form-wrap .js-form .ks-contact-fields > [class*="col-"] {
+    width: 100%;
+    float: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .entry-content h3,
+  .entry-content h4 {
+    margin-top: 1.5rem;
+  }
+
+  .nistravel-legal-meta {
+    margin-bottom: 1rem;
+  }
+
+  .subtitle-top {
+    margin-bottom: 0.45rem;
+  }
+
+  .ks-package-card__list {
+    margin-bottom: 0.35rem;
+  }
+
+  .rev_slider .btn,
+  .rev_slider .btn-yellow,
+  .rev_slider .link-arrow {
+    margin-top: 0.35rem;
+  }
+}
+
+@media (max-width: 479px) {
+  .nistravel-contact-cta-banner__title {
+    font-size: 1.5rem;
+  }
+
+  .ks-editorial__title {
+    font-size: 1.45rem;
+    max-width: none;
+  }
+
+  .ks-process__icon {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+
+  .ks-card-grid .nistravel-tour-card__media,
+  .ks-offer__types .nistravel-tour-card__media {
+    height: 10rem;
   }
 }

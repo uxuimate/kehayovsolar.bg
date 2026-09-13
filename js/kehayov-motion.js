@@ -42,21 +42,47 @@
 
 (function ($) {
   if (!$ || !$.fn.owlCarousel) return;
-  var $slider = $('.ks-brands-slider');
-  if (!$slider.length) return;
   var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  $slider.owlCarousel({
-    items: 1,
-    loop: true,
-    margin: 0,
-    dots: true,
-    nav: true,
-    navText: ['', ''],
-    smartSpeed: 650,
-    autoplay: !reduceMotion,
-    autoplayTimeout: 5600,
-    autoplayHoverPause: true
-  });
+  var isBg = (document.documentElement.lang || '').toLowerCase().indexOf('bg') === 0;
+
+  var $brands = $('.ks-brands-slider');
+  if ($brands.length) {
+    $brands.owlCarousel({
+      items: 1,
+      loop: true,
+      margin: 0,
+      dots: true,
+      nav: true,
+      navText: ['', ''],
+      smartSpeed: 650,
+      autoplay: !reduceMotion,
+      autoplayTimeout: 5600,
+      autoplayHoverPause: true
+    });
+  }
+
+  var $proof = $('.ks-proof-slider');
+  if ($proof.length) {
+    $proof.owlCarousel({
+      loop: true,
+      margin: 16,
+      dots: true,
+      nav: true,
+      navText: [
+        '<span aria-hidden="true">‹</span><span class="sr-only">' + (isBg ? 'Предишни снимки' : 'Previous photos') + '</span>',
+        '<span aria-hidden="true">›</span><span class="sr-only">' + (isBg ? 'Следващи снимки' : 'Next photos') + '</span>'
+      ],
+      smartSpeed: 500,
+      autoplay: !reduceMotion,
+      autoplayTimeout: 6200,
+      autoplayHoverPause: true,
+      responsive: {
+        0: { items: 1 },
+        640: { items: 2 },
+        992: { items: 3 }
+      }
+    });
+  }
 })(window.jQuery);
 
 (function () {

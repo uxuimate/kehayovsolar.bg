@@ -129,6 +129,13 @@
 		}
 	});
 
+	$(document).on('click', '.lang-dropdown__list a[href]', function(e){
+		var href = this.getAttribute('href');
+		if (!href || href === '#') return;
+		e.preventDefault();
+		window.location.assign(href);
+	});
+
 	$('.close-menu, .click-capture').on('click', function(){
 		$('body').removeClass('menu-is-opened').addClass('menu-is-closed');
 		$('.menu-list ul').slideUp(300);

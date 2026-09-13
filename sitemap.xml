@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://kehayovsolar.bg/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://kehayovsolar.bg/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kehayovsolar.bg/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kehayovsolar.bg/"/>
+  </url>
+  <url>
+    <loc>https://kehayovsolar.bg/en/index.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://kehayovsolar.bg/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kehayovsolar.bg/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kehayovsolar.bg/"/>
+  </url>
+  <url>
+    <loc>https://kehayovsolar.bg/about.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://kehayovsolar.bg/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kehayovsolar.bg/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kehayovsolar.bg/about.html"/>
+  </url>
+  <url>
+    <loc>https://kehayovsolar.bg/en/about.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://kehayovsolar.bg/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kehayovsolar.bg/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kehayovsolar.bg/about.html"/>
+  </url>
+  <url>
+    <loc>https://kehayovsolar.bg/services.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://kehayovsolar.bg/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kehayovsolar.bg/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kehayovsolar.bg/services.html"/>
+  </url>
+  <url>
+    <loc>https://kehayovsolar.bg/en/services.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://kehayovsolar.bg/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kehayovsolar.bg/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kehayovsolar.bg/services.html"/>
+  </url>
+  <url>
+    <loc>https://kehayovsolar.bg/packages.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://kehayovsolar.bg/packages.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kehayovsolar.bg/en/packages.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kehayovsolar.bg/packages.html"/>
+  </url>
+  <url>
+    <loc>https://kehayovsolar.bg/en/packages.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://kehayovsolar.bg/packages.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kehayovsolar.bg/en/packages.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kehayovsolar.bg/packages.html"/>
+  </url>
+  <url>
+    <loc>https://kehayovsolar.bg/projects.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://kehayovsolar.bg/projects.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kehayovsolar.bg/en/projects.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kehayovsolar.bg/projects.html"/>
+  </url>
+  <url>
+    <loc>https://kehayovsolar.bg/en/projects.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://kehayovsolar.bg/projects.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kehayovsolar.bg/en/projects.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kehayovsolar.bg/projects.html"/>
+  </url>
+  <url>
+    <loc>https://kehayovsolar.bg/contact.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://kehayovsolar.bg/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kehayovsolar.bg/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kehayovsolar.bg/contact.html"/>
+  </url>
+  <url>
+    <loc>https://kehayovsolar.bg/en/contact.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://kehayovsolar.bg/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kehayovsolar.bg/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kehayovsolar.bg/contact.html"/>
+  </url>
+  <url>
+    <loc>https://kehayovsolar.bg/privacy.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://kehayovsolar.bg/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kehayovsolar.bg/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kehayovsolar.bg/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://kehayovsolar.bg/en/privacy.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://kehayovsolar.bg/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kehayovsolar.bg/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kehayovsolar.bg/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://kehayovsolar.bg/terms.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://kehayovsolar.bg/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kehayovsolar.bg/en/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kehayovsolar.bg/terms.html"/>
+  </url>
+  <url>
+    <loc>https://kehayovsolar.bg/en/terms.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://kehayovsolar.bg/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kehayovsolar.bg/en/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kehayovsolar.bg/terms.html"/>
+  </url>
+  <url>
+    <loc>https://kehayovsolar.bg/service-grid.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://kehayovsolar.bg/service-grid.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kehayovsolar.bg/en/service-grid.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kehayovsolar.bg/service-grid.html"/>
+  </url>
+  <url>
+    <loc>https://kehayovsolar.bg/en/service-grid.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://kehayovsolar.bg/service-grid.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kehayovsolar.bg/en/service-grid.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kehayovsolar.bg/service-grid.html"/>
+  </url>
+  <url>
+    <loc>https://kehayovsolar.bg/service-hybrid.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://kehayovsolar.bg/service-hybrid.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kehayovsolar.bg/en/service-hybrid.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kehayovsolar.bg/service-hybrid.html"/>
+  </url>
+  <url>
+    <loc>https://kehayovsolar.bg/en/service-hybrid.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://kehayovsolar.bg/service-hybrid.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kehayovsolar.bg/en/service-hybrid.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kehayovsolar.bg/service-hybrid.html"/>
+  </url>
+  <url>
+    <loc>https://kehayovsolar.bg/service-offgrid.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://kehayovsolar.bg/service-offgrid.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kehayovsolar.bg/en/service-offgrid.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kehayovsolar.bg/service-offgrid.html"/>
+  </url>
+  <url>
+    <loc>https://kehayovsolar.bg/en/service-offgrid.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://kehayovsolar.bg/service-offgrid.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kehayovsolar.bg/en/service-offgrid.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kehayovsolar.bg/service-offgrid.html"/>
+  </url>
+  <url>
+    <loc>https://kehayovsolar.bg/service-storage.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://kehayovsolar.bg/service-storage.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kehayovsolar.bg/en/service-storage.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kehayovsolar.bg/service-storage.html"/>
+  </url>
+  <url>
+    <loc>https://kehayovsolar.bg/en/service-storage.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://kehayovsolar.bg/service-storage.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kehayovsolar.bg/en/service-storage.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kehayovsolar.bg/service-storage.html"/>
+  </url>
+</urlset>
