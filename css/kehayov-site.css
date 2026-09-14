@@ -1182,6 +1182,165 @@ header.navbar.boxed .navbar-main li.active > a {
   text-decoration: none;
 }
 
+/* Systems dropdown — desktop */
+header.navbar.boxed .navbar-main > ul > li.has-dropdown {
+  position: relative;
+}
+
+header.navbar.boxed .navbar-main > ul > li.has-dropdown > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.28rem;
+}
+
+header.navbar.boxed .navbar-main > ul > li.has-dropdown > a::before {
+  content: none;
+}
+
+header.navbar.boxed .navbar-main > ul > li.has-dropdown > a .nav-caret {
+  display: inline-block;
+  width: 0.45rem;
+  height: 0.45rem;
+  margin-top: -0.15rem;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg);
+  opacity: 0.7;
+}
+
+header.navbar.boxed .navbar-main .nav-dropdown {
+  position: absolute;
+  top: calc(100% + 0.65rem);
+  left: 50%;
+  z-index: 40;
+  display: block;
+  min-width: 15.5rem;
+  margin: 0;
+  padding: 0.45rem 0;
+  list-style: none;
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 10px;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.12);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateX(-50%) translateY(0.35rem);
+  transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s ease;
+}
+
+header.navbar.boxed .navbar-main .nav-dropdown::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -0.75rem;
+  height: 0.75rem;
+}
+
+header.navbar.boxed .navbar-main > ul > li.has-dropdown:hover > .nav-dropdown,
+header.navbar.boxed .navbar-main > ul > li.has-dropdown:focus-within > .nav-dropdown {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+
+header.navbar.boxed .navbar-main .nav-dropdown li {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+header.navbar.boxed .navbar-main .nav-dropdown a {
+  display: block;
+  padding: 0.55rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #1a1d21;
+  white-space: nowrap;
+}
+
+header.navbar.boxed .navbar-main .nav-dropdown a:hover,
+header.navbar.boxed .navbar-main .nav-dropdown a:focus,
+header.navbar.boxed .navbar-main .nav-dropdown li.active > a {
+  color: var(--nt-orange);
+  background: rgba(206, 224, 2, 0.12);
+}
+
+.navbar-white .navbar-main .nav-dropdown {
+  background: #111;
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+}
+
+.navbar-white .navbar-main .nav-dropdown a {
+  color: #f3f4f6;
+}
+
+.navbar-white .navbar-main .nav-dropdown a:hover,
+.navbar-white .navbar-main .nav-dropdown a:focus,
+.navbar-white .navbar-main .nav-dropdown li.active > a {
+  color: var(--nt-orange);
+  background: rgba(206, 224, 2, 0.1);
+}
+
+/* Systems dropdown — mobile slide menu */
+.menu.menu--with-brand .menu-list > li.has-dropdown > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.menu.menu--with-brand .menu-list > li.has-dropdown > a .nav-caret {
+  display: inline-block;
+  flex: 0 0 auto;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  opacity: 0.55;
+  transition: transform 0.2s ease;
+}
+
+.menu.menu--with-brand .menu-list > li.has-dropdown.is-open > a .nav-caret {
+  transform: rotate(-135deg);
+  margin-top: 0.25rem;
+}
+
+.menu.menu--with-brand .menu-list > li.has-dropdown > .nav-dropdown {
+  display: none;
+  list-style: none;
+  margin: 0.85rem 0 0;
+  padding: 0 0 0 0.15rem;
+}
+
+.menu.menu--with-brand .menu-list > li.has-dropdown > .nav-dropdown > li {
+  margin-top: 0.85rem;
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+
+.menu.menu--with-brand .menu-list > li.has-dropdown > .nav-dropdown > li:first-child {
+  margin-top: 0.35rem;
+}
+
+.menu.menu--with-brand .menu-list > li.has-dropdown > .nav-dropdown a {
+  color: #6b7280;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+.menu.menu--with-brand .menu-list > li.has-dropdown > .nav-dropdown a:hover,
+.menu.menu--with-brand .menu-list > li.has-dropdown > .nav-dropdown li.active > a {
+  color: #111;
+}
+
 header.navbar.boxed .navbar-lang-dropdown {
   position: relative;
   order: 4;

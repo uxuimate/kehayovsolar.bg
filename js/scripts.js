@@ -138,6 +138,7 @@
 
 	$('.close-menu, .click-capture').on('click', function(){
 		$('body').removeClass('menu-is-opened').addClass('menu-is-closed');
+		$('.menu-list > li').removeClass('is-open');
 		$('.menu-list ul').slideUp(300);
 	});
 
@@ -145,8 +146,9 @@
 
 
 	dropToggle.on('click',function(){
-		dropToggle.not(this).closest('li').find('ul').slideUp(200);
-		$(this).closest('li').children('ul').slideToggle(200);
+		var $li = $(this).closest('li');
+		dropToggle.not(this).closest('li').removeClass('is-open').find('ul').slideUp(200);
+		$li.toggleClass('is-open').children('ul').slideToggle(200);
 		return false;
 	});
 
