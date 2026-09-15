@@ -103,6 +103,7 @@
   }
 }
 </script>
+<link rel="preload" as="image" href="images/img/07.jpg">
 <link href="css/style.css" rel="stylesheet" media="screen">
 <link href="css/kehayov-site.css" rel="stylesheet" media="screen">
 <script type="application/ld+json">
@@ -179,6 +180,7 @@
 </script>
 </head>
 <body class="nistravel-motion">
+<a class="ks-skip-link" href="#about">Към съдържанието</a>
 <div class="animsition">
   <div class="wrapper boxed">
 
@@ -201,7 +203,16 @@
               <li><a href="service-storage.html">Съхранение (BESS)</a></li>
             </ul>
           </li>
-          <li><a href="packages.html">пакети</a></li>
+          <li class="has-dropdown">
+            <a href="packages.html">пакети <span class="nav-caret" aria-hidden="true"></span></a>
+            <ul class="nav-dropdown">
+              <li><a href="packages.html">Всички пакети</a></li>
+              <li><a href="package-6kw.html">6.12 kWp</a></li>
+              <li><a href="package-8kw.html">7.8 kWp</a></li>
+              <li><a href="package-12kw.html">12.2 kWp</a></li>
+              <li><a href="package-20kw.html">20.4 kWp</a></li>
+            </ul>
+          </li>
           <li><a href="projects.html">проекти</a></li>
           <li><a href="about.html">за нас</a></li>
           <li><a href="contact.html">контакт</a></li>
@@ -255,7 +266,16 @@
               <li><a href="service-storage.html">Съхранение (BESS)</a></li>
             </ul>
           </li>
-          <li><a href="packages.html">пакети</a></li>
+          <li class="has-dropdown">
+            <a href="packages.html">пакети <span class="nav-caret" aria-hidden="true"></span></a>
+            <ul class="nav-dropdown">
+              <li><a href="packages.html">Всички пакети</a></li>
+              <li><a href="package-6kw.html">6.12 kWp</a></li>
+              <li><a href="package-8kw.html">7.8 kWp</a></li>
+              <li><a href="package-12kw.html">12.2 kWp</a></li>
+              <li><a href="package-20kw.html">20.4 kWp</a></li>
+            </ul>
+          </li>
           <li><a href="projects.html">проекти</a></li>
           <li><a href="about.html">за нас</a></li>
           <li><a href="contact.html">контакт</a></li>
@@ -301,7 +321,7 @@
       <div class="navbar-spacer hidden-sm hidden-xs"></div>
 
       <div class="navbar-tools">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar-collapse" aria-label="Отвори меню">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -331,7 +351,6 @@
                 data-autoplayonlyfirsttime="false"
                 data-nextslideatend="false">
               </div>
-
               <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme"
                 data-x="['left']" data-hoffset="['100']"
                 data-y="['middle','middle','middle','middle']" data-voffset="['-250']"
@@ -448,7 +467,6 @@
                 data-autoplayonlyfirsttime="false"
                 data-nextslideatend="false">
               </div>
-
               <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme"
                 data-x="['left']" data-hoffset="['100']"
                 data-y="['middle','middle','middle','middle']" data-voffset="['-250']"
@@ -581,7 +599,7 @@
           <div class="row">
             <div class="col-md-6">
               <strong class="section-subtitle">едно решение</strong>
-              <h2 class="section-title section-about-title">Една система. Едно решение. От начало до край.</h2>
+              <h1 class="section-title section-about-title">Една система. Едно решение. От начало до край.</h1>
               <p>От избора на подходящо оборудване до монтажа на готовата система — поемаме целия процес, за да получите решение, съобразено с вашия имот, потребление и цели.</p>
               <ul class="service-list ks-steps">
                 <li>01. Индивидуално проектиране</li>
@@ -593,10 +611,10 @@
             <div class="col-md-5 col-md-offset-1">
               <div class="ks-about-company__media nistravel-reveal">
                 <div class="ks-about-company__thumb ks-about-company__thumb--back">
-                  <img alt="Покривна фотоволтаична система" src="images/img/24.jpg">
+                  <img alt="Покривна фотоволтаична система" src="images/img/24.jpg" loading="lazy" decoding="async">
                 </div>
                 <div class="ks-about-company__thumb ks-about-company__thumb--front">
-                  <img alt="Монтаж на соларни панели" src="images/img/09.jpg">
+                  <img alt="Монтаж на соларни панели" src="images/img/09.jpg" loading="lazy" decoding="async">
                 </div>
               </div>
             </div>
@@ -669,7 +687,7 @@
             <div class="col-sm-6">
               <a href="#paketi" class="card nistravel-tour-card nistravel-reveal">
                 <div class="nistravel-tour-card__media">
-                  <img alt="Фотоволтаична система за дома" src="images/img/01.jpg">
+                  <img alt="Фотоволтаична система за дома" src="images/img/01.jpg" loading="lazy" decoding="async">
                 </div>
                 <div class="card-block">
                   <div class="card-posted"><span class="text-primary">Дом</span></div>
@@ -681,7 +699,7 @@
             <div class="col-sm-6">
               <a href="#paketi" class="card nistravel-tour-card nistravel-reveal">
                 <div class="nistravel-tour-card__media">
-                  <img alt="Фотоволтаична система за бизнеса" src="images/img/19.jpg">
+                  <img alt="Фотоволтаична система за бизнеса" src="images/img/19.jpg" loading="lazy" decoding="async">
                 </div>
                 <div class="card-block">
                   <div class="card-posted"><span class="text-primary">Бизнес</span></div>
@@ -697,7 +715,7 @@
             <div class="col-sm-6 col-md-3">
               <a href="service-grid.html" class="card nistravel-tour-card nistravel-reveal">
                 <div class="nistravel-tour-card__media">
-                  <img alt="Мрежова фотоволтаична система" src="images/img/22.jpg">
+                  <img alt="Мрежова фотоволтаична система" src="images/img/22.jpg" loading="lazy" decoding="async">
                 </div>
                 <div class="card-block">
                   <h4 class="card-title">Мрежова</h4>
@@ -708,7 +726,7 @@
             <div class="col-sm-6 col-md-3">
               <a href="service-hybrid.html" class="card nistravel-tour-card nistravel-reveal">
                 <div class="nistravel-tour-card__media">
-                  <img alt="Хибридна фотоволтаична система" src="images/img/21.jpg">
+                  <img alt="Хибридна фотоволтаична система" src="images/img/21.jpg" loading="lazy" decoding="async">
                 </div>
                 <div class="card-block">
                   <h4 class="card-title">Хибридна</h4>
@@ -719,7 +737,7 @@
             <div class="col-sm-6 col-md-3">
               <a href="service-offgrid.html" class="card nistravel-tour-card nistravel-reveal">
                 <div class="nistravel-tour-card__media">
-                  <img alt="Автономна фотоволтаична система" src="images/img/17.jpg">
+                  <img alt="Автономна фотоволтаична система" src="images/img/17.jpg" loading="lazy" decoding="async">
                 </div>
                 <div class="card-block">
                   <h4 class="card-title">Автономна</h4>
@@ -730,7 +748,7 @@
             <div class="col-sm-6 col-md-3">
               <a href="service-storage.html" class="card nistravel-tour-card nistravel-reveal">
                 <div class="nistravel-tour-card__media">
-                  <img alt="Система за съхранение на енергия" src="images/img/20.jpg">
+                  <img alt="Система за съхранение на енергия" src="images/img/20.jpg" loading="lazy" decoding="async">
                 </div>
                 <div class="card-block">
                   <h4 class="card-title">Съхранение (BESS)</h4>
@@ -751,73 +769,98 @@
         <div class="container">
           <div class="nistravel-enter-group text-center">
             <p class="subtitle-top text-dark nistravel-enter">Системи</p>
-            <h2 class="title-uppercase nistravel-enter">Ориентировъчна мощност</h2>
-            <p class="nistravel-booking-lead nistravel-enter">Типичен състав за 5, 10 и 20 kW. Точната конфигурация и цената се уточняват след оглед на обекта.</p>
+            <h2 class="title-uppercase nistravel-enter">Готови пакети</h2>
+            <p class="nistravel-booking-lead nistravel-enter">Четири хибридни пакета с JinkoSolar и Deye. Конструкция и монтаж включени. Цените са ориентировъчни.</p>
           </div>
-          <div class="row ks-card-grid">
-            <div class="col-sm-6 col-md-4">
-              <article class="card nistravel-tour-card ks-package-card nistravel-reveal">
+          <div class="owl-carousel ks-packages-slider" aria-label="Готови пакети">
+              <article id="paket-6kw" class="card nistravel-tour-card ks-package-card nistravel-reveal">
                 <div class="nistravel-tour-card__media">
-                  <img alt="Система 5 kW" src="images/img/25.jpg">
-                  <span class="ks-package-card__power">5 kW</span>
+                  <img alt="Пакет 6.12 kWp" src="images/img/25.jpg" loading="lazy" decoding="async">
+                  <span class="ks-package-card__power">6.12 kWp</span>
                 </div>
                 <div class="card-block">
-                  <h4 class="card-title">Компактно решение</h4>
-                  <p class="ks-package-card__for">За домакинства с по-умерено потребление</p>
+                  <h3 class="card-title">Пакет 6.12 kWp</h3>
+                  <p class="ks-package-card__for">Компактен хибриден пакет за дом с умерено потребление.</p>
+                  <p class="ks-package-card__phase">Монофазен LV</p>
                   <ul class="ks-package-card__list">
-                    <li>Проектиране на системата</li>
-                    <li>JinkoSolar панели</li>
-                    <li>Deye инвертор 5 kW</li>
-                    <li>Конструкция, кабели и защита</li>
-                    <li>Доставка и монтаж</li>
-                    <li>Опция за Deye батерия</li>
+                    <li>12 × 510 W JinkoSolar панели</li>
+                    <li>Deye инвертор 6 kW (монофазен LV)</li>
+                    <li>Deye батерия 11.8 kWh</li>
+                    <li>Конструкция и монтаж — включени</li>
                   </ul>
-                  <a href="contact.html?paket=5kw" class="btn btn-quiet nistravel-tour-card__cta">Поискайте оферта</a>
+                  <p class="ks-package-card__price"><span>Ориентировъчна цена</span> около 6 887 €</p>
+                  <div class="ks-package-card__actions">
+                    <a href="package-6kw.html" class="btn nistravel-tour-card__cta">Виж пакета →</a>
+                    <a href="contact.html?paket=6kw" class="btn btn-quiet nistravel-tour-card__cta">Оферта →</a>
+                  </div>
                 </div>
               </article>
-            </div>
-            <div class="col-sm-6 col-md-4">
-              <article class="card nistravel-tour-card ks-package-card nistravel-reveal">
+              <article id="paket-8kw" class="card nistravel-tour-card ks-package-card nistravel-reveal">
                 <div class="nistravel-tour-card__media">
-                  <img alt="Система 10 kW" src="images/img/26.jpg">
-                  <span class="ks-package-card__power">10 kW</span>
+                  <img alt="Пакет 7.8 kWp" src="images/img/26.jpg" loading="lazy" decoding="async">
+                  <span class="ks-package-card__power">7.8 kWp</span>
                 </div>
                 <div class="card-block">
-                  <h4 class="card-title">Балансирано решение</h4>
-                  <p class="ks-package-card__for">За домакинства с по-високо потребление</p>
+                  <h3 class="card-title">Пакет 7.8 kWp</h3>
+                  <p class="ks-package-card__for">Балансиран хибриден пакет с по-голямо съхранение.</p>
+                  <p class="ks-package-card__phase">Монофазен LV</p>
                   <ul class="ks-package-card__list">
-                    <li>Проектиране на системата</li>
-                    <li>JinkoSolar панели</li>
-                    <li>Deye инвертор 10 kW</li>
-                    <li>Конструкция, кабели и защита</li>
-                    <li>Доставка и монтаж</li>
-                    <li>Опция за Deye батерия</li>
+                    <li>12 × 590 W JinkoSolar панели</li>
+                    <li>Deye инвертор 8 kW (монофазен LV)</li>
+                    <li>Deye батерия 16 kWh</li>
+                    <li>Конструкция и монтаж — включени</li>
                   </ul>
-                  <a href="contact.html?paket=10kw" class="btn btn-quiet nistravel-tour-card__cta">Поискайте оферта</a>
+                  <p class="ks-package-card__price"><span>Ориентировъчна цена</span> около 7 887 €</p>
+                  <div class="ks-package-card__actions">
+                    <a href="package-8kw.html" class="btn nistravel-tour-card__cta">Виж пакета →</a>
+                    <a href="contact.html?paket=8kw" class="btn btn-quiet nistravel-tour-card__cta">Оферта →</a>
+                  </div>
                 </div>
               </article>
-            </div>
-            <div class="col-sm-6 col-md-4">
-              <article class="card nistravel-tour-card ks-package-card nistravel-reveal">
+              <article id="paket-12kw" class="card nistravel-tour-card ks-package-card nistravel-reveal">
                 <div class="nistravel-tour-card__media">
-                  <img alt="Система 20 kW" src="images/img/30.jpg">
-                  <span class="ks-package-card__power">20 kW</span>
+                  <img alt="Пакет 12.2 kWp" src="images/img/30.jpg" loading="lazy" decoding="async">
+                  <span class="ks-package-card__power">12.2 kWp</span>
                 </div>
                 <div class="card-block">
-                  <h4 class="card-title">Мощно решение</h4>
-                  <p class="ks-package-card__for">За по-големи жилищни и бизнес обекти</p>
+                  <h3 class="card-title">Пакет 12.2 kWp</h3>
+                  <p class="ks-package-card__for">По-мощен пакет за домакинства с по-високо потребление.</p>
+                  <p class="ks-package-card__phase">Монофазен LV</p>
                   <ul class="ks-package-card__list">
-                    <li>Проектиране на системата</li>
-                    <li>JinkoSolar панели</li>
-                    <li>Deye инвертор 20 kW</li>
-                    <li>Конструкция, кабели и защита</li>
-                    <li>Доставка и монтаж</li>
-                    <li>Опция за Deye батерия</li>
+                    <li>24 × 510 W JinkoSolar панели</li>
+                    <li>Deye инвертор 12 kW (монофазен LV)</li>
+                    <li>Deye батерия 16 kWh</li>
+                    <li>Конструкция и монтаж — включени</li>
                   </ul>
-                  <a href="contact.html?paket=20kw" class="btn btn-quiet nistravel-tour-card__cta">Поискайте оферта</a>
+                  <p class="ks-package-card__price"><span>Ориентировъчна цена</span> около 10 037 €</p>
+                  <div class="ks-package-card__actions">
+                    <a href="package-12kw.html" class="btn nistravel-tour-card__cta">Виж пакета →</a>
+                    <a href="contact.html?paket=12kw" class="btn btn-quiet nistravel-tour-card__cta">Оферта →</a>
+                  </div>
                 </div>
               </article>
-            </div>
+              <article id="paket-20kw" class="card nistravel-tour-card ks-package-card nistravel-reveal">
+                <div class="nistravel-tour-card__media">
+                  <img alt="Пакет 20.4 kWp" src="images/img/19.jpg" loading="lazy" decoding="async">
+                  <span class="ks-package-card__power">20.4 kWp</span>
+                </div>
+                <div class="card-block">
+                  <h3 class="card-title">Пакет 20.4 kWp</h3>
+                  <p class="ks-package-card__for">Трифазен пакет за голям дом или бизнес обект.</p>
+                  <p class="ks-package-card__phase">Трифазен LV</p>
+                  <ul class="ks-package-card__list">
+                    <li>40 × 510 W JinkoSolar панели</li>
+                    <li>Deye инвертор 20 kW (трифазен LV)</li>
+                    <li>Deye батерии 2 × 16 kWh</li>
+                    <li>Конструкция и монтаж — включени</li>
+                  </ul>
+                  <p class="ks-package-card__price"><span>Ориентировъчна цена</span> около 16 000 €</p>
+                  <div class="ks-package-card__actions">
+                    <a href="package-20kw.html" class="btn nistravel-tour-card__cta">Виж пакета →</a>
+                    <a href="contact.html?paket=20kw" class="btn btn-quiet nistravel-tour-card__cta">Оферта →</a>
+                  </div>
+                </div>
+              </article>
           </div>
         </div>
       </section>
@@ -836,12 +879,12 @@
             </p>
           </div>
           <div class="owl-carousel ks-proof-slider" aria-label="Снимки от реални обекти">
-            <figure class="ks-proof-slide"><img src="images/img/07.jpg" alt="Покривна фотоволтаична система"><figcaption>Жилищен покрив</figcaption></figure>
-            <figure class="ks-proof-slide"><img src="images/img/09.jpg" alt="Монтаж на соларни панели"><figcaption>Монтаж на обект</figcaption></figure>
-            <figure class="ks-proof-slide"><img src="images/img/18.jpg" alt="Фотоволтаична система на терен"><figcaption>Теренна инсталация</figcaption></figure>
-            <figure class="ks-proof-slide"><img src="images/img/17.jpg" alt="Реализиран фотоволтаичен обект"><figcaption>Готова система</figcaption></figure>
-            <figure class="ks-proof-slide"><img src="images/img/24.jpg" alt="Покривни соларни панели"><figcaption>Покривен монтаж</figcaption></figure>
-            <figure class="ks-proof-slide"><img src="images/img/23.jpg" alt="Фотоволтаичен парк"><figcaption>Теренен обект</figcaption></figure>
+            <figure class="ks-proof-slide"><img src="images/img/07.jpg" alt="Покривна фотоволтаична система" loading="lazy" decoding="async"><figcaption>Жилищен покрив</figcaption></figure>
+            <figure class="ks-proof-slide"><img src="images/img/09.jpg" alt="Монтаж на соларни панели" loading="lazy" decoding="async"><figcaption>Монтаж на обект</figcaption></figure>
+            <figure class="ks-proof-slide"><img src="images/img/18.jpg" alt="Фотоволтаична система на терен" loading="lazy" decoding="async"><figcaption>Теренна инсталация</figcaption></figure>
+            <figure class="ks-proof-slide"><img src="images/img/17.jpg" alt="Реализиран фотоволтаичен обект" loading="lazy" decoding="async"><figcaption>Готова система</figcaption></figure>
+            <figure class="ks-proof-slide"><img src="images/img/24.jpg" alt="Покривни соларни панели" loading="lazy" decoding="async"><figcaption>Покривен монтаж</figcaption></figure>
+            <figure class="ks-proof-slide"><img src="images/img/23.jpg" alt="Фотоволтаичен парк" loading="lazy" decoding="async"><figcaption>Теренен обект</figcaption></figure>
           </div>
           <p class="text-center ks-proof__cta"><a href="projects.html" class="btn btn-yellow">Виж реализациите</a></p>
         </div>
@@ -858,7 +901,7 @@
           </div>
           <div class="ks-brands-grid">
             <article class="ks-brands-slide nistravel-reveal">
-              <img src="images/img/28.jpg" alt="JinkoSolar панели">
+              <img src="images/img/28.jpg" alt="JinkoSolar панели" loading="lazy" decoding="async">
               <div class="ks-brands-slide__copy">
                 <span class="ks-brands-slide__label">Панели</span>
                 <h3 class="ks-brands-slide__name">JinkoSolar</h3>
@@ -866,7 +909,7 @@
               </div>
             </article>
             <article class="ks-brands-slide nistravel-reveal">
-              <img src="images/img/12.jpg" alt="Deye инвертори и батерии">
+              <img src="images/img/12.jpg" alt="Deye инвертори и батерии" loading="lazy" decoding="async">
               <div class="ks-brands-slide__copy">
                 <span class="ks-brands-slide__label">Инвертори и батерии</span>
                 <h3 class="ks-brands-slide__name">Deye</h3>
@@ -882,7 +925,7 @@
           <div class="row">
             <div class="col-md-5">
               <div class="dots-image">
-                <img alt="Слънчева енергия за дома и бизнеса" class="about-img img-responsive" src="images/img/29.jpg">
+                <img alt="Слънчева енергия за дома и бизнеса" class="about-img img-responsive" src="images/img/29.jpg" loading="lazy" decoding="async">
                 <div class="dots"></div>
               </div>
             </div>
@@ -1006,12 +1049,13 @@
             </ul>
           </div>
           <div class="ks-footer__col">
-            <p class="ks-footer__heading">Пакети</p>
+                        <p class="ks-footer__heading">Пакети</p>
             <ul>
               <li><a href="packages.html">Всички пакети</a></li>
-              <li><a href="packages.html#paket-5kw">5 kW — компактен</a></li>
-              <li><a href="packages.html#paket-10kw">10 kW — балансиран</a></li>
-              <li><a href="packages.html#paket-20kw">20 kW — мощен</a></li>
+              <li><a href="package-6kw.html">6.12 kWp</a></li>
+              <li><a href="package-8kw.html">7.8 kWp</a></li>
+              <li><a href="package-12kw.html">12.2 kWp</a></li>
+              <li><a href="package-20kw.html">20.4 kWp</a></li>
             </ul>
           </div>
           <div class="ks-footer__col">

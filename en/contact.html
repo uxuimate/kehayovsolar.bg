@@ -107,6 +107,7 @@
 <link href="../css/kehayov-site.css" rel="stylesheet" media="screen">
 </head>
 <body class="nistravel-motion ks-contact-page">
+<a class="ks-skip-link" href="#main-content">Skip to content</a>
 <div class="animsition">
   <div class="wrapper boxed">
 
@@ -129,7 +130,16 @@
               <li><a href="service-storage.html">Storage (BESS)</a></li>
             </ul>
           </li>
-          <li><a href="packages.html">packages</a></li>
+          <li class="has-dropdown">
+            <a href="packages.html">packages <span class="nav-caret" aria-hidden="true"></span></a>
+            <ul class="nav-dropdown">
+              <li><a href="packages.html">All packages</a></li>
+              <li><a href="package-6kw.html">6.12 kWp</a></li>
+              <li><a href="package-8kw.html">7.8 kWp</a></li>
+              <li><a href="package-12kw.html">12.2 kWp</a></li>
+              <li><a href="package-20kw.html">20.4 kWp</a></li>
+            </ul>
+          </li>
           <li><a href="projects.html">projects</a></li>
           <li><a href="about.html">about</a></li>
           <li class="active"><a href="contact.html" aria-current="page">contact</a></li>
@@ -183,7 +193,16 @@
               <li><a href="service-storage.html">Storage (BESS)</a></li>
             </ul>
           </li>
-          <li><a href="packages.html">packages</a></li>
+          <li class="has-dropdown">
+            <a href="packages.html">packages <span class="nav-caret" aria-hidden="true"></span></a>
+            <ul class="nav-dropdown">
+              <li><a href="packages.html">All packages</a></li>
+              <li><a href="package-6kw.html">6.12 kWp</a></li>
+              <li><a href="package-8kw.html">7.8 kWp</a></li>
+              <li><a href="package-12kw.html">12.2 kWp</a></li>
+              <li><a href="package-20kw.html">20.4 kWp</a></li>
+            </ul>
+          </li>
           <li><a href="projects.html">projects</a></li>
           <li><a href="about.html">about</a></li>
           <li class="active"><a href="contact.html" aria-current="page">contact</a></li>
@@ -229,7 +248,7 @@
       <div class="navbar-spacer hidden-sm hidden-xs"></div>
 
       <div class="navbar-tools">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar-collapse" aria-label="Open menu">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -255,7 +274,7 @@
         </div>
       </div>
     </section>
-    <div class="content">
+    <div class="content" id="main-content">
       <section class="section ks-contact-section" id="ks-contact-form">
         <div class="container">
           <div class="row ks-contact-layout">
@@ -270,22 +289,27 @@
                 <input class="ks-hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
                 <div class="row ks-contact-fields">
                   <div class="form-group col-sm-6">
-                    <input class="input-gray" type="text" name="name" required placeholder="Name*">
+                    <label class="sr-only" for="contact-name">Name</label>
+                    <input class="input-gray" id="contact-name" type="text" name="name" required placeholder="Name*" autocomplete="name" aria-required="true">
                   </div>
                   <div class="form-group col-sm-6">
-                    <input class="input-gray" type="tel" name="phone" required placeholder="Phone*">
+                    <label class="sr-only" for="contact-phone">Phone</label>
+                    <input class="input-gray" id="contact-phone" type="tel" name="phone" required placeholder="Phone*" autocomplete="tel" aria-required="true">
                   </div>
                   <div class="form-group col-sm-12">
-                    <input class="input-gray" type="email" name="email" placeholder="Email">
+                    <label class="sr-only" for="contact-email">Email</label>
+                    <input class="input-gray" id="contact-email" type="email" name="email" placeholder="Email" autocomplete="email">
                   </div>
                   <div class="form-group col-sm-12">
-                    <select class="input-gray" name="subject" id="contact-subject">
+                    <label class="sr-only" for="contact-subject">Subject</label>
+                    <select class="input-gray" name="subject" id="contact-subject" aria-label="Enquiry subject">
                       <option value="Enquiry">Send an enquiry</option>
                       <option value="Request a quote">Request a quote</option>
                       <option value="Consultation">Book a consultation</option>
-                      <option value="5 kW package">5 kW package</option>
-                      <option value="10 kW package">10 kW package</option>
-                      <option value="20 kW package">20 kW package</option>
+                      <option value="6.12 kWp package">6.12 kWp package</option>
+                      <option value="7.8 kWp package">7.8 kWp package</option>
+                      <option value="12.2 kWp package">12.2 kWp package</option>
+                      <option value="20.4 kWp package">20.4 kWp package</option>
                       <option value="Grid-tied photovoltaic systems">Grid-tied photovoltaic systems</option>
                       <option value="Hybrid photovoltaic systems">Hybrid photovoltaic systems</option>
                       <option value="Off-grid photovoltaic systems">Off-grid photovoltaic systems</option>
@@ -293,7 +317,8 @@
                     </select>
                   </div>
                   <div class="form-group col-sm-4">
-                    <select class="input-gray" name="object_type" aria-label="Property type">
+                    <label class="sr-only" for="contact-object">Property type</label>
+                    <select class="input-gray" name="object_type" id="contact-object" aria-label="Property type">
                       <option value="">Property</option>
                       <option value="Home">Home</option>
                       <option value="Business">Business</option>
@@ -301,21 +326,24 @@
                     </select>
                   </div>
                   <div class="form-group col-sm-4">
-                    <select class="input-gray" name="grid" aria-label="Grid connection">
+                    <label class="sr-only" for="contact-grid">Grid connection</label>
+                    <select class="input-gray" name="grid" id="contact-grid" aria-label="Grid connection">
                       <option value="">Grid</option>
                       <option value="Yes">On-grid</option>
                       <option value="No">Off-grid</option>
                     </select>
                   </div>
                   <div class="form-group col-sm-4">
-                    <select class="input-gray" name="mounting" aria-label="Installation">
+                    <label class="sr-only" for="contact-mounting">Installation</label>
+                    <select class="input-gray" name="mounting" id="contact-mounting" aria-label="Installation">
                       <option value="">Installation</option>
                       <option value="Roof">Roof</option>
                       <option value="Ground">Ground</option>
                     </select>
                   </div>
                   <div class="form-group col-sm-12">
-                    <textarea class="input-gray" name="message" id="contact-message" required placeholder="Message*"></textarea>
+                    <label class="sr-only" for="contact-message">Message</label>
+                    <textarea class="input-gray" name="message" id="contact-message" required placeholder="Message*" aria-required="true"></textarea>
                   </div>
                 </div>
                 <div class="ks-contact-submit">
@@ -459,12 +487,13 @@
             </ul>
           </div>
           <div class="ks-footer__col">
-            <p class="ks-footer__heading">Packages</p>
+                        <p class="ks-footer__heading">Packages</p>
             <ul>
               <li><a href="packages.html">All packages</a></li>
-              <li><a href="packages.html#paket-5kw">5 kW — compact</a></li>
-              <li><a href="packages.html#paket-10kw">10 kW — balanced</a></li>
-              <li><a href="packages.html#paket-20kw">20 kW — high-capacity</a></li>
+              <li><a href="package-6kw.html">6.12 kWp</a></li>
+              <li><a href="package-8kw.html">7.8 kWp</a></li>
+              <li><a href="package-12kw.html">12.2 kWp</a></li>
+              <li><a href="package-20kw.html">20.4 kWp</a></li>
             </ul>
           </div>
           <div class="ks-footer__col">
@@ -517,9 +546,10 @@
 <script>
 (function () {
   var TOPICS = {
-    '5kw': { subject: '5 kW package', message: 'Hello, I would like an enquiry about a 5 kW system.' },
-    '10kw': { subject: '10 kW package', message: 'Hello, I would like an enquiry about a 10 kW system.' },
-    '20kw': { subject: '20 kW package', message: 'Hello, I would like an enquiry about a 20 kW system.' },
+    '6kw': { subject: '6.12 kWp package', message: 'Hello, I would like an enquiry about the 6.12 kWp package.' },
+    '8kw': { subject: '7.8 kWp package', message: 'Hello, I would like an enquiry about the 7.8 kWp package.' },
+    '12kw': { subject: '12.2 kWp package', message: 'Hello, I would like an enquiry about the 12.2 kWp package.' },
+    '20kw': { subject: '20.4 kWp package', message: 'Hello, I would like an enquiry about the 20.4 kWp package.' },
     oferta: { subject: 'Request a quote', message: 'Hello, I would like a quote for a photovoltaic system.' },
     konsultacia: { subject: 'Consultation', message: 'Hello, I would like to book a consultation.' },
     mrezhova: {

@@ -83,6 +83,52 @@
       }
     });
   }
+
+  var $packages = $('.ks-packages-slider');
+  if ($packages.length) {
+    var pkgPrev = isBg ? 'Предишен пакет' : 'Previous package';
+    var pkgNext = isBg ? 'Следващ пакет' : 'Next package';
+
+    function syncPackageNav(event) {
+      var owl = event.relatedTarget;
+      var visible = owl.settings.items;
+      var total = owl.items().length;
+      var $nav = $(event.target).find('.owl-nav');
+      var $dots = $(event.target).find('.owl-dots');
+      if (total <= visible) {
+        $nav.addClass('disabled').attr('aria-hidden', 'true');
+        $dots.addClass('disabled').attr('aria-hidden', 'true');
+      } else {
+        $nav.removeClass('disabled').removeAttr('aria-hidden');
+        $dots.removeClass('disabled').removeAttr('aria-hidden');
+      }
+    }
+
+    $packages.owlCarousel({
+      loop: false,
+      rewind: false,
+      margin: 18,
+      dots: true,
+      nav: true,
+      autoHeight: false,
+      navText: [
+        '<span aria-hidden="true">‹</span><span class="sr-only">' + pkgPrev + '</span>',
+        '<span aria-hidden="true">›</span><span class="sr-only">' + pkgNext + '</span>'
+      ],
+      smartSpeed: 450,
+      autoplay: false,
+      mouseDrag: true,
+      touchDrag: true,
+      responsive: {
+        0: { items: 1 },
+        640: { items: 2 },
+        992: { items: 3 },
+        1200: { items: 4 }
+      },
+      onInitialized: syncPackageNav,
+      onResized: syncPackageNav
+    });
+  }
 })(window.jQuery);
 
 (function () {
