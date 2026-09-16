@@ -52,8 +52,8 @@
 	$(".animsition").animsition({
 	   inClass: 'fade-in',
        outClass: 'fade-out',
-	   inDuration: 1000,
-	   outDuration: 700,
+	   inDuration: 600,
+	   outDuration: 400,
 	   linkElement: '.menu-list a',
 	   // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
 	   loading: true,
