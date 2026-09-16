@@ -2,39 +2,71 @@
    Load after css/style.css on every page that uses the same header. */
 
 :root {
+  /* Color */
   /* Brand fill — clean solar lime (dark text #1a1d21 only, never white on fill) */
   --nt-orange: #c9e200;
   --nt-orange-dark: #b0c800;
   /* Text/links on light UI — WCAG AA. Do not use --nt-orange for body text. */
   --nt-accent-ink: #3f4a00;
   --nt-blue: #1b6cbb;
-  --nt-card-radius: 12px;
   --nt-card-bg: #fff;
+  --nt-icon-badge-ink: #1a1d21;
+  --nt-icon-badge-gradient: linear-gradient(145deg, #f5fac8 0%, #e2f04a 40%, var(--nt-orange) 100%);
+  --nt-body-color: #4a5160;
+  --ks-focus-ring: #1a1d21;
+  --ks-color-text: #1a1d21;
+  --ks-color-ink: #1a1d21;
+  --ks-color-surface: #fff;
+  --ks-color-hint: #5a6169;
+  --ks-color-muted: #4a5160;
+  --ks-color-border: rgba(15, 23, 42, 0.12);
+  --ks-slate-04: rgba(15, 23, 42, 0.04);
+  --ks-slate-06: rgba(15, 23, 42, 0.06);
+  --ks-slate-08: rgba(15, 23, 42, 0.08);
+  --ks-slate-10: rgba(15, 23, 42, 0.1);
+  --ks-slate-12: rgba(15, 23, 42, 0.12);
+  --ks-slate-14: rgba(15, 23, 42, 0.14);
+  --ks-slate-16: rgba(15, 23, 42, 0.16);
+  --ks-slate-18: rgba(15, 23, 42, 0.18);
+  --ks-slate-20: rgba(15, 23, 42, 0.2);
+  --ks-slate-22: rgba(15, 23, 42, 0.22);
+  --ks-slate-28: rgba(15, 23, 42, 0.28);
+  --ks-slate-50: rgba(15, 23, 42, 0.5);
+  --ks-slate-55: rgba(15, 23, 42, 0.55);
+  --ks-lime-glow-14: rgba(180, 200, 20, 0.14);
+  --ks-lime-glow-16: rgba(180, 200, 20, 0.16);
+  --ks-lime-glow-22: rgba(180, 200, 20, 0.22);
+  --ks-lime-glow-28: rgba(180, 200, 20, 0.28);
+  --ks-lime-glow-35: rgba(180, 200, 20, 0.35);
+  --ks-lime-glow-45: rgba(180, 200, 20, 0.45);
+  --ks-lime-glow-55: rgba(180, 200, 20, 0.55);
+  --ks-lime-accent-08: rgba(201, 226, 0, 0.08);
+  --ks-lime-accent-10: rgba(201, 226, 0, 0.1);
+  --ks-lime-accent-12: rgba(201, 226, 0, 0.12);
+  --ks-lime-accent-14: rgba(201, 226, 0, 0.14);
+  --ks-lime-accent-16: rgba(201, 226, 0, 0.16);
+  --ks-lime-accent-18: rgba(201, 226, 0, 0.18);
+  --ks-lime-accent-20: rgba(201, 226, 0, 0.2);
+  --ks-lime-accent-30: rgba(201, 226, 0, 0.3);
+  --ks-lime-accent-35: rgba(201, 226, 0, 0.35);
+  --ks-lime-accent-50: rgba(201, 226, 0, 0.5);
+  --ks-lime-accent-55: rgba(201, 226, 0, 0.55);
+  --ks-lime-accent-65: rgba(201, 226, 0, 0.65);
+  --ks-lime-accent-70: rgba(201, 226, 0, 0.7);
+  --ks-focus-lime-ring: 0 0 0 3px rgba(180, 200, 20, 0.45);
+
+  /* Radius */
+  --nt-card-radius: 12px;
+  --nt-icon-badge-radius: 8px;
+  --nt-icon-badge-nav-radius: 8px;
+  --nt-btn-pill-radius: 980px;
+
+  /* Shadow */
   --nt-card-border: 1px solid rgba(15, 23, 42, 0.08);
   --nt-card-shadow: 0 16px 36px -28px rgba(15, 23, 42, 0.22);
   --nt-card-shadow-hover: 0 22px 44px -24px rgba(15, 23, 42, 0.28);
-  --nt-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
-  /* Икони в градиентен „squircle“ (като „Защо да ни изберете“) */
-  --nt-icon-badge-ink: #1a1d21;
-  --nt-icon-badge-gradient: linear-gradient(145deg, #f5fac8 0%, #e2f04a 40%, var(--nt-orange) 100%);
   --nt-icon-badge-shadow: 0 4px 14px rgba(180, 200, 20, 0.28), 0 2px 5px rgba(0, 0, 0, 0.08);
-  --nt-icon-badge-size: 2.5rem;
-  --nt-icon-badge-radius: 8px;
-  --nt-icon-badge-nav-size: 1.9rem;
-  --nt-icon-badge-nav-radius: 8px;
   /* Бутони: форма и сенки в духа на Apple HIG (pill + меки слоеве) */
-  --nt-btn-pill-radius: 980px;
-  --nt-btn-ease: cubic-bezier(0.25, 0.1, 0.25, 1);
-  --nt-btn-duration: 0.32s;
-  --ks-btn-min-h: 2.75rem;
-  --ks-btn-pad-x: 1.45rem;
-  --ks-btn-pad-y: 0.7rem;
-  --ks-btn-font: 0.8125rem;
-  --ks-focus-ring: #1a1d21;
-  --ks-color-text: #1a1d21;
-  --ks-color-muted: #4a5160;
-  --ks-color-border: rgba(15, 23, 42, 0.12);
-  --ks-content-max: 40rem;
   --nt-btn-shadow:
     0 1px 2px rgba(0, 0, 0, 0.04),
     0 4px 12px rgba(180, 200, 20, 0.22),
@@ -51,7 +83,18 @@
     0 2px 6px rgba(0, 0, 0, 0.05),
     0 10px 24px rgba(15, 23, 42, 0.1),
     0 22px 48px rgba(15, 23, 42, 0.08);
-  /* Motion/system tokens */
+  --ks-shadow-accent:
+    0 0 0 1px rgba(201, 226, 0, 0.35),
+    0 14px 28px -16px rgba(15, 23, 42, 0.22);
+  --ks-shadow-accent-strong:
+    0 0 0 2px rgba(201, 226, 0, 0.5),
+    0 12px 28px -14px rgba(15, 23, 42, 0.2),
+    0 0 16px rgba(201, 226, 0, 0.2);
+
+  /* Motion */
+  --nt-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --nt-btn-ease: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --nt-btn-duration: 0.32s;
   --nt-motion-ease-premium: cubic-bezier(0.22, 1, 0.36, 1);
   --nt-motion-card-duration: 0.45s;
   --nt-motion-media-duration: 0.6s;
@@ -59,10 +102,20 @@
   --nt-enter-duration: 0.88s;
   --nt-reveal-offset: 1.85rem;
   --nt-enter-offset: 1.35rem;
-  --nt-tour-media-height: 13.5rem;
+  --ks-lift: translateY(-3px);
+  --ks-lift-strong: translateY(-5px);
+  --ks-btn-lift: scale(1.02) translateY(-1px);
+
+  /* Type */
   --nt-body-size: 1.0625rem;
   --nt-body-line: 1.7;
-  --nt-body-color: #4a5160;
+  --ks-btn-font: 0.8125rem;
+  --ks-content-max: 40rem;
+
+  /* Space */
+  --ks-btn-min-h: 2.75rem;
+  --ks-btn-pad-x: 1.45rem;
+  --ks-btn-pad-y: 0.7rem;
   --ks-space-xs: 0.5rem;
   --ks-space-sm: 0.75rem;
   --ks-space-md: 1rem;
@@ -77,13 +130,18 @@
   --ks-navbar-pad-y: 1.15rem;
   --ks-navbar-min-h: 8.5rem;
   --ks-page-offset: 9.25rem;
+
+  /* Layout */
+  --nt-icon-badge-size: 2.5rem;
+  --nt-icon-badge-nav-size: 1.9rem;
+  --nt-tour-media-height: 13.5rem;
   --ks-logo-max: 6.75rem;
   --ks-footer-logo: 7.2rem;
 }
 
 /* Poppins is loaded from css/style.css (woff2). Do not point at missing Manrope .ttf files. */
 
-/* Accessible text accents — never use bright lime as body/link text on light UI */
+/* --- Section: Accessible text accents --- */
 .text-primary,
 .animsition .text-primary {
   color: var(--nt-accent-ink) !important;
@@ -113,16 +171,16 @@ textarea:focus-visible {
   outline-offset: 3px;
 }
 
-/* Skip link — hidden until keyboard focus (never peeks above logo) */
+/* --- Section: Skip link --- */
 .ks-skip-link {
   position: absolute;
-  left: 1rem;
+  left: var(--ks-space-md);
   top: 0;
   z-index: 10000;
   padding: 0.65rem 1.1rem;
   border-radius: var(--nt-btn-pill-radius);
-  background: #1a1d21;
-  color: #fff !important;
+  background: var(--ks-color-ink);
+  color: var(--ks-color-surface) !important;
   font-size: 0.875rem;
   font-weight: 600;
   text-decoration: none;
@@ -137,12 +195,12 @@ textarea:focus-visible {
   outline-offset: 3px;
 }
 
-/* Mobile swipe hint for carousels / horizontal stages */
+/* --- Section: Mobile swipe hint --- */
 .ks-scroll-hint {
   display: none;
   margin: 0 0 0.65rem;
-  color: #5a6169;
-  font-size: 0.8125rem;
+  color: var(--ks-color-hint);
+  font-size: var(--ks-btn-font);
   font-weight: 600;
   letter-spacing: 0.04em;
   text-align: center;
@@ -182,7 +240,7 @@ body {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
 .section-title, .slider-title, .brand-name, .brand-text {
   font-family: 'Poppins', sans-serif;
-  color: #1a1d21;
+  color: var(--ks-color-ink);
 }
 
 .content p,
@@ -190,7 +248,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
 .nistravel-booking-lead,
 .card-text,
 .ks-package-card__for,
-.nistravel-step-card__text,
 .nistravel-faq__answer p,
 .entry-content p {
   font-size: var(--nt-body-size);
@@ -388,11 +445,11 @@ blockquote {
   background-color: var(--nt-orange) !important;
 }
 
-/* Основни бутони: pill форма, меки сенки. Тъмен текст върху лайма — бялото е нечетимо. */
+/* --- Section: Primary buttons --- */
 .animsition .btn {
   cursor: pointer;
   background-color: var(--nt-orange);
-  color: #1a1d21;
+  color: var(--ks-color-ink);
   border: none;
   border-radius: var(--nt-btn-pill-radius);
   font-weight: 600;
@@ -414,9 +471,9 @@ blockquote {
 .animsition .btn:hover,
 .animsition .btn:focus {
   background-color: var(--nt-orange-dark);
-  color: #1a1d21;
+  color: var(--ks-color-ink);
   box-shadow: var(--nt-btn-shadow-hover);
-  transform: scale(1.02) translateY(-1px);
+  transform: var(--ks-btn-lift);
   outline: none;
 }
 
@@ -433,7 +490,7 @@ blockquote {
 
 .animsition .btn-yellow {
   background: var(--nt-orange);
-  color: #1a1d21;
+  color: var(--ks-color-ink);
   border: none;
   box-shadow: var(--nt-btn-shadow);
 }
@@ -441,15 +498,15 @@ blockquote {
 .animsition .btn-yellow:hover,
 .animsition .btn-yellow:focus {
   background-color: var(--nt-orange-dark);
-  color: #1a1d21;
+  color: var(--ks-color-ink);
   border-color: transparent;
   box-shadow: var(--nt-btn-shadow-hover);
-  transform: scale(1.02) translateY(-1px);
+  transform: var(--ks-btn-lift);
 }
 
 .animsition .btn-quiet {
   background: transparent;
-  color: #1a1d21;
+  color: var(--ks-color-ink);
   border: 1px solid rgba(26, 29, 33, 0.18);
   box-shadow: none;
 }
@@ -457,16 +514,16 @@ blockquote {
 .animsition .btn-quiet:hover,
 .animsition .btn-quiet:focus {
   background: rgba(194, 212, 0, 0.18);
-  color: #1a1d21;
+  color: var(--ks-color-ink);
   border-color: var(--nt-orange-dark);
   box-shadow: none;
-  transform: scale(1.02) translateY(-1px);
+  transform: var(--ks-btn-lift);
 }
 
 .nistravel-contact-cta-banner .btn-quiet,
 .ks-final-cta .btn-quiet {
   background: transparent;
-  color: #fff;
+  color: var(--ks-color-surface);
   border-color: rgba(255, 255, 255, 0.55);
 }
 
@@ -474,9 +531,9 @@ blockquote {
 .nistravel-contact-cta-banner .btn-quiet:focus,
 .ks-final-cta .btn-quiet:hover,
 .ks-final-cta .btn-quiet:focus {
-  background: #fff;
-  color: #1a1d21;
-  border-color: #fff;
+  background: var(--ks-color-surface);
+  color: var(--ks-color-ink);
+  border-color: var(--ks-color-surface);
 }
 
 /* Статичен hero (като първи слайд на index, без Revolution) */
@@ -502,7 +559,7 @@ blockquote {
 .nistravel-about-specialization {
   padding-top: var(--ks-section-y);
   padding-bottom: var(--ks-section-y);
-  background: #fff;
+  background: var(--ks-color-surface);
 }
 
 .nistravel-about-specialization__grid {
@@ -695,7 +752,7 @@ body.nistravel-page--about .nistravel-contact-cta-banner .nistravel-contact-cta-
 .rev_slider .tp-caption .btn,
 .rev_slider .tp-caption .btn-yellow {
   background-color: var(--nt-orange) !important;
-  color: #1a1d21 !important;
+  color: var(--ks-color-ink) !important;
   text-shadow: none !important;
 }
 .rev_slider .btn:hover,
@@ -704,8 +761,8 @@ body.nistravel-page--about .nistravel-contact-cta-banner .nistravel-contact-cta-
 .rev_slider .btn-yellow:focus,
 .rev_slider .tp-caption .btn:hover,
 .rev_slider .tp-caption .btn-yellow:hover {
-  background-color: #1a1d21 !important;
-  color: #fff !important;
+  background-color: var(--ks-color-ink) !important;
+  color: var(--ks-color-surface) !important;
 }
 .rev_slider .link-arrow {
   text-shadow: none !important;
@@ -716,8 +773,8 @@ body.nistravel-page--about .nistravel-contact-cta-banner .nistravel-contact-cta-
   padding: 0.72rem 1.65rem 0.68rem;
   min-height: 2.75rem;
   box-sizing: border-box;
-  background-color: #fff !important;
-  color: #1a1d21 !important;
+  background-color: var(--ks-color-surface) !important;
+  color: var(--ks-color-ink) !important;
   font-weight: 600;
   font-size: 0.8125rem;
   letter-spacing: 0.06em;
@@ -734,7 +791,7 @@ body.nistravel-page--about .nistravel-contact-cta-banner .nistravel-contact-cta-
 }
 .rev_slider .link-arrow,
 .rev_slider .link-arrow * {
-  color: #1a1d21 !important;
+  color: var(--ks-color-ink) !important;
 }
 .rev_slider .link-arrow .icon {
   color: inherit !important;
@@ -743,8 +800,8 @@ body.nistravel-page--about .nistravel-contact-cta-banner .nistravel-contact-cta-
 }
 .rev_slider .link-arrow:hover {
   background-color: var(--nt-orange) !important;
-  color: #1a1d21 !important;
-  transform: scale(1.02) translateY(-1px);
+  color: var(--ks-color-ink) !important;
+  transform: var(--ks-btn-lift);
   box-shadow: var(--nt-btn-shadow-muted-hover);
 }
 .rev_slider .link-arrow:active {
@@ -754,7 +811,7 @@ body.nistravel-page--about .nistravel-contact-cta-banner .nistravel-contact-cta-
 }
 .rev_slider .link-arrow:hover,
 .rev_slider .link-arrow:hover * {
-  color: #1a1d21 !important;
+  color: var(--ks-color-ink) !important;
 }
 .rev_slider .link-arrow:focus-visible {
   outline: 2px solid rgba(255, 255, 255, 0.95);
@@ -788,7 +845,7 @@ body.nistravel-page--about .nistravel-contact-cta-banner .nistravel-contact-cta-
   z-index: 2;
 }
 
-/* --- Top bar: meta (social + language) --- */
+/* --- Section: Top bar meta --- */
 .navbar .navbar-meta {
   float: right;
   margin-right: 0;
@@ -799,7 +856,7 @@ body.nistravel-page--about .nistravel-contact-cta-banner .nistravel-contact-cta-
   gap: 1.75rem;
 }
 
-/* --- Language <details> dropdown (navbar, menu, footer) --- */
+/* --- Section: Language dropdown --- */
 .lang-dropdown {
   position: relative;
 }
@@ -1173,7 +1230,7 @@ body.nistravel-page--about .nistravel-contact-cta-banner .nistravel-contact-cta-
   object-position: left center;
 }
 
-/* --- header.navbar.boxed: flex row + order (reuse same markup on all pages) --- */
+/* --- Section: header.navbar.boxed --- */
 header.navbar.boxed {
   display: flex;
   flex-wrap: nowrap;
@@ -1236,7 +1293,7 @@ header.navbar.boxed .navbar-main li.active > a {
   text-decoration: none;
 }
 
-/* Systems dropdown — desktop */
+/* --- Section: Systems dropdown desktop --- */
 header.navbar.boxed .navbar-main > ul > li.has-dropdown {
   position: relative;
 }
@@ -1341,7 +1398,7 @@ header.navbar.boxed .navbar-main .nav-dropdown li.active > a {
   background: rgba(201, 226, 0, 0.12);
 }
 
-/* Systems dropdown — mobile slide menu */
+/* --- Section: Systems dropdown mobile --- */
 .menu.menu--with-brand .menu-list > li.has-dropdown > a {
   display: flex;
   align-items: center;
@@ -1409,7 +1466,7 @@ header.navbar.boxed .navbar-lang-dropdown > summary {
   justify-content: center;
   padding: 0.15rem;
   line-height: 0;
-  border-radius: 999px;
+  border-radius: var(--nt-btn-pill-radius);
 }
 
 header.navbar.boxed .navbar-tools__lang {
@@ -1665,295 +1722,11 @@ header.navbar.boxed .navbar-toggle {
   color: var(--nt-accent-ink) !important;
 }
 
-/* --- Homepage: Нашите екскурзии (isotope grid, synced from edited/index) --- */
-#ekskurzii.nistravel-tours-home,
-.nistravel-trip-more-tours.nistravel-tours-home {
-  background: linear-gradient(165deg, #f2f4f8 0%, #e9ecf2 48%, #f6f8fb 100%);
-  padding-top: var(--ks-section-y);
-  padding-bottom: var(--ks-section-y);
-  scroll-margin-top: 5.5rem;
-}
-
 .nistravel-tours-home__inner {
   position: relative;
 }
 
-#ekskurzii .nistravel-tours-header,
-.nistravel-trip-more-tours .nistravel-tours-header {
-  margin-bottom: 1.75rem;
-}
-
-#ekskurzii .nistravel-tours-header h1,
-.nistravel-trip-more-tours .nistravel-tours-header h2 {
-  color: #000;
-}
-
-#ekskurzii .nistravel-tours-lead,
-.nistravel-trip-more-tours .nistravel-tours-lead {
-  margin: 0.85rem 0 0;
-  max-width: 40rem;
-  font-size: 0.9375rem;
-  line-height: 1.6;
-  color: #4a5058;
-  font-weight: 400;
-}
-
-#ekskurzii .filter-content-3 {
-  margin-bottom: 1.5rem;
-}
-
-#ekskurzii .filter-content-3 .filter.js-filter {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.4rem 0.65rem;
-}
-
-#ekskurzii .filter-content-3 .filter li {
-  margin-right: 0;
-  margin-bottom: 0;
-}
-
-#ekskurzii .nistravel-tours-3col .card-title,
-.nistravel-trip-more-tours .owl-item .card-title {
-  line-height: 1.35;
-  margin-top: 0.35rem;
-  color: #0f172a;
-  font-weight: 600;
-}
-
-#ekskurzii .nistravel-tours-3col .card-block,
-.nistravel-trip-more-tours .owl-item .card-block {
-  padding-top: 1rem;
-  padding-bottom: 1.1rem;
-}
-
-#ekskurzii .nistravel-tours-3col .card-text,
-.nistravel-trip-more-tours .owl-item .card-text {
-  margin-top: 1rem;
-  flex-grow: 1;
-  color: #475569;
-  font-size: 0.875rem;
-  line-height: 1.6;
-}
-
-#ekskurzii .nistravel-tours-3col .card-posted,
-.nistravel-trip-more-tours .owl-item .card-posted {
-  font-size: 0.75rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #64748b;
-}
-
-#ekskurzii .nistravel-tours-3col .card-posted .text-primary,
-.nistravel-trip-more-tours .owl-item .card-posted .text-primary {
-  font-weight: 700;
-  letter-spacing: 0.04em;
-}
-
-#ekskurzii .nistravel-tours-3col .grid-item {
-  display: flex;
-}
-
-#ekskurzii .nistravel-tours-3col .grid-item .card.nistravel-tour-card,
-.nistravel-trip-more-tours .owl-item .card.nistravel-tour-card {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  min-height: 40rem;
-  height: 100%;
-  overflow: hidden;
-  border-radius: var(--nt-card-radius);
-  background: var(--nt-card-bg);
-  border: var(--nt-card-border);
-  box-shadow: var(--nt-card-shadow);
-  transition:
-    transform var(--nt-motion-card-duration) var(--nt-motion-ease-premium),
-    box-shadow var(--nt-motion-card-duration) ease,
-    border-color 0.35s ease;
-}
-
-#ekskurzii .nistravel-tours-3col .grid-item .card.nistravel-tour-card:hover,
-.nistravel-trip-more-tours .owl-item .card.nistravel-tour-card:hover {
-  transform: translateY(-3px);
-  border-color: rgba(15, 23, 42, 0.14);
-  box-shadow: var(--nt-card-shadow-hover);
-}
-
-#ekskurzii .nistravel-tours-3col .nistravel-tour-card__media,
-.nistravel-trip-more-tours .owl-item .nistravel-tour-card__media {
-  position: relative;
-  height: var(--nt-tour-media-height);
-  flex-shrink: 0;
-  overflow: hidden;
-  background: #1a1d21;
-}
-
-#ekskurzii .nistravel-tours-3col .nistravel-tour-card__media::after,
-.nistravel-trip-more-tours .owl-item .nistravel-tour-card__media::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, transparent 40%, rgba(15, 23, 42, 0.5) 100%);
-  pointer-events: none;
-}
-
-#ekskurzii .nistravel-tours-3col .nistravel-tour-card__media img,
-.nistravel-trip-more-tours .owl-item .nistravel-tour-card__media img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: scale(1.02);
-  transition: transform var(--nt-motion-media-duration) var(--nt-motion-ease-premium);
-}
-
-#ekskurzii .nistravel-tours-3col .card.nistravel-tour-card:hover .nistravel-tour-card__media img,
-.nistravel-trip-more-tours .owl-item .card.nistravel-tour-card:hover .nistravel-tour-card__media img {
-  transform: scale(1.07);
-}
-
-#ekskurzii .nistravel-tours-3col .card.nistravel-tour-card .card-block,
-.nistravel-trip-more-tours .owl-item .card.nistravel-tour-card .card-block {
-  flex: 1 1 auto;
-  display: flex;
-  flex-direction: column;
-  background: transparent;
-  border-top: 1px solid rgba(15, 23, 42, 0.06);
-}
-
-/* Trip card CTA: same pill/shadow system as .btn (Apple HIG–style), full-width min tap target */
-#ekskurzii .nistravel-tours-3col .nistravel-tour-card .nistravel-tour-card__cta.btn,
-.nistravel-trip-more-tours .owl-item .nistravel-tour-card .nistravel-tour-card__cta.btn {
-  margin-top: 1.25rem;
-  align-self: stretch;
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  min-height: 44px;
-  padding: 0.65rem 1.25rem;
-  text-transform: none;
-  letter-spacing: 0.03em;
-}
-
-#ekskurzii .nistravel-tours-3col .grid-item {
-  width: 100%;
-}
-
-@media (min-width: 768px) {
-  #ekskurzii .nistravel-tours-3col .grid-item {
-    width: 50%;
-  }
-}
-
-@media (min-width: 992px) {
-  #ekskurzii .nistravel-tours-3col .grid-item {
-    width: 33.333%;
-  }
-}
-
-@media (max-width: 991px) {
-  #ekskurzii .nistravel-tours-3col .grid-item .card.nistravel-tour-card {
-    box-shadow: var(--nt-card-shadow);
-  }
-
-  #ekskurzii .nistravel-tours-3col .card.nistravel-tour-card:hover {
-    transform: translateY(-2px);
-  }
-
-  #ekskurzii .nistravel-tours-3col .card.nistravel-tour-card:hover .nistravel-tour-card__media img {
-    transform: scale(1.04);
-  }
-}
-
-/* Trip detail: carousel „Още екскурзии“ — еднаква височина на слайдовете */
-.nistravel-trip-more-tours .nistravel-trip-more-tours__carousel {
-  position: relative;
-  margin-top: 0.5rem;
-}
-
-.nistravel-trip-more-tours .owl-item {
-  display: flex;
-  height: auto;
-}
-
-.nistravel-trip-more-tours .owl-item > .item {
-  display: flex;
-  width: 100%;
-}
-
-.nistravel-trip-more-tours .owl-nav {
-  position: static;
-  top: auto;
-  left: auto;
-  right: auto;
-  width: 100%;
-  margin-top: 1.25rem;
-  text-align: center;
-  -webkit-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
-}
-
-/* Единствени стрелки: navText + Linearicons; глобалните Ionicons :before са изключени */
-.nistravel-trip-more-tours .owl-nav button.owl-prev::before,
-.nistravel-trip-more-tours .owl-nav button.owl-next::before {
-  content: none !important;
-  display: none;
-}
-
-.nistravel-trip-more-tours .owl-nav button.owl-prev,
-.nistravel-trip-more-tours .owl-nav button.owl-next {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 2.75rem;
-  height: 2.75rem;
-  margin: 0 0.35rem;
-  padding: 0;
-  border-radius: 50%;
-  border: 1px solid rgba(15, 23, 42, 0.12);
-  background: rgba(255, 255, 255, 0.9);
-  color: #0f172a;
-  font-size: 1.1rem;
-  line-height: 1;
-  transition:
-    background-color var(--nt-btn-duration) var(--nt-btn-ease),
-    border-color var(--nt-btn-duration) var(--nt-btn-ease),
-    color var(--nt-btn-duration) var(--nt-btn-ease);
-}
-
-.nistravel-trip-more-tours .owl-nav button.owl-prev:hover,
-.nistravel-trip-more-tours .owl-nav button.owl-next:hover {
-  border-color: rgba(180, 200, 20, 0.45);
-  color: var(--nt-accent-ink);
-  background: #fff;
-}
-
-.nistravel-trip-more-tours .owl-nav button.owl-prev:focus-visible,
-.nistravel-trip-more-tours .owl-nav button.owl-next:focus-visible {
-  outline: 2px solid rgba(180, 200, 20, 0.55);
-  outline-offset: 2px;
-}
-
-.nistravel-trip-more-tours .owl-dots {
-  margin-top: 1rem;
-}
-
-.nistravel-trip-more-tours .owl-dot span {
-  background: rgba(15, 23, 42, 0.2);
-}
-
-.nistravel-trip-more-tours .owl-dot.active span,
-.nistravel-trip-more-tours .owl-dot:hover span {
-  background: var(--nt-orange);
-}
-
-/* --- Как работи записването (#zapisvane): същият вертикален ритъм като екскурзиите --- */
+/* --- Section: Booking process --- */
 .nistravel-section-booking {
   padding-top: var(--ks-section-y);
   padding-bottom: var(--ks-section-y);
@@ -2101,194 +1874,7 @@ header.navbar.boxed .navbar-toggle {
   box-shadow: var(--nt-btn-shadow-muted-hover);
 }
 
-.nistravel-step-card {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  border-radius: var(--nt-card-radius);
-  background: var(--nt-card-bg);
-  border: var(--nt-card-border);
-  box-shadow: var(--nt-card-shadow);
-  transition:
-    transform var(--nt-motion-card-duration) var(--nt-motion-ease-premium),
-    box-shadow var(--nt-motion-card-duration) ease,
-    border-color 0.35s ease;
-}
-
-.nistravel-step-card:hover {
-  transform: translateY(-3px);
-  border-color: rgba(15, 23, 42, 0.14);
-  box-shadow: var(--nt-card-shadow-hover);
-}
-
-.nistravel-step-card__media {
-  position: relative;
-  aspect-ratio: 16 / 10;
-  overflow: hidden;
-  background: #1a1d21;
-}
-
-.nistravel-step-card__media::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, transparent 35%, rgba(15, 23, 42, 0.55) 100%);
-  pointer-events: none;
-}
-
-.nistravel-step-card__media img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: scale(1.02);
-  transition: transform var(--nt-motion-media-duration) var(--nt-motion-ease-premium);
-}
-
-.nistravel-step-card:hover .nistravel-step-card__media img {
-  transform: scale(1.08);
-}
-
-.nistravel-step-card__body {
-  padding: 1.65rem 1.5rem 1.75rem;
-  flex: 1 1 auto;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Номера на стъпки + икони в карти: един и същ визуален език */
-.nistravel-step-card__icon-badge,
-.nistravel-step-card__num {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: var(--nt-icon-badge-size);
-  height: var(--nt-icon-badge-size);
-  margin-bottom: 0.75rem;
-  line-height: 1;
-  color: var(--nt-icon-badge-ink);
-  background: var(--nt-icon-badge-gradient);
-  border-radius: var(--nt-icon-badge-radius);
-  box-shadow: var(--nt-icon-badge-shadow);
-  flex-shrink: 0;
-}
-
-.nistravel-step-card__num {
-  font-size: 0.6875rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-}
-
-.nistravel-step-card__title {
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1.3;
-  color: #0f172a;
-  margin: 0 0 0.5rem;
-}
-
-.nistravel-step-card__text {
-  font-size: var(--nt-body-size);
-  line-height: var(--nt-body-line);
-  color: var(--nt-body-color);
-  margin: 0;
-}
-
-.nistravel-step-card__list {
-  margin: auto 0 0;
-  padding: 0;
-  list-style: none;
-  font-size: var(--nt-body-size);
-  font-weight: 400;
-  line-height: var(--nt-body-line);
-  letter-spacing: 0.01em;
-  color: var(--nt-body-color);
-}
-
-.nistravel-step-card__list li {
-  position: relative;
-  padding-left: 1.05rem;
-  margin-bottom: 0.4rem;
-}
-
-.nistravel-step-card__list li:last-child {
-  margin-bottom: 0;
-}
-
-.nistravel-step-card__list li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0.72em;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background: #7a8190;
-  box-shadow: none;
-}
-
-.nistravel-step-card__icon-badge {
-  font-size: 1.2rem;
-}
-
-.nistravel-step-card__icon-badge .icon {
-  display: block;
-}
-
-.nistravel-step-card__kicker {
-  margin: 0 0 0.45rem;
-  font-size: 0.6875rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: #64748b;
-}
-
-.nistravel-step-card__cta {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  margin-top: auto;
-  padding-top: 0.65rem;
-  font-size: 0.8125rem;
-  font-weight: 600;
-  color: var(--nt-accent-ink);
-  text-decoration: none;
-  transition:
-    color 0.2s ease,
-    gap 0.25s ease;
-}
-
-.nistravel-step-card__cta:hover,
-.nistravel-step-card__cta:focus {
-  color: var(--nt-orange-dark);
-}
-
-.nistravel-step-card__cta-arrow {
-  transition: transform 0.25s var(--nt-ease-out);
-}
-
-.nistravel-step-card__cta:hover .nistravel-step-card__cta-arrow,
-.nistravel-step-card__cta:focus .nistravel-step-card__cta-arrow {
-  transform: translateX(4px);
-}
-
-.nistravel-step-card--feature .nistravel-step-card__body {
-  padding-top: 1.2rem;
-}
-
-@supports not (backdrop-filter: blur(1px)) {
-  .nistravel-step-card,
-  #ekskurzii .nistravel-tours-3col .grid-item .card.nistravel-tour-card,
-  .nistravel-trip-more-tours .owl-item .card.nistravel-tour-card,
-  .nistravel-related-pages a.card.nistravel-tour-card.nistravel-related-pages__card {
-    background: var(--nt-card-bg);
-    border: var(--nt-card-border);
-    box-shadow: var(--nt-card-shadow);
-  }
-}
-
-/* --- Защо да ни изберете: плътни карти, без стъкло --- */
+/* --- Section: Why choose us --- */
 .nistravel-why-choose {
   margin-top: 0;
   padding-top: var(--ks-section-y);
@@ -2358,33 +1944,7 @@ header.navbar.boxed .navbar-toggle {
   margin-top: 2.5rem;
 }
 
-.nistravel-why-choose--four .nistravel-step-card--feature .nistravel-step-card__title {
-  font-size: 1.0625rem;
-  line-height: 1.28;
-}
-
-.nistravel-why-choose .nistravel-step-card--feature {
-  width: 100%;
-  min-height: 100%;
-}
-
-.nistravel-why-choose .nistravel-step-card--feature::before {
-  content: '';
-  display: block;
-  flex-shrink: 0;
-  height: 4px;
-  width: 100%;
-  background: linear-gradient(90deg, #eef6a8 0%, var(--nt-orange) 52%, #9aaa00 100%);
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.35) inset;
-}
-
-.nistravel-why-choose .nistravel-step-card--feature .nistravel-step-card__body {
-  flex: 1 1 auto;
-  padding-top: 1.5rem;
-  padding-bottom: 1.65rem;
-}
-
-/* --- Мнения: като home-fullpage section-5, но плосък блок (без pagepiling / .intro анимация) --- */
+/* --- Section: Reviews --- */
 .nistravel-reviews-flat.section {
   position: relative;
   overflow: hidden;
@@ -2416,10 +1976,6 @@ header.navbar.boxed .navbar-toggle {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.65);
-}
-
-.nistravel-reviews-flat .nistravel-reviews-flat__quote-wrap.nistravel-step-card__icon-badge {
-  margin-bottom: 0.9rem;
 }
 
 .nistravel-reviews-flat .nistravel-reviews-flat__quote-wrap .icon-quote {
@@ -2494,7 +2050,7 @@ header.navbar.boxed .navbar-toggle {
   color: #0f172a;
 }
 
-/* --- FAQ --- */
+/* --- Section: FAQ --- */
 .nistravel-faq-section {
   padding-top: var(--ks-section-y);
   padding-bottom: var(--ks-section-y);
@@ -2833,7 +2389,7 @@ header.navbar.boxed .navbar-toggle {
   margin-bottom: 0;
 }
 
-/* --- Банер пред формата за контакт (снимка + CTA) --- */
+/* --- Section: Contact CTA banner --- */
 .nistravel-contact-cta-banner.section {
   position: relative;
   overflow: hidden;
@@ -2949,7 +2505,7 @@ header.navbar.boxed .navbar-toggle {
   box-shadow: none;
 }
 
-/* --- Get in touch (като post-gallery comment form, фон #fff) --- */
+/* --- Section: Get in touch --- */
 .nistravel-get-in-touch.section-comments {
   margin-top: 0;
   padding-top: var(--ks-section-y);
@@ -3019,59 +2575,6 @@ header.navbar.boxed .navbar-toggle {
     align-items: stretch;
     min-width: 0;
   }
-
-  /*
-   * Височина на картата = колоната (като полетата), без height:100% върху aside
-   * (комбинацията flex + % често надценява височината).
-   */
-  .nistravel-get-in-touch .nistravel-contact-aside.nistravel-step-card {
-    width: 100%;
-    max-width: none;
-    flex: 1 1 0;
-    min-height: 0;
-    height: auto;
-    max-height: none;
-    align-self: stretch;
-  }
-
-  .nistravel-get-in-touch .nistravel-contact-aside__body.nistravel-step-card__body {
-    flex: 1 1 auto;
-    justify-content: center;
-    padding: 1.5rem 1.35rem 1.5rem;
-  }
-}
-
-/* Текст и списък в картата „Данни за връзка“ — по-ясен ритъм (всички ширини) */
-.nistravel-get-in-touch .nistravel-contact-aside .nistravel-step-card__kicker {
-  margin: 0 0 0.5rem;
-}
-
-.nistravel-get-in-touch .nistravel-contact-aside .nistravel-step-card__title {
-  font-size: 1.15rem;
-  margin: 0 0 0.7rem;
-  line-height: 1.28;
-}
-
-.nistravel-get-in-touch .nistravel-contact-aside .nistravel-step-card__text {
-  font-size: var(--nt-body-size);
-  line-height: var(--nt-body-line);
-  margin: 0 0 1.05rem;
-}
-
-.nistravel-get-in-touch .nistravel-contact-aside .nistravel-step-card__list {
-  margin: 0.15rem 0 0;
-  padding: 0;
-  font-size: var(--nt-body-size);
-  line-height: var(--nt-body-line);
-}
-
-.nistravel-get-in-touch .nistravel-contact-aside .nistravel-step-card__list li {
-  margin-bottom: 0.62rem;
-  padding-left: 1.25rem;
-}
-
-.nistravel-get-in-touch .nistravel-contact-aside .nistravel-step-card__list li:last-child {
-  margin-bottom: 0;
 }
 
 .nistravel-get-in-touch__form-wrap,
@@ -3109,98 +2612,6 @@ header.navbar.boxed .navbar-toggle {
   border-radius: var(--nt-btn-pill-radius);
 }
 
-/* Карта с контакти: височина = колоната с формата; тясна ширина, подравнена вдясно */
-.nistravel-contact-aside.nistravel-step-card {
-  display: flex;
-  flex-direction: column;
-  width: min(100%, 19.25rem);
-  max-width: 19.25rem;
-  flex: 1 1 auto;
-  min-height: 0;
-  height: auto;
-  box-sizing: border-box;
-}
-
-@media (min-width: 992px) {
-  .nistravel-contact-aside.nistravel-step-card {
-    height: 100%;
-  }
-
-  .nistravel-get-in-touch .nistravel-contact-aside.nistravel-step-card {
-    height: auto;
-  }
-}
-
-.nistravel-contact-aside.nistravel-step-card::before {
-  content: '';
-  display: block;
-  flex-shrink: 0;
-  height: 4px;
-  width: 100%;
-  background: linear-gradient(90deg, #eef6a8 0%, var(--nt-orange) 52%, #9aaa00 100%);
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.35) inset;
-}
-
-.nistravel-contact-aside__body.nistravel-step-card__body {
-  flex: 1 1 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 0;
-  box-sizing: border-box;
-  padding: 1.5rem 1.45rem 1.6rem;
-}
-
-.nistravel-contact-aside .nistravel-step-card__kicker {
-  margin-bottom: 0.4rem;
-  font-size: 0.75rem;
-  letter-spacing: 0.12em;
-}
-
-.nistravel-contact-aside .nistravel-step-card__title {
-  font-size: 1.35rem;
-  font-weight: 700;
-  line-height: 1.25;
-  margin: 0 0 0.5rem;
-}
-
-.nistravel-contact-aside .nistravel-step-card__text {
-  font-size: var(--nt-body-size);
-  line-height: var(--nt-body-line);
-  margin: 0 0 0.75rem;
-}
-
-/* Без margin-top: auto — иначе списъкът „умира“ в дъното и остава празнина */
-.nistravel-contact-aside .nistravel-step-card__list {
-  margin: 0;
-  padding: 0;
-  font-size: var(--nt-body-size);
-  line-height: var(--nt-body-line);
-}
-
-.nistravel-contact-aside .nistravel-step-card__list li {
-  margin-bottom: 0.4rem;
-  color: var(--nt-body-color);
-  padding-left: 1.05rem;
-}
-
-.nistravel-contact-aside .nistravel-step-card__list li:last-child {
-  margin-bottom: 0;
-}
-
-.nistravel-contact-aside .nistravel-step-card__list a {
-  color: var(--nt-accent-ink);
-  font-weight: 600;
-  font-size: inherit;
-  text-decoration: none;
-}
-
-.nistravel-contact-aside .nistravel-step-card__list a:hover,
-.nistravel-contact-aside .nistravel-step-card__list a:focus {
-  color: var(--nt-orange-dark);
-  text-decoration: underline;
-}
-
 @media (max-width: 991px) {
   .nistravel-get-in-touch__fields-row .nistravel-get-in-touch__col + .nistravel-get-in-touch__col {
     margin-top: 2.25rem;
@@ -3209,22 +2620,9 @@ header.navbar.boxed .navbar-toggle {
   .nistravel-get-in-touch__col--card {
     align-items: stretch;
   }
-
-  .nistravel-contact-aside.nistravel-step-card {
-    max-width: none;
-    min-height: 0;
-    height: auto;
-    flex: 0 1 auto;
-  }
-
-  .nistravel-contact-aside__body.nistravel-step-card__body {
-    justify-content: flex-start;
-    min-height: 0;
-    padding: 1.35rem 1.35rem 1.45rem;
-  }
 }
 
-/* --- Footer: линия за начало, списъци, дискретен кредит --- */
+/* --- Section: Footer --- */
 /* Override .section { padding: 10.28rem 0 } — that + padding-bottom:0 caused huge top gap */
 .nistravel-footer.footer {
   border-top: 1px solid rgba(15, 23, 42, 0.12);
@@ -3784,7 +3182,7 @@ header.navbar.boxed .navbar-toggle {
 }
 
 .nistravel-trip-gallery__link:focus-visible {
-  box-shadow: 0 0 0 3px rgba(180, 200, 20, 0.45);
+  box-shadow: var(--ks-focus-lime-ring);
 }
 
 .nistravel-trip-gallery__zoom {
@@ -3811,7 +3209,7 @@ header.navbar.boxed .navbar-toggle {
   line-height: 1;
 }
 
-/* Legal pages hero — same pattern as index contact CTA banner (image + scrim + type), no button */
+/* --- Section: Legal pages hero --- */
 .nistravel-legal-hero-banner.nistravel-contact-cta-banner.section {
   padding-top: var(--ks-section-y) !important;
   padding-bottom: var(--ks-section-y) !important;
@@ -3838,7 +3236,7 @@ header.navbar.boxed .navbar-toggle {
   color: #334155;
 }
 
-/* Страница Контакти — фирмен блок + карта в един ред (desktop) */
+/* --- Section: Contact page --- */
 .nistravel-contact-page-info-map__col--intro {
   margin-bottom: clamp(1.5rem, 3vw, 2rem);
 }
@@ -4036,130 +3434,6 @@ header.navbar.boxed .navbar-toggle {
   text-decoration: underline;
 }
 
-.nistravel-related-pages .related-post-title {
-  margin-bottom: 0.5rem;
-}
-
-.nistravel-related-pages .nistravel-related-pages__grid {
-  margin-top: 1.25rem;
-  margin-bottom: 2.5rem;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.nistravel-related-pages .nistravel-related-pages__grid > [class*="col-"] {
-  float: none;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1.5rem;
-}
-
-@media (min-width: 768px) {
-  .nistravel-related-pages .nistravel-related-pages__grid > [class*="col-"] {
-    margin-bottom: 0;
-  }
-}
-
-/* Related legal pages: solid architectural cards, whole card is one link */
-
-.nistravel-related-pages a.card.nistravel-tour-card.nistravel-related-pages__card {
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 auto;
-  width: 100%;
-  min-height: 100%;
-  overflow: hidden;
-  border-radius: var(--nt-card-radius);
-  background: var(--nt-card-bg);
-  border: var(--nt-card-border);
-  box-shadow: var(--nt-card-shadow);
-  text-decoration: none;
-  color: inherit;
-  transition:
-    transform var(--nt-motion-card-duration) var(--nt-motion-ease-premium),
-    box-shadow var(--nt-motion-card-duration) ease,
-    border-color 0.35s ease;
-}
-
-.nistravel-related-pages a.card.nistravel-tour-card.nistravel-related-pages__card:hover {
-  transform: translateY(-3px);
-  border-color: rgba(15, 23, 42, 0.14);
-  box-shadow: var(--nt-card-shadow-hover);
-  text-decoration: none;
-  color: inherit;
-}
-
-.nistravel-related-pages a.card.nistravel-tour-card.nistravel-related-pages__card:focus-visible {
-  outline: none;
-  text-decoration: none;
-  color: inherit;
-  box-shadow:
-    var(--nt-card-shadow-hover),
-    0 0 0 3px rgba(180, 200, 20, 0.45);
-}
-
-.nistravel-related-pages .nistravel-tour-card__media {
-  position: relative;
-  height: var(--nt-tour-media-height);
-  flex-shrink: 0;
-  overflow: hidden;
-  background: #1a1d21;
-}
-
-.nistravel-related-pages .nistravel-tour-card__media::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, transparent 40%, rgba(15, 23, 42, 0.5) 100%);
-  pointer-events: none;
-}
-
-.nistravel-related-pages .nistravel-tour-card__media img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: scale(1.02);
-  transition: transform var(--nt-motion-media-duration) var(--nt-motion-ease-premium);
-}
-
-.nistravel-related-pages a.card.nistravel-tour-card.nistravel-related-pages__card:hover .nistravel-tour-card__media img,
-.nistravel-related-pages a.card.nistravel-tour-card.nistravel-related-pages__card:focus-visible .nistravel-tour-card__media img {
-  transform: scale(1.07);
-}
-
-.nistravel-related-pages a.card.nistravel-tour-card.nistravel-related-pages__card .card-block {
-  flex: 1 1 auto;
-  display: flex;
-  flex-direction: column;
-  min-height: 0;
-  background: #fff;
-  border-top: 1px solid rgba(15, 23, 42, 0.06);
-  padding: 1rem 1.5rem 1.5rem;
-}
-
-.nistravel-related-pages a.card.nistravel-tour-card.nistravel-related-pages__card .card-title {
-  line-height: 1.35;
-  margin-top: 0.35rem;
-  color: #0f172a;
-  font-weight: 600;
-}
-
-.nistravel-related-pages a.card.nistravel-tour-card.nistravel-related-pages__card .card-posted {
-  font-size: 0.75rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #64748b;
-}
-
-.nistravel-related-pages a.card.nistravel-tour-card.nistravel-related-pages__card .card-text {
-  flex: 1 1 auto;
-  margin-top: 0.85rem;
-  margin-bottom: 0;
-  color: #475569;
-  font-size: 0.875rem;
-  line-height: 1.6;
-}
-
 /* About: gallery in Related Posts layout, static box cards (no hover motion) */
 .nistravel-about-gallery.related-posts {
   padding-top: var(--ks-section-y);
@@ -4333,11 +3607,6 @@ body.nistravel-motion .nistravel-reviews-flat .nistravel-enter {
   transform: translate3d(0, 1.15rem, 0);
 }
 
-/* Тур секция: заглавие и филтри се движат; мрежата с карти остава без scroll motion */
-body.nistravel-page--home #ekskurzii .filter-content-3.nistravel-enter {
-  transition-duration: 0.75s, 0.75s;
-}
-
 /* Навигация: подчертаване при hover / активна секция */
 header.navbar.boxed .navbar-main > ul > li > a {
   position: relative;
@@ -4423,7 +3692,7 @@ body.nistravel-motion.menu-is-opened .menu.menu--with-brand .menu-list > li:nth-
 }
 
 
-/* Kehayov: solid architectural cards */
+/* --- Section: Kehayov solid cards --- */
 .ks-card-grid {
   display: flex;
   flex-wrap: wrap;
@@ -4451,8 +3720,8 @@ body.nistravel-motion.menu-is-opened .menu.menu--with-brand .menu-list > li:nth-
     border-color 0.35s ease;
 }
 .ks-card-grid .card.nistravel-tour-card:hover {
-  transform: translateY(-3px);
-  border-color: rgba(15, 23, 42, 0.14);
+  transform: var(--ks-lift);
+  border-color: var(--ks-slate-14);
   box-shadow: var(--nt-card-shadow-hover);
 }
 .ks-card-grid .nistravel-tour-card__media {
@@ -4460,13 +3729,13 @@ body.nistravel-motion.menu-is-opened .menu.menu--with-brand .menu-list > li:nth-
   height: var(--nt-tour-media-height);
   flex-shrink: 0;
   overflow: hidden;
-  background: #1a1d21;
+  background: var(--ks-color-ink);
 }
 .ks-card-grid .nistravel-tour-card__media::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, transparent 40%, rgba(15, 23, 42, 0.5) 100%);
+  background: linear-gradient(180deg, transparent 40%, var(--ks-slate-50) 100%);
   pointer-events: none;
 }
 .ks-card-grid .nistravel-tour-card__media img {
@@ -4484,12 +3753,12 @@ body.nistravel-motion.menu-is-opened .menu.menu--with-brand .menu-list > li:nth-
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  background: #fff;
-  border-top: 1px solid rgba(15, 23, 42, 0.06);
+  background: var(--nt-card-bg);
+  border-top: 1px solid var(--ks-slate-06);
   padding: 1.35rem 1.4rem 1.45rem;
 }
 .ks-card-grid .card:hover .card-block {
-  background: #fff;
+  background: var(--nt-card-bg);
 }
 .ks-card-grid .card-text {
   margin-top: 0;
@@ -4522,6 +3791,19 @@ body.nistravel-motion.menu-is-opened .menu.menu--with-brand .menu-list > li:nth-
   min-height: 0;
 }
 
+/* --- Section: Shared card utilities --- */
+.ks-lift-hover:hover,
+.ks-lift-hover:focus-visible {
+  transform: var(--ks-lift);
+}
+
+.ks-card-shell {
+  border-radius: var(--nt-card-radius);
+  background: var(--nt-card-bg);
+  border: var(--nt-card-border);
+  box-shadow: var(--nt-card-shadow);
+}
+
 .ks-package-card__power {
   position: absolute;
   left: 0.85rem;
@@ -4531,7 +3813,7 @@ body.nistravel-motion.menu-is-opened .menu.menu--with-brand .menu-list > li:nth-
   align-items: center;
   min-height: 2.25rem;
   padding: 0.35rem 0.85rem;
-  border-radius: 999px;
+  border-radius: var(--nt-btn-pill-radius);
   background: var(--nt-orange);
   color: #1a1d21;
   font-size: 0.95rem;
@@ -4620,7 +3902,7 @@ body.nistravel-motion.menu-is-opened .menu.menu--with-brand .menu-list > li:nth-
   letter-spacing: 0.08em;
   text-transform: uppercase;
   padding: 0.45rem 0.9rem;
-  border-radius: 980px;
+  border-radius: var(--nt-btn-pill-radius);
   cursor: pointer;
 }
 
@@ -5107,20 +4389,6 @@ body.ks-services-hub .content .nistravel-booking-lead {
   }
 }
 
-.ks-highlights .nistravel-step-card--feature {
-  width: 100%;
-  min-height: 100%;
-}
-
-.ks-highlights .nistravel-step-card--feature::before {
-  content: '';
-  display: block;
-  flex-shrink: 0;
-  height: 4px;
-  width: 100%;
-  background: linear-gradient(90deg, #eef6a8 0%, var(--nt-orange) 52%, #9aaa00 100%);
-}
-
 .ks-service-back {
   margin: 0 0 1.5rem;
   font-size: 0.95rem;
@@ -5162,7 +4430,7 @@ button.card.ks-inquiry-card:focus {
 }
 
 button.card.ks-inquiry-card:focus-visible {
-  box-shadow: 0 0 0 3px rgba(180, 200, 20, 0.45);
+  box-shadow: var(--ks-focus-lime-ring);
 }
 
 .ks-inquiry-card.is-active {
@@ -5508,7 +4776,7 @@ body.ks-service-page .nistravel-faq-section {
   padding-bottom: var(--ks-section-y);
 }
 
-/* Services hub: four photo cards in one row, Three.js overlay */
+/* --- Section: Services hub --- */
 body.ks-services-hub .ks-system-stage-wrap {
   margin-top: 2.35rem;
   padding: 0.55rem 0.25rem 1.5rem;
@@ -5540,8 +4808,8 @@ body.ks-services-hub .ks-system-stage-wrap {
 
 .ks-sys-card:hover,
 .ks-sys-card:focus-within {
-  transform: translateY(-3px);
-  border-color: rgba(15, 23, 42, 0.14);
+  transform: var(--ks-lift);
+  border-color: var(--ks-slate-14);
   box-shadow: var(--nt-card-shadow-hover);
 }
 
@@ -5552,7 +4820,7 @@ body.ks-services-hub .ks-system-stage-wrap {
   display: block;
   height: 15.5rem;
   overflow: hidden;
-  background: #1a1d21;
+  background: var(--ks-color-ink);
   perspective: 900px;
 }
 
@@ -5598,7 +4866,7 @@ body.ks-services-hub .ks-system-stage-wrap {
   align-items: center;
   min-height: 1.7rem;
   padding: 0 0.65rem;
-  border-radius: 999px;
+  border-radius: var(--nt-btn-pill-radius);
   background: var(--nt-orange);
   color: #1a1d21;
   font-size: 0.6875rem;
@@ -5765,7 +5033,7 @@ body.ks-services-hub .ks-system-stage-wrap {
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.04em;
-  color: #4a5160;
+  color: var(--nt-body-color);
 }
 
 .ks-form-note {
@@ -6090,7 +5358,7 @@ body.ks-services-hub .ks-system-stage-wrap {
   line-height: 1.25;
 }
 
-/* Compact home / business — not large photo cards */
+/* --- Section: Compact home / business --- */
 .ks-offer__audience {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -6118,11 +5386,9 @@ body.ks-services-hub .ks-system-stage-wrap {
 .ks-offer__audience-link:focus {
   color: inherit;
   text-decoration: none;
-  transform: translateY(-3px);
-  border-color: rgba(201, 226, 0, 0.55);
-  box-shadow:
-    0 0 0 1px rgba(201, 226, 0, 0.35),
-    0 14px 28px -16px rgba(15, 23, 42, 0.22);
+  transform: var(--ks-lift);
+  border-color: var(--ks-lime-accent-55);
+  box-shadow: var(--ks-shadow-accent);
 }
 
 .ks-offer__audience-tag {
@@ -6175,11 +5441,11 @@ body.ks-services-hub .ks-system-stage-wrap {
 .ks-offer__system:focus {
   color: inherit;
   text-decoration: none;
-  transform: translateY(-3px);
-  border-color: rgba(201, 226, 0, 0.5);
+  transform: var(--ks-lift);
+  border-color: var(--ks-lime-accent-50);
   box-shadow:
-    0 0 0 1px rgba(201, 226, 0, 0.3),
-    0 14px 28px -16px rgba(15, 23, 42, 0.2);
+    0 0 0 1px var(--ks-lime-accent-30),
+    0 14px 28px -16px var(--ks-slate-20);
 }
 
 .ks-offer__system-media {
@@ -6287,7 +5553,7 @@ body.ks-services-hub .ks-system-stage-wrap {
   line-height: 1.55;
 }
 
-/* Service detail — one premium intro (replaces legacy two-section about) */
+/* --- Section: Service detail intro --- */
 .ks-service-intro {
   position: relative;
   background:
@@ -6667,10 +5933,7 @@ body.ks-services-hub .ks-system-stage-wrap {
   }
 }
 
-/* ------------------------------------------------------------------
-   Responsive spacing system
-   Tokens shrink on tablet / phone. Desktop values stay in :root.
-   ------------------------------------------------------------------ */
+/* --- Section: Responsive spacing system --- */
 
 @media (min-width: 992px) {
   :root {
@@ -6753,8 +6016,7 @@ body.ks-services-hub .ks-system-stage-wrap {
 .ks-scope-section,
 .ks-consult-band,
 .nistravel-faq-section,
-.nistravel-section-booking,
-#ekskurzii.nistravel-tours-home {
+.nistravel-section-booking {
   padding-top: var(--ks-section-y);
   padding-bottom: var(--ks-section-y);
 }
@@ -7147,7 +6409,7 @@ body.ks-services-hub .ks-system-stage-wrap {
   }
 }
 
-/* Package cards — elevated, aligned, clear hierarchy */
+/* --- Section: Package cards --- */
 .ks-package-card {
   display: flex;
   flex-direction: column;
@@ -7155,11 +6417,11 @@ body.ks-services-hub .ks-system-stage-wrap {
   /* visible so hover ring / button glow are not clipped by the card */
   overflow: visible;
   border-radius: var(--nt-card-radius);
-  background: #fff;
-  border: 1px solid rgba(15, 23, 42, 0.1);
+  background: var(--nt-card-bg);
+  border: 1px solid var(--ks-slate-10);
   box-shadow:
-    0 1px 2px rgba(15, 23, 42, 0.04),
-    0 10px 24px -12px rgba(15, 23, 42, 0.16);
+    0 1px 2px var(--ks-slate-04),
+    0 10px 24px -12px var(--ks-slate-16);
   transition:
     transform 0.35s var(--nt-ease-out),
     box-shadow 0.35s ease,
@@ -7167,12 +6429,9 @@ body.ks-services-hub .ks-system-stage-wrap {
 }
 
 .ks-package-card:hover {
-  transform: translateY(-5px);
-  border-color: rgba(201, 226, 0, 0.7);
-  box-shadow:
-    0 0 0 2px rgba(201, 226, 0, 0.5),
-    0 12px 28px -14px rgba(15, 23, 42, 0.2),
-    0 0 16px rgba(201, 226, 0, 0.2);
+  transform: var(--ks-lift-strong);
+  border-color: var(--ks-lime-accent-70);
+  box-shadow: var(--ks-shadow-accent-strong);
   z-index: 2;
 }
 
@@ -7181,7 +6440,7 @@ body.ks-services-hub .ks-system-stage-wrap {
 .ks-package-card .card-block,
 .ks-card-grid .ks-package-card:hover .card-block,
 .ks-packages-slider .ks-package-card:hover .card-block {
-  background: #fff !important;
+  background: var(--nt-card-bg) !important;
 }
 
 .ks-package-card .nistravel-tour-card__media {
@@ -7189,7 +6448,7 @@ body.ks-services-hub .ks-system-stage-wrap {
   flex: 0 0 auto;
   overflow: hidden;
   border-radius: var(--nt-card-radius) var(--nt-card-radius) 0 0;
-  background: #1a1d21;
+  background: var(--ks-color-ink);
 }
 
 .ks-package-card .nistravel-tour-card__media::after {
@@ -7301,7 +6560,7 @@ body.ks-services-hub .ks-system-stage-wrap {
   align-items: center;
   min-height: 2.25rem;
   padding: 0.35rem 0.85rem;
-  border-radius: 999px;
+  border-radius: var(--nt-btn-pill-radius);
   background: var(--nt-orange);
   color: #1a1d21;
   font-size: 0.95rem;
@@ -7891,7 +7150,7 @@ body.ks-services-hub .ks-system-stage-wrap {
 .ks-package-suit__list li {
   margin: 0;
   padding: 0.55rem 0.9rem;
-  border-radius: 999px;
+  border-radius: var(--nt-btn-pill-radius);
   background: rgba(201, 226, 0, 0.18);
   color: #1a1d21;
   font-size: 0.875rem;
