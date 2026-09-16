@@ -124,6 +124,7 @@
   --ks-space-2xl: 3.25rem;
   --ks-space-3xl: 4.5rem;
   --ks-gutter: 1.25rem;
+  --ks-content-inset: 1.25rem;
   --ks-section-y: clamp(5rem, 7.5vw, 6.75rem);
   --ks-stack: 1.35rem;
   --ks-grid-gap: 1.5rem;
@@ -1238,8 +1239,12 @@ header.navbar.boxed {
   justify-content: flex-start;
   gap: 0.65rem 1rem;
   box-sizing: border-box;
+  /* Match .wrapper.boxed gutter — header is position:absolute so it
+     does not inherit the wrapper’s horizontal padding. */
   padding-top: var(--ks-navbar-pad-y);
   padding-bottom: var(--ks-navbar-pad-y);
+  padding-left: max(var(--ks-gutter), 32px);
+  padding-right: max(var(--ks-gutter), 32px);
   height: auto;
   min-height: var(--ks-navbar-min-h);
 }
@@ -5943,10 +5948,12 @@ body.ks-services-hub .ks-system-stage-wrap {
 
 @media (min-width: 768px) and (max-width: 991px) {
   :root {
-    --ks-gutter: 2.65rem;
+    /* Tablet portrait — keep copy clear of screen edges */
+    --ks-gutter: 2rem;
+    --ks-content-inset: 1.5rem;
     --ks-section-y: 3.85rem;
     --ks-stack: 1.05rem;
-    --ks-grid-gap: 1.2rem;
+    --ks-grid-gap: 1.35rem;
     --ks-navbar-pad-y: 0.7rem;
     --ks-navbar-min-h: 5.35rem;
     --ks-page-offset: 5.6rem;
@@ -5959,12 +5966,23 @@ body.ks-services-hub .ks-system-stage-wrap {
   }
 }
 
+/* iPad landscape / large tablet */
+@media (min-width: 992px) and (max-width: 1199px) {
+  :root {
+    --ks-gutter: 2.85rem;
+    --ks-content-inset: 1.65rem;
+    --ks-grid-gap: 1.35rem;
+  }
+}
+
 @media (max-width: 767px) {
   :root {
-    --ks-gutter: 1.15rem;
+    /* Phones: floor in px so 12px root never collapses gutters */
+    --ks-gutter: 1.5rem;
+    --ks-content-inset: 1.25rem;
     --ks-section-y: 2.75rem;
-    --ks-stack: 0.85rem;
-    --ks-grid-gap: 1rem;
+    --ks-stack: 0.95rem;
+    --ks-grid-gap: 1.15rem;
     --ks-navbar-pad-y: 0.55rem;
     --ks-navbar-min-h: 4.35rem;
     --ks-page-offset: 4.55rem;
@@ -5980,7 +5998,8 @@ body.ks-services-hub .ks-system-stage-wrap {
 
 @media (max-width: 479px) {
   :root {
-    --ks-gutter: 1rem;
+    --ks-gutter: 1.35rem;
+    --ks-content-inset: 1.1rem;
     --ks-section-y: 2.35rem;
     --ks-navbar-min-h: 4.1rem;
     --ks-page-offset: 4.25rem;
@@ -5989,18 +6008,69 @@ body.ks-services-hub .ks-system-stage-wrap {
   }
 }
 
+/* Page frame — beat theme .boxed media queries (style.css) */
 .boxed,
 .animsition > .wrapper.boxed {
-  padding-left: var(--ks-gutter);
-  padding-right: var(--ks-gutter);
+  padding-left: max(var(--ks-gutter), 32px);
+  padding-right: max(var(--ks-gutter), 32px);
 }
 
 .left-boxed {
-  left: var(--ks-gutter);
+  left: max(var(--ks-gutter), 32px);
 }
 
 .right-boxed {
-  right: var(--ks-gutter);
+  right: max(var(--ks-gutter), 32px);
+}
+
+/*
+ * ≤1199: theme zeros .boxed .container; restore inset so heroes/sections
+ * never sit on the media edge. Floor in px survives small html root sizes.
+ */
+@media (max-width: 1199px) {
+  .animsition > .wrapper.boxed,
+  .boxed {
+    padding-left: max(var(--ks-gutter), 32px) !important;
+    padding-right: max(var(--ks-gutter), 32px) !important;
+  }
+
+  .animsition > .wrapper.boxed .container,
+  .animsition > .wrapper.boxed .container-fluid,
+  .kehayov-contact-cta-banner__inner,
+  .ks-editorial__inner,
+  .ks-final-cta .kehayov-contact-cta-banner__inner {
+    padding-left: max(var(--ks-content-inset), 24px) !important;
+    padding-right: max(var(--ks-content-inset), 24px) !important;
+  }
+}
+
+/* Narrow tablet / phone: Bootstrap −15px rows eat the inset — neutralize.
+   Keep column padding so side-by-side cards retain a gutter. */
+@media (max-width: 991px) {
+  .animsition > .wrapper.boxed .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* Stacked detail layouts: space between media column and copy */
+  .ks-package-detail > .container > .row > [class*="col-"] + [class*="col-"],
+  .section-about > .container > .row > [class*="col-"] + [class*="col-"],
+  .kehayov-section-booking .row > [class*="col-"] + [class*="col-"] {
+    margin-top: var(--ks-grid-gap);
+  }
+
+  .ks-package-detail__media {
+    margin-bottom: 0.25rem;
+  }
+
+  .ks-package-detail .subtitle-top {
+    margin-top: 0.25rem;
+  }
+
+  .ks-package-detail .section-about-title,
+  .ks-package-detail .section-title {
+    margin-top: 0.15rem;
+  }
 }
 
 .section:not(.footer):not(.kehayov-footer),
@@ -6077,11 +6147,6 @@ body.ks-services-hub .ks-system-stage-wrap {
 
   .content p {
     margin-bottom: 1rem;
-  }
-
-  .kehayov-contact-cta-banner__inner {
-    padding-left: 0.85rem;
-    padding-right: 0.85rem;
   }
 
   .kehayov-contact-cta-banner__title {
@@ -6585,7 +6650,8 @@ body.ks-services-hub .ks-system-stage-wrap {
   position: relative;
   margin-top: 0.35rem;
   margin-bottom: 0.25rem;
-  padding: 1rem 1.15rem 2.35rem;
+  /* Side lanes for prev/next — arrows sit outside the cards */
+  padding: 1rem 3.25rem 2.35rem;
   overflow: hidden;
 }
 
@@ -6595,7 +6661,7 @@ body.ks-services-hub .ks-system-stage-wrap {
 }
 
 .ks-packages-slider.owl-carousel .owl-stage-outer {
-  overflow: visible !important;
+  overflow: hidden !important;
   padding: 0;
   margin: 0;
   -webkit-transform: none;
@@ -6636,11 +6702,19 @@ body.ks-services-hub .ks-system-stage-wrap {
   object-fit: cover;
 }
 
+/* Owl leaves .owl-nav as a 0×0 absolute box — force static so
+   prev/next position against .ks-packages-slider, not that box. */
+.ks-packages-slider .owl-nav {
+  position: static;
+  margin: 0;
+  transform: none;
+}
+
 .ks-packages-slider .owl-nav .owl-prev,
 .ks-packages-slider .owl-nav .owl-next {
   position: absolute;
   top: 42%;
-  z-index: 3;
+  z-index: 5;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -6660,16 +6734,24 @@ body.ks-services-hub .ks-system-stage-wrap {
 }
 
 .ks-packages-slider .owl-nav .owl-prev {
-  left: -0.15rem;
+  left: 0.25rem;
+  right: auto;
 }
 
 .ks-packages-slider .owl-nav .owl-next {
-  right: -0.15rem;
+  right: 0.25rem;
+  left: auto;
 }
 
 .ks-packages-slider .owl-nav .owl-prev:hover,
 .ks-packages-slider .owl-nav .owl-next:hover {
   background: var(--nt-orange);
+}
+
+/* Theme Ionicons ::before would stack on our ‹ › labels */
+.ks-packages-slider .owl-nav .owl-prev:before,
+.ks-packages-slider .owl-nav .owl-next:before {
+  content: none;
 }
 
 .ks-packages-slider .owl-nav.disabled,
@@ -6703,13 +6785,57 @@ body.ks-services-hub .ks-system-stage-wrap {
   background: #1a1d21;
 }
 
-@media (max-width: 1199px) {
+/* Tablet: bleed to viewport edges so arrows sit on the screen sides */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .ks-packages-slider {
+    width: 100vw;
+    max-width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    padding-left: 5.25rem;
+    padding-right: 5.25rem;
+    box-sizing: border-box;
+  }
+
+  .ks-packages-slider .owl-nav .owl-prev,
+  .ks-packages-slider .owl-nav .owl-next {
+    width: 2.55rem;
+    height: 2.55rem;
+    font-size: 1.5rem;
+  }
+
   .ks-packages-slider .owl-nav .owl-prev {
-    left: 0.35rem;
+    left: 0.7rem;
+    right: auto;
   }
 
   .ks-packages-slider .owl-nav .owl-next {
-    right: 0.35rem;
+    right: 0.7rem;
+    left: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .ks-packages-slider {
+    padding-left: 2.85rem;
+    padding-right: 2.85rem;
+  }
+
+  .ks-packages-slider .owl-nav .owl-prev,
+  .ks-packages-slider .owl-nav .owl-next {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.45rem;
+  }
+
+  .ks-packages-slider .owl-nav .owl-prev {
+    left: 0.2rem;
+    right: auto;
+  }
+
+  .ks-packages-slider .owl-nav .owl-next {
+    right: 0.2rem;
+    left: auto;
   }
 }
 
