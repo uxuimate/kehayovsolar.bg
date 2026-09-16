@@ -107,7 +107,7 @@
     $packages.owlCarousel({
       loop: false,
       rewind: false,
-      margin: 18,
+      margin: 20,
       dots: true,
       nav: true,
       autoHeight: false,
@@ -181,4 +181,69 @@
       return '<span style="transform:rotate(' + (i * step) + 'deg)">' + safe + '</span>';
     }).join('');
   });
+})();
+
+(function () {
+  function showHint(el) {
+    if (!el) return;
+    el.hidden = false;
+    el.removeAttribute('hidden');
+  }
+
+  function hideHint(el) {
+    if (!el) return;
+    el.hidden = true;
+    el.setAttribute('hidden', '');
+  }
+
+  function syncPackageHint() {
+    var hint = document.querySelector('[data-ks-hint="packages"]');
+    var slider = document.querySelector('.ks-packages-slider');
+    if (!hint || !slider || !window.jQuery) return;
+    var $s = window.jQuery(slider);
+    if (!$s.data('owl.carousel')) {
+      hideHint(hint);
+      return;
+    }
+    var owl = $s.data('owl.carousel');
+    var visible = owl.settings.items;
+    var total = owl.items().length;
+    if (window.matchMedia('(max-width: 1199px)').matches && total > visible) {
+      showHint(hint);
+    } else {
+      hideHint(hint);
+    }
+  }
+
+  function syncSystemHint() {
+    var hint = document.querySelector('[data-ks-hint="systems"]');
+    var stage = document.querySelector('.ks-system-stage');
+    if (!hint || !stage) return;
+    var needsScroll =
+      window.matchMedia('(max-width: 991px)').matches &&
+      stage.scrollWidth > stage.clientWidth + 8;
+    if (needsScroll) showHint(hint);
+    else hideHint(hint);
+  }
+
+  function syncAll() {
+    syncPackageHint();
+    syncSystemHint();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function () {
+      setTimeout(syncAll, 400);
+    });
+  } else {
+    setTimeout(syncAll, 400);
+  }
+  window.addEventListener('resize', syncAll);
+  if (window.jQuery) {
+    window.jQuery(document).on(
+      'initialized.owl.carousel resized.owl.carousel',
+      '.ks-packages-slider',
+      syncPackageHint
+    );
+  }
 })();

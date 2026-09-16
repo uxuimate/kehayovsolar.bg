@@ -26,6 +26,15 @@
   --nt-btn-pill-radius: 980px;
   --nt-btn-ease: cubic-bezier(0.25, 0.1, 0.25, 1);
   --nt-btn-duration: 0.32s;
+  --ks-btn-min-h: 2.75rem;
+  --ks-btn-pad-x: 1.45rem;
+  --ks-btn-pad-y: 0.7rem;
+  --ks-btn-font: 0.8125rem;
+  --ks-focus-ring: #1a1d21;
+  --ks-color-text: #1a1d21;
+  --ks-color-muted: #4a5160;
+  --ks-color-border: rgba(15, 23, 42, 0.12);
+  --ks-content-max: 40rem;
   --nt-btn-shadow:
     0 1px 2px rgba(0, 0, 0, 0.04),
     0 4px 12px rgba(180, 200, 20, 0.22),
@@ -60,9 +69,10 @@
   --ks-space-lg: 1.5rem;
   --ks-space-xl: 2.25rem;
   --ks-space-2xl: 3.25rem;
+  --ks-space-3xl: 4.5rem;
   --ks-gutter: 1.25rem;
-  --ks-section-y: clamp(4.75rem, 7vw, 6.25rem);
-  --ks-stack: 1.25rem;
+  --ks-section-y: clamp(5rem, 7.5vw, 6.75rem);
+  --ks-stack: 1.35rem;
   --ks-grid-gap: 1.5rem;
   --ks-navbar-pad-y: 1.15rem;
   --ks-navbar-min-h: 8.5rem;
@@ -91,38 +101,72 @@
   border: 0;
 }
 
-/* Skip link + visible focus for keyboard users */
-.ks-skip-link {
-  position: absolute;
-  left: 0.75rem;
-  top: 0.75rem;
-  z-index: 10000;
-  padding: 0.65rem 1rem;
-  background: #1a1d21;
-  color: #fff !important;
-  font-weight: 600;
-  font-size: 0.875rem;
-  text-decoration: none;
-  border-radius: 8px;
-  transform: translateY(-120%);
-  transition: transform 0.2s ease;
-}
-.ks-skip-link:focus,
-.ks-skip-link:focus-visible {
-  transform: translateY(0);
-  outline: 2px solid var(--nt-orange);
-  outline-offset: 2px;
-}
-
 a:focus-visible,
 button:focus-visible,
 summary:focus-visible,
 .btn:focus-visible,
+.animsition .btn:focus-visible,
 input:focus-visible,
 select:focus-visible,
 textarea:focus-visible {
-  outline: 2px solid var(--nt-accent-ink);
-  outline-offset: 2px;
+  outline: 2px solid var(--ks-focus-ring) !important;
+  outline-offset: 3px;
+}
+
+/* Skip link — hidden until keyboard focus (never peeks above logo) */
+.ks-skip-link {
+  position: absolute;
+  left: 1rem;
+  top: 0;
+  z-index: 10000;
+  padding: 0.65rem 1.1rem;
+  border-radius: var(--nt-btn-pill-radius);
+  background: #1a1d21;
+  color: #fff !important;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  transform: translateY(-120%);
+  transition: transform 0.2s ease;
+}
+
+.ks-skip-link:focus,
+.ks-skip-link:focus-visible {
+  transform: translateY(0.75rem);
+  outline: 2px solid var(--nt-orange) !important;
+  outline-offset: 3px;
+}
+
+/* Mobile swipe hint for carousels / horizontal stages */
+.ks-scroll-hint {
+  display: none;
+  margin: 0 0 0.65rem;
+  color: #5a6169;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+.ks-scroll-hint[hidden] {
+  display: none !important;
+}
+
+@media (max-width: 991px) {
+  .ks-scroll-hint:not([hidden]) {
+    display: block;
+  }
+}
+
+.nistravel-booking-lead,
+.ks-offer .nistravel-booking-lead {
+  max-width: var(--ks-content-max);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ks-scope-tiles li::before {
+  color: var(--nt-accent-ink) !important;
 }
 
 /* Do NOT set global img max-width/height — it breaks Revolution Slider heroes */
@@ -352,11 +396,11 @@ blockquote {
   border: none;
   border-radius: var(--nt-btn-pill-radius);
   font-weight: 600;
-  font-size: 0.8125rem;
+  font-size: var(--ks-btn-font);
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding: 0.72rem 1.65rem 0.68rem;
-  min-height: 2.75rem;
+  padding: var(--ks-btn-pad-y) var(--ks-btn-pad-x);
+  min-height: var(--ks-btn-min-h);
   box-sizing: border-box;
   box-shadow: var(--nt-btn-shadow);
   -webkit-font-smoothing: antialiased;
@@ -377,7 +421,7 @@ blockquote {
 }
 
 .animsition .btn:focus-visible {
-  outline: 2px solid rgba(180, 200, 20, 0.55);
+  outline: 2px solid var(--ks-focus-ring) !important;
   outline-offset: 3px;
 }
 
@@ -4722,9 +4766,25 @@ body.nistravel-motion.menu-is-opened .menu.menu--with-brand .menu-list > li:nth-
 .content > .section,
 .content > .section-about,
 .content > .ks-scope-section,
-.content > .ks-consult-band {
+.content > .ks-consult-band,
+.content > .ks-service-intro {
   padding-top: var(--ks-section-y);
   padding-bottom: var(--ks-section-y);
+}
+
+/* Consistent media corners sitewide */
+.dots-image .dots,
+.dots-image-2 .dots {
+  display: none !important;
+}
+
+.dots-image img,
+.dots-image-2 img,
+.section-about .about-img,
+.ks-explain .dots-image img,
+.ks-explain .dots-image-2 img,
+.ks-explain__photos img {
+  border-radius: var(--nt-card-radius);
 }
 
 .ks-explain.bg-dots {
@@ -5451,6 +5511,8 @@ body.ks-service-page .nistravel-faq-section {
 /* Services hub: four photo cards in one row, Three.js overlay */
 body.ks-services-hub .ks-system-stage-wrap {
   margin-top: 2.35rem;
+  padding: 0.55rem 0.25rem 1.5rem;
+  overflow: visible;
 }
 
 .ks-system-stage {
@@ -5595,7 +5657,8 @@ body.ks-services-hub .ks-system-stage-wrap {
 @media (max-width: 991px) {
   .ks-system-stage {
     overflow-x: auto;
-    padding-bottom: 0.4rem;
+    padding: 0.65rem 0.85rem 1.45rem;
+    margin: 0 -0.5rem;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
   }
@@ -5799,7 +5862,7 @@ body.ks-services-hub .ks-system-stage-wrap {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 4px;
+  border-radius: calc(var(--nt-card-radius) - 2px);
 }
 
 .ks-about-company__thumb--back {
@@ -5972,6 +6035,209 @@ body.ks-services-hub .ks-system-stage-wrap {
   }
 }
 
+.ks-offer {
+  position: relative;
+  background:
+    radial-gradient(ellipse 80% 55% at 50% -10%, rgba(201, 226, 0, 0.12), transparent 55%),
+    linear-gradient(180deg, #f7f8f4 0%, #fff 42%, #fff 100%);
+}
+
+.ks-offer__flow {
+  display: grid;
+  gap: 2.25rem;
+  margin-top: 2.25rem;
+}
+
+.ks-offer__phase-head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.ks-offer__phase-num {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  background: var(--nt-orange);
+  color: #1a1d21;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  box-shadow: var(--nt-icon-badge-shadow);
+}
+
+.ks-offer__phase-label {
+  margin: 0 0 0.15rem;
+  color: var(--nt-accent-ink);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.ks-offer__phase-title {
+  margin: 0;
+  color: #1a1d21;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+/* Compact home / business — not large photo cards */
+.ks-offer__audience {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.ks-offer__audience-link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1.1rem 1.2rem 1.15rem;
+  color: inherit;
+  text-decoration: none;
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  border-radius: var(--nt-card-radius);
+  box-shadow: 0 10px 24px -18px rgba(15, 23, 42, 0.18);
+  transition:
+    transform 0.3s var(--nt-ease-out),
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.ks-offer__audience-link:hover,
+.ks-offer__audience-link:focus {
+  color: inherit;
+  text-decoration: none;
+  transform: translateY(-3px);
+  border-color: rgba(201, 226, 0, 0.55);
+  box-shadow:
+    0 0 0 1px rgba(201, 226, 0, 0.35),
+    0 14px 28px -16px rgba(15, 23, 42, 0.22);
+}
+
+.ks-offer__audience-tag {
+  color: var(--nt-accent-ink);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.ks-offer__audience-title {
+  color: #1a1d21;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  line-height: 1.3;
+}
+
+.ks-offer__audience-text {
+  color: var(--nt-body-color);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.ks-offer__systems {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.ks-offer__system {
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.65rem 0.85rem 0.65rem 0.65rem;
+  color: inherit;
+  text-decoration: none;
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  border-radius: var(--nt-card-radius);
+  box-shadow: 0 10px 24px -18px rgba(15, 23, 42, 0.16);
+  transition:
+    transform 0.3s var(--nt-ease-out),
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.ks-offer__system:hover,
+.ks-offer__system:focus {
+  color: inherit;
+  text-decoration: none;
+  transform: translateY(-3px);
+  border-color: rgba(201, 226, 0, 0.5);
+  box-shadow:
+    0 0 0 1px rgba(201, 226, 0, 0.3),
+    0 14px 28px -16px rgba(15, 23, 42, 0.2);
+}
+
+.ks-offer__system-media {
+  display: block;
+  width: 4.5rem;
+  height: 4.5rem;
+  overflow: hidden;
+  border-radius: var(--nt-card-radius);
+  background: #1a1d21;
+}
+
+.ks-offer__system-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.55s var(--nt-motion-ease-premium);
+}
+
+.ks-offer__system:hover .ks-offer__system-media img {
+  transform: scale(1.08);
+}
+
+.ks-offer__system-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 0;
+}
+
+.ks-offer__system-title {
+  color: #1a1d21;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  line-height: 1.3;
+}
+
+.ks-offer__system-text {
+  color: var(--nt-body-color);
+  font-size: 0.875rem;
+  line-height: 1.45;
+}
+
+.ks-offer__system-go {
+  color: #1a1d21;
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1;
+  opacity: 0.45;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.ks-offer__system:hover .ks-offer__system-go {
+  opacity: 1;
+  transform: translateX(3px);
+}
+
 .ks-offer__step {
   margin: 2.35rem 0 0;
   color: #1a1d21;
@@ -5990,10 +6256,13 @@ body.ks-services-hub .ks-system-stage-wrap {
 }
 
 .ks-offer__note {
-  margin-top: 0.5rem;
-  padding: 1.5rem 1.75rem;
-  background: #f6f7f4;
+  margin-top: 2rem;
+  padding: 1.35rem 1.5rem 1.4rem;
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-left: 3px solid var(--nt-orange);
   border-radius: var(--nt-card-radius);
+  box-shadow: 0 12px 28px -22px rgba(15, 23, 42, 0.2);
 }
 
 .ks-offer__note-label {
@@ -6007,6 +6276,165 @@ body.ks-services-hub .ks-system-stage-wrap {
 
 .ks-offer__note p:last-child {
   margin: 0;
+}
+
+.ks-offer__close {
+  margin: 1.35rem auto 0;
+  max-width: 40rem;
+  text-align: center;
+  color: var(--nt-body-color);
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+/* Service detail — one premium intro (replaces legacy two-section about) */
+.ks-service-intro {
+  position: relative;
+  background:
+    radial-gradient(ellipse 70% 50% at 0% 0%, rgba(201, 226, 0, 0.08), transparent 55%),
+    #fff;
+}
+
+.ks-service-intro__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  gap: clamp(1.5rem, 3vw, 3rem);
+  align-items: center;
+}
+
+.ks-service-intro__media {
+  margin: 0;
+  overflow: hidden;
+  border-radius: var(--nt-card-radius);
+  box-shadow:
+    0 1px 2px rgba(15, 23, 42, 0.04),
+    0 18px 40px -22px rgba(15, 23, 42, 0.35);
+  background: #1a1d21;
+  aspect-ratio: 4 / 5;
+  max-height: 36rem;
+}
+
+.ks-service-intro__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--nt-card-radius);
+}
+
+.ks-service-intro__eyebrow {
+  margin: 0 0 0.45rem;
+  color: var(--nt-accent-ink);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.ks-service-intro__title {
+  margin: 0 0 1.1rem;
+  color: #1a1d21;
+  font-size: clamp(1.45rem, 2.4vw, 1.85rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+}
+
+.ks-service-intro__copy > p {
+  margin: 0 0 0.95rem;
+  max-width: 36rem;
+  color: var(--nt-body-color);
+  font-size: 1.02rem;
+  line-height: 1.65;
+}
+
+.ks-service-intro__suit {
+  margin-top: 1.5rem;
+  padding-top: 1.35rem;
+  border-top: 1px solid rgba(15, 23, 42, 0.1);
+}
+
+.ks-service-intro__suit-label {
+  margin: 0 0 0.35rem;
+  color: var(--nt-accent-ink);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.ks-service-intro__suit-title {
+  margin: 0 0 0.85rem;
+  color: #1a1d21;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+}
+
+.ks-service-intro__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ks-service-intro__list li {
+  position: relative;
+  margin: 0 0 0.55rem;
+  padding-left: 1.35rem;
+  color: var(--nt-body-color);
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+.ks-service-intro__list li:last-child {
+  margin-bottom: 0;
+}
+
+.ks-service-intro__list li::before {
+  content: '';
+  position: absolute;
+  top: 0.45rem;
+  left: 0;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 2px;
+  background: var(--nt-orange);
+}
+
+@media (max-width: 991px) {
+  .ks-service-intro__grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .ks-service-intro__media {
+    aspect-ratio: 16 / 10;
+    max-height: 22rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .ks-offer__systems {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .ks-offer__audience,
+  .ks-offer__systems {
+    grid-template-columns: 1fr;
+  }
+
+  .ks-offer__system {
+    grid-template-columns: 3.75rem minmax(0, 1fr) auto;
+    gap: 0.75rem;
+  }
+
+  .ks-offer__system-media {
+    width: 3.75rem;
+    height: 3.75rem;
+  }
 }
 
 .ks-system-links {
@@ -6252,8 +6680,8 @@ body.ks-services-hub .ks-system-stage-wrap {
 
 @media (min-width: 768px) and (max-width: 991px) {
   :root {
-    --ks-gutter: 1.65rem;
-    --ks-section-y: 3.65rem;
+    --ks-gutter: 2.65rem;
+    --ks-section-y: 3.85rem;
     --ks-stack: 1.05rem;
     --ks-grid-gap: 1.2rem;
     --ks-navbar-pad-y: 0.7rem;
@@ -6390,20 +6818,21 @@ body.ks-services-hub .ks-system-stage-wrap {
   }
 
   .nistravel-contact-cta-banner__inner {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 0.85rem;
+    padding-right: 0.85rem;
   }
 
   .nistravel-contact-cta-banner__title {
     font-size: clamp(1.55rem, 5.4vw, 2.1rem);
     margin-bottom: 0.75rem;
+    max-width: 34rem;
   }
 
   .nistravel-contact-cta-banner__text,
   .content .nistravel-contact-cta-banner__text,
   .ks-final-cta .nistravel-contact-cta-banner__text {
     font-size: 1rem;
-    max-width: 36rem;
+    max-width: 34rem;
   }
 
   .nistravel-contact-cta-banner__actions,
@@ -6414,17 +6843,19 @@ body.ks-services-hub .ks-system-stage-wrap {
     margin-top: 1.25rem;
   }
 
+  .nistravel-contact-cta-banner__actions .btn,
+  .ks-final-cta__actions .btn {
+    width: auto;
+    min-width: 11.5rem;
+  }
+
   .ks-breadcrumb {
     margin-bottom: 0.85rem;
   }
 
-  .ks-offer__step {
-    margin-top: 1.75rem;
-  }
-
   .ks-offer__note {
-    margin-top: 0.25rem;
-    padding: 1.2rem 1.25rem;
+    margin-top: 1.5rem;
+    padding: 1.15rem 1.2rem;
   }
 
   .ks-card-grid .card.nistravel-tour-card .card-block {
@@ -6577,9 +7008,20 @@ body.ks-services-hub .ks-system-stage-wrap {
   .ks-final-cta__actions .btn,
   .ks-consult-band__inner .btn,
   .nistravel-contact-cta-banner__actions .link-arrow {
-    width: 100%;
+    width: auto;
+    min-width: 12rem;
+    max-width: 100%;
     justify-content: center;
     text-align: center;
+  }
+
+  @media (max-width: 575px) {
+    .nistravel-contact-cta-banner__actions .btn,
+    .ks-final-cta__actions .btn,
+    .ks-consult-band__inner .btn {
+      width: 100%;
+      min-width: 0;
+    }
   }
 
   .ks-final-cta .nistravel-contact-cta-banner__title {
@@ -6710,14 +7152,14 @@ body.ks-services-hub .ks-system-stage-wrap {
   display: flex;
   flex-direction: column;
   height: 100%;
-  overflow: hidden;
+  /* visible so hover ring / button glow are not clipped by the card */
+  overflow: visible;
   border-radius: var(--nt-card-radius);
   background: #fff;
   border: 1px solid rgba(15, 23, 42, 0.1);
   box-shadow:
     0 1px 2px rgba(15, 23, 42, 0.04),
-    0 12px 28px -16px rgba(15, 23, 42, 0.28),
-    0 28px 56px -28px rgba(15, 23, 42, 0.22);
+    0 10px 24px -12px rgba(15, 23, 42, 0.16);
   transition:
     transform 0.35s var(--nt-ease-out),
     box-shadow 0.35s ease,
@@ -6725,18 +7167,28 @@ body.ks-services-hub .ks-system-stage-wrap {
 }
 
 .ks-package-card:hover {
-  transform: translateY(-6px);
-  border-color: rgba(201, 226, 0, 0.55);
+  transform: translateY(-5px);
+  border-color: rgba(201, 226, 0, 0.7);
   box-shadow:
-    0 2px 4px rgba(15, 23, 42, 0.05),
-    0 18px 36px -14px rgba(15, 23, 42, 0.32),
-    0 36px 64px -24px rgba(201, 226, 0, 0.28);
+    0 0 0 2px rgba(201, 226, 0, 0.5),
+    0 12px 28px -14px rgba(15, 23, 42, 0.2),
+    0 0 16px rgba(201, 226, 0, 0.2);
+  z-index: 2;
+}
+
+/* Kill template fill-on-hover — keep text readable */
+.ks-package-card:hover .card-block,
+.ks-package-card .card-block,
+.ks-card-grid .ks-package-card:hover .card-block,
+.ks-packages-slider .ks-package-card:hover .card-block {
+  background: #fff !important;
 }
 
 .ks-package-card .nistravel-tour-card__media {
   position: relative;
   flex: 0 0 auto;
   overflow: hidden;
+  border-radius: var(--nt-card-radius) var(--nt-card-radius) 0 0;
   background: #1a1d21;
 }
 
@@ -6755,6 +7207,7 @@ body.ks-services-hub .ks-system-stage-wrap {
   padding: 1.25rem 1.2rem 1.3rem;
   background: #fff;
   border-top: 3px solid var(--nt-orange);
+  border-radius: 0 0 var(--nt-card-radius) var(--nt-card-radius);
 }
 
 .ks-package-card .card-title {
@@ -6794,13 +7247,12 @@ body.ks-services-hub .ks-system-stage-wrap {
   margin: auto 0 0;
   padding: 0.95rem 0 0;
   border-top: 1px solid rgba(15, 23, 42, 0.08);
-  font-size: 1.15rem;
-  font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: 800;
   color: #1a1d21;
   letter-spacing: -0.02em;
   line-height: 1.25;
 }
-
 .ks-package-card__price span {
   display: block;
   margin-bottom: 0.2rem;
@@ -6861,11 +7313,21 @@ body.ks-services-hub .ks-system-stage-wrap {
     0 8px 18px rgba(201, 226, 0, 0.35);
 }
 
-/* One-row package slider — equal cards; scrolls when 4 cannot fit */
+#paketi,
+#paketi .container {
+  overflow: visible;
+}
+
+/*
+  Clip on the slider shell (with padding), not on .owl-stage-outer.
+  That way card glow/shadow sits in the padding and never looks cut.
+*/
 .ks-packages-slider {
   position: relative;
-  margin-top: 0.75rem;
-  padding: 0.35rem 0.15rem 0.85rem;
+  margin-top: 0.35rem;
+  margin-bottom: 0.25rem;
+  padding: 1rem 1.15rem 2.35rem;
+  overflow: hidden;
 }
 
 .ks-packages-slider .nistravel-reveal {
@@ -6873,16 +7335,26 @@ body.ks-services-hub .ks-system-stage-wrap {
   transform: none;
 }
 
+.ks-packages-slider.owl-carousel .owl-stage-outer {
+  overflow: visible !important;
+  padding: 0;
+  margin: 0;
+  -webkit-transform: none;
+  transform: none;
+}
+
 .ks-packages-slider .owl-stage {
   display: flex;
   align-items: stretch;
-  padding-bottom: 0.35rem;
+  padding: 0;
 }
 
 .ks-packages-slider .owl-item {
   display: flex;
   float: none;
   height: auto;
+  box-sizing: border-box;
+  padding: 0.2rem 0.15rem;
 }
 
 .ks-packages-slider .ks-package-card {
@@ -7014,11 +7486,57 @@ body.ks-services-hub .ks-system-stage-wrap {
   flex: 1 1 auto;
 }
 
+.ks-package-detail__media {
+  overflow: hidden;
+  border-radius: var(--nt-card-radius);
+  box-shadow: var(--nt-card-shadow);
+  background: #1a1d21;
+}
+
 .ks-package-detail__media img {
   width: 100%;
   height: auto;
+  display: block;
   border-radius: var(--nt-card-radius);
-  box-shadow: var(--nt-card-shadow);
+}
+
+@media (min-width: 992px) {
+  .ks-package-detail > .container > .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+
+  .ks-package-detail > .container > .row::before,
+  .ks-package-detail > .container > .row::after {
+    content: none;
+    display: none;
+  }
+
+  .ks-package-detail > .container > .row > [class*="col-"] {
+    display: flex;
+    flex-direction: column;
+    float: none;
+  }
+
+  .ks-package-detail__media {
+    flex: 1 1 auto;
+    align-self: stretch;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+  }
+
+  .ks-package-detail__media img,
+  .ks-package-detail__media img.img-responsive {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    min-height: 22rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: var(--nt-card-radius);
+  }
 }
 
 .ks-package-specs {
@@ -7050,10 +7568,375 @@ body.ks-services-hub .ks-system-stage-wrap {
 
 .ks-package-detail__price {
   margin-top: 1.25rem;
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #1a1d21;
 }
+
+.ks-package-related .card-block {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.ks-package-related .card-title {
+  margin-bottom: 0.55rem;
+  min-height: 0;
+}
+
+.ks-package-related__list {
+  margin: 0 0 0.85rem;
+  padding: 0;
+  list-style: none;
+  flex: 1 1 auto;
+}
+
+.ks-package-related__list li {
+  position: relative;
+  margin: 0 0 0.4rem;
+  padding: 0 0 0 1.25rem;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #334155;
+  font-weight: 500;
+}
+
+.ks-package-related__list li:last-child {
+  margin-bottom: 0;
+}
+
+.ks-package-related__list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.3em;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background: var(--nt-orange);
+}
+
+.ks-package-related__list li::after {
+  content: '';
+  position: absolute;
+  left: 0.24rem;
+  top: 0.45em;
+  width: 0.24rem;
+  height: 0.38rem;
+  border: solid #1a1d21;
+  border-width: 0 1.5px 1.5px 0;
+  transform: rotate(45deg);
+}
+
+.ks-package-related__price {
+  margin: 0 0 0.85rem;
+  font-size: 1.125rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #1a1d21;
+  line-height: 1.25;
+}
+
+.ks-package-related .nistravel-tour-card__cta.btn {
+  margin-top: auto;
+  width: 100%;
+  align-self: stretch;
+}
+
 
 .ks-package-detail__note {
   margin: 0.65rem 0 0;
   color: #64748b;
   font-size: 0.875rem;
+}
+
+/* Premium package detail body */
+.ks-package-body {
+  padding-top: 0.25rem;
+  background:
+    radial-gradient(ellipse 70% 45% at 0% 0%, rgba(201, 226, 0, 0.08), transparent 55%),
+    radial-gradient(ellipse 55% 40% at 100% 20%, rgba(15, 23, 42, 0.03), transparent 50%),
+    #fff;
+}
+
+.ks-package-story {
+  display: grid;
+  grid-template-columns: minmax(7rem, 10rem) minmax(0, 1fr);
+  gap: 1.25rem 2rem;
+  align-items: start;
+  margin-bottom: clamp(2.5rem, 5vw, 3.5rem);
+  padding-bottom: clamp(2rem, 4vw, 2.75rem);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.ks-package-story__kicker,
+.ks-package-panel__kicker {
+  margin: 0 0 0.55rem;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--nt-accent-ink);
+}
+
+.ks-package-story__copy {
+  max-width: none;
+}
+
+.ks-package-story__copy p {
+  margin: 0 0 1rem;
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: #3d4450;
+}
+
+.ks-package-story__copy p:last-child {
+  margin-bottom: 0;
+}
+
+.ks-package-panels {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-bottom: clamp(2rem, 4vw, 2.75rem);
+}
+
+.ks-package-panel {
+  margin: 0;
+  padding: 1.5rem 1.45rem 1.55rem;
+  border-radius: 14px;
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow:
+    0 1px 2px rgba(15, 23, 42, 0.03),
+    0 18px 40px -28px rgba(15, 23, 42, 0.35);
+}
+
+.ks-package-panel--specs {
+  background: linear-gradient(165deg, #1a1d21 0%, #243018 100%);
+  border-color: transparent;
+  color: #fff;
+}
+
+.ks-package-panel--specs .ks-package-panel__kicker {
+  color: var(--nt-orange);
+}
+
+.ks-package-panel--specs .ks-package-panel__title {
+  color: #fff;
+}
+
+.ks-package-panel__title {
+  margin: 0 0 1.15rem;
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #1a1d21;
+  line-height: 1.25;
+}
+
+.ks-package-check {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ks-package-check li {
+  position: relative;
+  margin: 0 0 0.7rem;
+  padding: 0 0 0 1.55rem;
+  font-size: 0.9375rem;
+  line-height: 1.45;
+  color: #334155;
+}
+
+.ks-package-check li:last-child {
+  margin-bottom: 0;
+}
+
+.ks-package-check li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.35em;
+  width: 0.85rem;
+  height: 0.85rem;
+  border-radius: 50%;
+  background: var(--nt-orange);
+  box-shadow: inset 0 0 0 2px rgba(26, 29, 33, 0.08);
+}
+
+.ks-package-check li::after {
+  content: '';
+  position: absolute;
+  left: 0.28rem;
+  top: 0.52em;
+  width: 0.28rem;
+  height: 0.45rem;
+  border: solid #1a1d21;
+  border-width: 0 1.5px 1.5px 0;
+  transform: rotate(45deg);
+}
+
+.ks-package-dl {
+  margin: 0;
+}
+
+.ks-package-dl__row {
+  display: grid;
+  grid-template-columns: minmax(5.5rem, 38%) minmax(0, 1fr);
+  gap: 0.75rem 1rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.ks-package-dl__row:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.ks-package-dl__row:first-child {
+  padding-top: 0;
+}
+
+.ks-package-dl dt {
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.ks-package-dl dd {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.35;
+}
+
+.ks-package-benefits {
+  margin-bottom: clamp(2rem, 4vw, 2.75rem);
+  padding: 1.6rem 1.5rem 1.7rem;
+  border-radius: 14px;
+  background: #f6f7f2;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.ks-package-benefits__head {
+  margin-bottom: 1.25rem;
+}
+
+.ks-package-benefits__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 0.85rem 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ks-package-benefits__item {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0.95rem 1rem;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  box-shadow: 0 10px 24px -20px rgba(15, 23, 42, 0.35);
+}
+
+.ks-package-benefits__num {
+  flex: 0 0 auto;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--nt-accent-ink);
+  line-height: 1.4;
+}
+
+.ks-package-benefits__text {
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: #1a1d21;
+  font-weight: 500;
+}
+
+.ks-package-suit {
+  display: grid;
+  grid-template-columns: minmax(10rem, 16rem) minmax(0, 1fr);
+  gap: 1.25rem 2rem;
+  align-items: center;
+  margin-bottom: 1.75rem;
+  padding: 1.5rem 1.55rem;
+  border-radius: 14px;
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 16px 36px -28px rgba(15, 23, 42, 0.3);
+}
+
+.ks-package-suit__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ks-package-suit__list li {
+  margin: 0;
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(201, 226, 0, 0.18);
+  color: #1a1d21;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.ks-package-body__note {
+  margin: 0;
+  padding: 1.1rem 1.25rem;
+  border-radius: 12px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-left: 3px solid var(--nt-orange);
+  background: #fff;
+  color: #475569;
+  font-size: 0.9375rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 991px) {
+  .ks-package-story {
+    grid-template-columns: 1fr;
+    gap: 0.65rem;
+  }
+
+  .ks-package-panels {
+    grid-template-columns: 1fr;
+  }
+
+  .ks-package-suit {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .ks-package-panel,
+  .ks-package-benefits,
+  .ks-package-suit {
+    padding-left: 1.15rem;
+    padding-right: 1.15rem;
+  }
+
+  .ks-package-dl__row {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
 }
