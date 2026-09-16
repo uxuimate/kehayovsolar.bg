@@ -2,8 +2,8 @@
   'use strict';
   var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  document.querySelectorAll('.nistravel-enter-group').forEach(function (group) {
-    group.querySelectorAll('.nistravel-enter').forEach(function (el, i) {
+  document.querySelectorAll('.kehayov-enter-group').forEach(function (group) {
+    group.querySelectorAll('.kehayov-enter').forEach(function (el, i) {
       el.style.setProperty('--nt-enter-delay', (i * 68) + 'ms');
     });
   });
@@ -15,8 +15,8 @@
     seen.add(el);
     motionEls.push(el);
   }
-  document.querySelectorAll('.nistravel-reveal').forEach(addMotionEl);
-  document.querySelectorAll('.nistravel-enter').forEach(addMotionEl);
+  document.querySelectorAll('.kehayov-reveal').forEach(addMotionEl);
+  document.querySelectorAll('.kehayov-enter').forEach(addMotionEl);
   if (!motionEls.length) return;
 
   if (reduceMotion || !('IntersectionObserver' in window)) {

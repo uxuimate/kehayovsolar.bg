@@ -303,8 +303,8 @@ def append_faq_schema(html: str) -> str:
         html,
     )
     pairs = re.findall(
-        r'nistravel-faq__question">([^<]+)</summary>\s*'
-        r'<div class="nistravel-faq__answer">\s*<p>([^<]+)</p>',
+        r'kehayov-faq__question">([^<]+)</summary>\s*'
+        r'<div class="kehayov-faq__answer">\s*<p>([^<]+)</p>',
         html,
     )
     if not pairs:

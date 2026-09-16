@@ -216,8 +216,8 @@ textarea:focus-visible {
   }
 }
 
-.nistravel-booking-lead,
-.ks-offer .nistravel-booking-lead {
+.kehayov-booking-lead,
+.ks-offer .kehayov-booking-lead {
   max-width: var(--ks-content-max);
   margin-left: auto;
   margin-right: auto;
@@ -245,10 +245,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
 
 .content p,
 .content li,
-.nistravel-booking-lead,
+.kehayov-booking-lead,
 .card-text,
 .ks-package-card__for,
-.nistravel-faq__answer p,
+.kehayov-faq__answer p,
 .entry-content p {
   font-size: var(--nt-body-size);
   font-weight: 400;
@@ -257,8 +257,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
   color: var(--nt-body-color);
 }
 
-.content .nistravel-contact-cta-banner p,
-.content .nistravel-contact-cta-banner li,
+.content .kehayov-contact-cta-banner p,
+.content .kehayov-contact-cta-banner li,
 .content .ks-editorial p,
 .content .ks-editorial li,
 .content .ks-brands-slide p {
@@ -332,7 +332,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
   margin-bottom: 1.2rem;
 }
 
-.ks-card-grid .nistravel-tour-card .card-title {
+.ks-card-grid .kehayov-tour-card .card-title {
   min-height: 2.6em;
   font-size: 1.125rem;
   font-weight: 600;
@@ -341,22 +341,22 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
   color: #1a1d21;
 }
 
-.ks-card-grid .nistravel-tour-card .card-title a {
+.ks-card-grid .kehayov-tour-card .card-title a {
   color: inherit;
   text-decoration: none;
 }
 
-.ks-card-grid .nistravel-tour-card .card-title a:hover,
-.ks-card-grid .nistravel-tour-card .card-title a:focus {
+.ks-card-grid .kehayov-tour-card .card-title a:hover,
+.ks-card-grid .kehayov-tour-card .card-title a:focus {
   color: inherit;
   text-decoration: none;
 }
 
-.ks-card-grid .nistravel-tour-card__media {
+.ks-card-grid .kehayov-tour-card__media {
   display: block;
 }
 
-.ks-card-grid a.card.nistravel-tour-card {
+.ks-card-grid a.card.kehayov-tour-card {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -364,8 +364,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
   text-decoration: none;
 }
 
-.ks-card-grid a.card.nistravel-tour-card:hover,
-.ks-card-grid a.card.nistravel-tour-card:focus {
+.ks-card-grid a.card.kehayov-tour-card:hover,
+.ks-card-grid a.card.kehayov-tour-card:focus {
   color: inherit;
   text-decoration: none;
 }
@@ -405,13 +405,13 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
   opacity: 0.5;
 }
 
-.nistravel-contact-cta-banner .ks-breadcrumb a {
+.kehayov-contact-cta-banner .ks-breadcrumb a {
   color: rgba(255, 255, 255, 0.72);
   text-decoration: none;
 }
 
-.nistravel-contact-cta-banner .ks-breadcrumb a:hover,
-.nistravel-contact-cta-banner .ks-breadcrumb a:focus {
+.kehayov-contact-cta-banner .ks-breadcrumb a:hover,
+.kehayov-contact-cta-banner .ks-breadcrumb a:focus {
   color: #fff;
   text-decoration: none;
 }
@@ -520,15 +520,15 @@ blockquote {
   transform: var(--ks-btn-lift);
 }
 
-.nistravel-contact-cta-banner .btn-quiet,
+.kehayov-contact-cta-banner .btn-quiet,
 .ks-final-cta .btn-quiet {
   background: transparent;
   color: var(--ks-color-surface);
   border-color: rgba(255, 255, 255, 0.55);
 }
 
-.nistravel-contact-cta-banner .btn-quiet:hover,
-.nistravel-contact-cta-banner .btn-quiet:focus,
+.kehayov-contact-cta-banner .btn-quiet:hover,
+.kehayov-contact-cta-banner .btn-quiet:focus,
 .ks-final-cta .btn-quiet:hover,
 .ks-final-cta .btn-quiet:focus {
   background: var(--ks-color-surface);
@@ -556,29 +556,29 @@ blockquote {
 
 
 /* „За нас“ — втора секция: flex като section-about на index, без глобалния .section (pagepiling padding) */
-.nistravel-about-specialization {
+.kehayov-about-specialization {
   padding-top: var(--ks-section-y);
   padding-bottom: var(--ks-section-y);
   background: var(--ks-color-surface);
 }
 
-.nistravel-about-specialization__grid {
+.kehayov-about-specialization__grid {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   gap: clamp(2rem, 4.5vw, 3rem);
 }
 
-.nistravel-about-specialization__copy {
+.kehayov-about-specialization__copy {
   flex: 1 1 auto;
   min-width: 0;
 }
 
-.nistravel-about-specialization__copy .section-subtitle {
+.kehayov-about-specialization__copy .section-subtitle {
   margin-bottom: 1rem;
 }
 
-.nistravel-about-specialization__mission {
+.kehayov-about-specialization__mission {
   font-size: clamp(1.85rem, 2.9vw, 2.65rem);
   font-weight: 600;
   letter-spacing: -0.03em;
@@ -588,7 +588,7 @@ blockquote {
   text-transform: none;
 }
 
-.nistravel-about-specialization__list.service-list {
+.kehayov-about-specialization__list.service-list {
   margin-top: 0;
   margin-bottom: 0;
   font-size: var(--nt-body-size);
@@ -596,24 +596,24 @@ blockquote {
   line-height: var(--nt-body-line);
 }
 
-.nistravel-about-specialization__list.service-list li {
+.kehayov-about-specialization__list.service-list li {
   margin-bottom: 0.55rem;
 }
 
-.nistravel-about-specialization__list.service-list li:last-child {
+.kehayov-about-specialization__list.service-list li:last-child {
   margin-bottom: 0;
 }
 
-.nistravel-about-specialization .nistravel-about-specialization__list a {
+.kehayov-about-specialization .kehayov-about-specialization__list a {
   color: #4a4a4a;
 }
 
-.nistravel-about-specialization .nistravel-about-specialization__list a:hover,
-.nistravel-about-specialization .nistravel-about-specialization__list a:focus {
+.kehayov-about-specialization .kehayov-about-specialization__list a:hover,
+.kehayov-about-specialization .kehayov-about-specialization__list a:focus {
   color: #111;
 }
 
-.nistravel-about-specialization__media {
+.kehayov-about-specialization__media {
   flex: 1 1 auto;
   min-width: 0;
   display: flex;
@@ -622,36 +622,36 @@ blockquote {
   padding-bottom: clamp(3.5rem, 10vw, 6.5rem);
 }
 
-.nistravel-about-specialization__figure.dots-image-2 {
+.kehayov-about-specialization__figure.dots-image-2 {
   display: inline-block;
   position: relative;
   max-width: min(100%, 29.5rem);
   margin: 0;
 }
 
-.nistravel-about-specialization__figure.dots-image-2 img {
+.kehayov-about-specialization__figure.dots-image-2 img {
   width: 100%;
   height: auto;
 }
 
-.nistravel-about-specialization .experience-info .number {
+.kehayov-about-specialization .experience-info .number {
   color: #bb6722;
 }
 
 @media (min-width: 992px) {
-  .nistravel-about-specialization__grid {
+  .kehayov-about-specialization__grid {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     gap: clamp(2.25rem, 4vw, 3.5rem);
   }
 
-  .nistravel-about-specialization__copy {
+  .kehayov-about-specialization__copy {
     flex: 1 1 0;
     min-width: 0;
   }
 
-  .nistravel-about-specialization__media {
+  .kehayov-about-specialization__media {
     flex: 1 1 0;
     min-width: 0;
     justify-content: flex-end;
@@ -662,86 +662,86 @@ blockquote {
 /* about-us.html: section-about веднага под hero — по-мек top от глобалните 8rem */
 
 /* Страница „За нас“: повече въздух между секциите + scroll reveal подредба */
-body.nistravel-page--about .page-content .primary > .section-about:first-child {
+body.kehayov-page--about .page-content .primary > .section-about:first-child {
   padding-top: var(--ks-section-y);
 }
 
-body.nistravel-page--about .page-content .section-about {
+body.kehayov-page--about .page-content .section-about {
   padding-bottom: var(--ks-section-y);
 }
 
-body.nistravel-page--about .page-content .section-about + .nistravel-about-specialization {
+body.kehayov-page--about .page-content .section-about + .kehayov-about-specialization {
   padding-top: var(--ks-section-y);
 }
 
-body.nistravel-page--about .nistravel-about-specialization {
+body.kehayov-page--about .kehayov-about-specialization {
   padding-bottom: var(--ks-section-y);
 }
 
-body.nistravel-page--about .nistravel-why-choose {
+body.kehayov-page--about .kehayov-why-choose {
   padding-top: var(--ks-section-y);
   padding-bottom: var(--ks-section-y);
 }
 
-body.nistravel-page--about .page-content {
+body.kehayov-page--about .page-content {
   margin-bottom: clamp(2rem, 4vw, 3.5rem);
 }
 
-/* Втората колона носи .nistravel-reveal върху самия .col — не върху вътрешен елемент */
-body.nistravel-page--about .section-about .row > [class*='col-']:nth-child(2).nistravel-reveal {
+/* Втората колона носи .kehayov-reveal върху самия .col — не върху вътрешен елемент */
+body.kehayov-page--about .section-about .row > [class*='col-']:nth-child(2).kehayov-reveal {
   --nt-reveal-delay: 0.18s;
 }
 
-body.nistravel-page--about .nistravel-about-specialization__media.nistravel-reveal {
+body.kehayov-page--about .kehayov-about-specialization__media.kehayov-reveal {
   --nt-reveal-delay: 0.22s;
 }
 
 /* About page: плавни и безопасни stagger анимации на елементно ниво */
-body.nistravel-page--about .section-about .section-subtitle.nistravel-enter {
+body.kehayov-page--about .section-about .section-subtitle.kehayov-enter {
   --nt-enter-delay: 20ms;
 }
 
-body.nistravel-page--about .section-about .section-title.nistravel-enter {
+body.kehayov-page--about .section-about .section-title.kehayov-enter {
   --nt-enter-delay: 90ms;
 }
 
-body.nistravel-page--about .section-about p.nistravel-enter:nth-of-type(1) {
+body.kehayov-page--about .section-about p.kehayov-enter:nth-of-type(1) {
   --nt-enter-delay: 160ms;
 }
 
-body.nistravel-page--about .section-about p.nistravel-enter:nth-of-type(2) {
+body.kehayov-page--about .section-about p.kehayov-enter:nth-of-type(2) {
   --nt-enter-delay: 220ms;
 }
 
-body.nistravel-page--about .section-about p.nistravel-enter:nth-of-type(3) {
+body.kehayov-page--about .section-about p.kehayov-enter:nth-of-type(3) {
   --nt-enter-delay: 280ms;
 }
 
-body.nistravel-page--about .nistravel-about-specialization__copy .section-subtitle.nistravel-enter {
+body.kehayov-page--about .kehayov-about-specialization__copy .section-subtitle.kehayov-enter {
   --nt-enter-delay: 30ms;
 }
 
-body.nistravel-page--about .nistravel-about-specialization__copy .section-title.nistravel-enter {
+body.kehayov-page--about .kehayov-about-specialization__copy .section-title.kehayov-enter {
   --nt-enter-delay: 100ms;
 }
 
-body.nistravel-page--about .nistravel-about-specialization__copy .service-list.nistravel-enter {
+body.kehayov-page--about .kehayov-about-specialization__copy .service-list.kehayov-enter {
   --nt-enter-delay: 180ms;
 }
 
-body.nistravel-page--about .nistravel-contact-cta-banner .nistravel-contact-cta-banner__kicker.nistravel-enter {
+body.kehayov-page--about .kehayov-contact-cta-banner .kehayov-contact-cta-banner__kicker.kehayov-enter {
   --nt-enter-delay: 20ms;
 }
 
-body.nistravel-page--about .nistravel-contact-cta-banner .nistravel-contact-cta-banner__title.nistravel-enter {
+body.kehayov-page--about .kehayov-contact-cta-banner .kehayov-contact-cta-banner__title.kehayov-enter {
   --nt-enter-delay: 90ms;
 }
 
-body.nistravel-page--about .nistravel-contact-cta-banner .nistravel-contact-cta-banner__text.nistravel-enter {
+body.kehayov-page--about .kehayov-contact-cta-banner .kehayov-contact-cta-banner__text.kehayov-enter {
   --nt-enter-delay: 160ms;
 }
 
-body.nistravel-page--about .nistravel-contact-cta-banner .nistravel-contact-cta-banner__actions.nistravel-enter {
+body.kehayov-page--about .kehayov-contact-cta-banner .kehayov-contact-cta-banner__actions.kehayov-enter {
   --nt-enter-delay: 230ms;
 }
 
@@ -1722,23 +1722,23 @@ header.navbar.boxed .navbar-toggle {
   color: var(--nt-accent-ink) !important;
 }
 
-.nistravel-tours-home__inner {
+.kehayov-tours-home__inner {
   position: relative;
 }
 
 /* --- Section: Booking process --- */
-.nistravel-section-booking {
+.kehayov-section-booking {
   padding-top: var(--ks-section-y);
   padding-bottom: var(--ks-section-y);
   scroll-margin-top: 5.5rem;
   background: linear-gradient(165deg, #eceef3 0%, #e2e5eb 48%, #f0f2f6 100%);
 }
 
-.nistravel-section-booking .title-uppercase.nistravel-booking-title {
+.kehayov-section-booking .title-uppercase.kehayov-booking-title {
   margin-bottom: 1.25rem;
 }
 
-.nistravel-booking-lead {
+.kehayov-booking-lead {
   max-width: 38rem;
   margin: 0.35rem auto 0;
   font-size: var(--nt-body-size);
@@ -1754,7 +1754,7 @@ header.navbar.boxed .navbar-toggle {
 }
 
 /* Scroll-in cards (стъпки / „Защо ние“): по-дълъг, по-мек easing — без промяна на hover по картите */
-.nistravel-reveal {
+.kehayov-reveal {
   opacity: 0;
   transform: translate3d(0, var(--nt-reveal-offset), 0);
   transition:
@@ -1762,68 +1762,68 @@ header.navbar.boxed .navbar-toggle {
     transform var(--nt-reveal-duration) cubic-bezier(0.16, 1, 0.3, 1) var(--nt-reveal-delay, 0ms);
 }
 
-.nistravel-reveal.is-visible {
+.kehayov-reveal.is-visible {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
 
-.nistravel-booking-steps {
+.kehayov-booking-steps {
   margin-top: 2.5rem;
 }
 
-.nistravel-section-booking .nistravel-booking-steps.row {
+.kehayov-section-booking .kehayov-booking-steps.row {
   display: flex;
   flex-wrap: wrap;
 }
 
-.nistravel-section-booking .nistravel-booking-steps.row::before,
-.nistravel-section-booking .nistravel-booking-steps.row::after {
+.kehayov-section-booking .kehayov-booking-steps.row::before,
+.kehayov-section-booking .kehayov-booking-steps.row::after {
   display: none !important;
   content: none !important;
 }
 
-.nistravel-booking-steps > [class*='col-'] {
+.kehayov-booking-steps > [class*='col-'] {
   margin-bottom: 1.5rem;
   display: flex;
   flex-direction: column;
 }
 
 @media (min-width: 1200px) {
-  .nistravel-booking-steps > [class*='col-'] {
+  .kehayov-booking-steps > [class*='col-'] {
     margin-bottom: 0;
   }
 }
 
-.nistravel-booking-steps > [class*='col-']:nth-child(1) .nistravel-reveal {
+.kehayov-booking-steps > [class*='col-']:nth-child(1) .kehayov-reveal {
   transition-delay: 0.05s;
 }
 
-.nistravel-booking-steps > [class*='col-']:nth-child(2) .nistravel-reveal {
+.kehayov-booking-steps > [class*='col-']:nth-child(2) .kehayov-reveal {
   transition-delay: 0.12s;
 }
 
-.nistravel-booking-steps > [class*='col-']:nth-child(3) .nistravel-reveal {
+.kehayov-booking-steps > [class*='col-']:nth-child(3) .kehayov-reveal {
   transition-delay: 0.19s;
 }
 
-.nistravel-booking-steps > [class*='col-']:nth-child(4) .nistravel-reveal {
+.kehayov-booking-steps > [class*='col-']:nth-child(4) .kehayov-reveal {
   transition-delay: 0.26s;
 }
 
-.nistravel-booking-cta {
+.kehayov-booking-cta {
   margin-top: clamp(2rem, 4vw, 2.75rem);
   padding-top: clamp(1.5rem, 3vw, 2rem);
   border-top: 1px solid rgba(15, 23, 42, 0.08);
 }
 
-.nistravel-booking-cta__kicker {
+.kehayov-booking-cta__kicker {
   margin: 0 0 1.15rem;
   font-size: 1rem;
   font-weight: 600;
   color: #334155;
 }
 
-.nistravel-booking-cta__actions {
+.kehayov-booking-cta__actions {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
@@ -1835,7 +1835,7 @@ header.navbar.boxed .navbar-toggle {
   margin-right: auto;
 }
 
-.nistravel-booking-cta__btn {
+.kehayov-booking-cta__btn {
   margin: 0;
   text-decoration: none !important;
   flex: 1 1 0;
@@ -1848,26 +1848,26 @@ header.navbar.boxed .navbar-toggle {
 }
 
 @media (max-width: 479px) {
-  .nistravel-booking-cta__actions {
+  .kehayov-booking-cta__actions {
     flex-direction: column;
     max-width: 18rem;
   }
 
-  .nistravel-booking-cta__btn {
+  .kehayov-booking-cta__btn {
     flex: none;
     width: 100%;
   }
 }
 
-.animsition .nistravel-booking-cta .btn.nistravel-booking-cta__btn--phone {
+.animsition .kehayov-booking-cta .btn.kehayov-booking-cta__btn--phone {
   background-color: transparent;
   color: #0f172a;
   border: 1px solid rgba(15, 23, 42, 0.22);
   box-shadow: none;
 }
 
-.animsition .nistravel-booking-cta .btn.nistravel-booking-cta__btn--phone:hover,
-.animsition .nistravel-booking-cta .btn.nistravel-booking-cta__btn--phone:focus {
+.animsition .kehayov-booking-cta .btn.kehayov-booking-cta__btn--phone:hover,
+.animsition .kehayov-booking-cta .btn.kehayov-booking-cta__btn--phone:focus {
   background-color: #fff;
   color: var(--nt-accent-ink);
   border-color: rgba(180, 200, 20, 0.45);
@@ -1875,7 +1875,7 @@ header.navbar.boxed .navbar-toggle {
 }
 
 /* --- Section: Why choose us --- */
-.nistravel-why-choose {
+.kehayov-why-choose {
   margin-top: 0;
   padding-top: var(--ks-section-y);
   padding-bottom: var(--ks-section-y);
@@ -1884,11 +1884,11 @@ header.navbar.boxed .navbar-toggle {
   scroll-margin-top: 5.5rem;
 }
 
-.nistravel-why-choose .title-uppercase.nistravel-why-choose__title {
+.kehayov-why-choose .title-uppercase.kehayov-why-choose__title {
   margin-bottom: 0.75rem;
 }
 
-.nistravel-why-choose__headline {
+.kehayov-why-choose__headline {
   font-size: clamp(1.65rem, 2.8vw, 2.35rem);
   font-weight: 600;
   letter-spacing: -0.02em;
@@ -1897,66 +1897,66 @@ header.navbar.boxed .navbar-toggle {
   text-transform: none;
 }
 
-.nistravel-why-choose__lead {
+.kehayov-why-choose__lead {
   max-width: 36rem;
   margin: 0.5rem auto 0;
 }
 
-.nistravel-why-choose__grid {
+.kehayov-why-choose__grid {
   display: flex;
   flex-wrap: wrap;
   margin-top: 2.25rem;
 }
 
-.nistravel-why-choose__grid > [class*='col-'] {
+.kehayov-why-choose__grid > [class*='col-'] {
   display: flex;
   flex-direction: column;
   margin-bottom: 1.5rem;
 }
 
-.nistravel-why-choose__grid > [class*='col-']:last-child {
+.kehayov-why-choose__grid > [class*='col-']:last-child {
   margin-bottom: 0;
 }
 
 @media (min-width: 992px) {
-  .nistravel-why-choose__grid > [class*='col-'] {
+  .kehayov-why-choose__grid > [class*='col-'] {
     margin-bottom: 0;
   }
 }
 
-.nistravel-why-choose__grid > [class*='col-']:nth-child(1) .nistravel-reveal {
+.kehayov-why-choose__grid > [class*='col-']:nth-child(1) .kehayov-reveal {
   transition-delay: 0.06s;
 }
 
-.nistravel-why-choose__grid > [class*='col-']:nth-child(2) .nistravel-reveal {
+.kehayov-why-choose__grid > [class*='col-']:nth-child(2) .kehayov-reveal {
   transition-delay: 0.14s;
 }
 
-.nistravel-why-choose__grid > [class*='col-']:nth-child(3) .nistravel-reveal {
+.kehayov-why-choose__grid > [class*='col-']:nth-child(3) .kehayov-reveal {
   transition-delay: 0.22s;
 }
 
-.nistravel-why-choose__grid > [class*='col-']:nth-child(4) .nistravel-reveal {
+.kehayov-why-choose__grid > [class*='col-']:nth-child(4) .kehayov-reveal {
   transition-delay: 0.3s;
 }
 
-.nistravel-why-choose--four .nistravel-why-choose__grid {
+.kehayov-why-choose--four .kehayov-why-choose__grid {
   margin-top: 2.5rem;
 }
 
 /* --- Section: Reviews --- */
-.nistravel-reviews-flat.section {
+.kehayov-reviews-flat.section {
   position: relative;
   overflow: hidden;
   padding-top: clamp(3.5rem, 7vw, 5.75rem) !important;
   padding-bottom: clamp(3.5rem, 7vw, 5.75rem) !important;
 }
 
-.nistravel-reviews-flat .nistravel-reviews-flat__bg.section-bg {
+.kehayov-reviews-flat .kehayov-reviews-flat__bg.section-bg {
   z-index: 0;
 }
 
-.nistravel-reviews-flat__scrim {
+.kehayov-reviews-flat__scrim {
   position: absolute;
   inset: 0;
   z-index: 0;
@@ -1964,12 +1964,12 @@ header.navbar.boxed .navbar-toggle {
   pointer-events: none;
 }
 
-.nistravel-reviews-flat__inner {
+.kehayov-reviews-flat__inner {
   position: relative;
   z-index: 1;
 }
 
-.nistravel-reviews-flat__kicker {
+.kehayov-reviews-flat__kicker {
   margin: 0 0 0.85rem;
   font-size: 0.6875rem;
   font-weight: 700;
@@ -1978,14 +1978,14 @@ header.navbar.boxed .navbar-toggle {
   color: rgba(255, 255, 255, 0.65);
 }
 
-.nistravel-reviews-flat .nistravel-reviews-flat__quote-wrap .icon-quote {
+.kehayov-reviews-flat .kehayov-reviews-flat__quote-wrap .icon-quote {
   margin-top: 0;
   font-size: 1.15rem;
   line-height: 1;
   color: var(--nt-icon-badge-ink);
 }
 
-.nistravel-reviews-flat .title-uppercase.nistravel-reviews-flat__headline {
+.kehayov-reviews-flat .title-uppercase.kehayov-reviews-flat__headline {
   margin-top: 0.35rem;
   margin-bottom: 0;
   line-height: 1.28;
@@ -1993,25 +1993,25 @@ header.navbar.boxed .navbar-toggle {
 }
 
 @media (max-width: 991px) {
-  .nistravel-reviews-flat .review-carousel {
+  .kehayov-reviews-flat .review-carousel {
     margin-top: 2.5rem;
   }
 
-  .nistravel-reviews-flat .review-author {
+  .kehayov-reviews-flat .review-author {
     margin-top: 3rem;
   }
 
-  .nistravel-reviews-flat .review-carousel .owl-nav {
+  .kehayov-reviews-flat .review-carousel .owl-nav {
     margin-top: 3rem;
   }
 }
 
-.nistravel-reviews-flat .review-carousel .text,
-.nistravel-reviews-flat .review-carousel .text p {
+.kehayov-reviews-flat .review-carousel .text,
+.kehayov-reviews-flat .review-carousel .text p {
   color: rgba(255, 255, 255, 0.92);
 }
 
-.nistravel-reviews-flat .review-carousel .text p strong {
+.kehayov-reviews-flat .review-carousel .text p strong {
   display: block;
   margin-bottom: 0.65rem;
   font-weight: 700;
@@ -2019,28 +2019,28 @@ header.navbar.boxed .navbar-toggle {
   letter-spacing: -0.02em;
 }
 
-.nistravel-reviews-flat .author-name {
+.kehayov-reviews-flat .author-name {
   color: #fff;
 }
 
-.nistravel-reviews-flat .review-author i {
+.kehayov-reviews-flat .review-author i {
   color: rgba(255, 255, 255, 0.65);
   font-style: normal;
   font-size: 0.9375rem;
 }
 
 /* Лента над мненията: същият bg-dots, компактна височина като стария лого ред */
-.nistravel-reviews-anchor {
+.kehayov-reviews-anchor {
   scroll-margin-top: 5.5rem;
 }
 
-.nistravel-reviews-headband.section {
+.kehayov-reviews-headband.section {
   padding-top: clamp(2rem, 4vw, 3rem) !important;
   padding-bottom: clamp(2rem, 4vw, 3rem) !important;
   margin: 0;
 }
 
-.nistravel-reviews-headband__title {
+.kehayov-reviews-headband__title {
   margin: 0;
   text-align: center;
   font-size: clamp(1.65rem, 4.2vw, 2.65rem);
@@ -2051,18 +2051,18 @@ header.navbar.boxed .navbar-toggle {
 }
 
 /* --- Section: FAQ --- */
-.nistravel-faq-section {
+.kehayov-faq-section {
   padding-top: var(--ks-section-y);
   padding-bottom: var(--ks-section-y);
   background-color: #fff;
   scroll-margin-top: 5.5rem;
 }
 
-.nistravel-faq-section .section-title {
+.kehayov-faq-section .section-title {
   margin-bottom: 0.75rem;
 }
 
-.nistravel-faq-lead {
+.kehayov-faq-lead {
   margin: 0 auto 2.25rem;
   max-width: 36rem;
   font-size: 0.9375rem;
@@ -2070,11 +2070,11 @@ header.navbar.boxed .navbar-toggle {
   color: #64748b;
 }
 
-.nistravel-faq {
+.kehayov-faq {
   text-align: left;
 }
 
-.nistravel-faq__item {
+.kehayov-faq__item {
   margin-bottom: 0.65rem;
   border: 1px solid rgba(15, 23, 42, 0.1);
   border-radius: var(--nt-card-radius);
@@ -2084,12 +2084,12 @@ header.navbar.boxed .navbar-toggle {
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.nistravel-faq__item[open] {
+.kehayov-faq__item[open] {
   border-color: rgba(180, 200, 20, 0.35);
   box-shadow: 0 8px 28px -18px rgba(15, 23, 42, 0.18);
 }
 
-.nistravel-faq__question {
+.kehayov-faq__question {
   position: relative;
   margin: 0;
   padding: 1.05rem 2.75rem 1.05rem 1.15rem;
@@ -2101,11 +2101,11 @@ header.navbar.boxed .navbar-toggle {
   list-style: none;
 }
 
-.nistravel-faq__question::-webkit-details-marker {
+.kehayov-faq__question::-webkit-details-marker {
   display: none;
 }
 
-.nistravel-faq__question::after {
+.kehayov-faq__question::after {
   content: '';
   position: absolute;
   right: 1.15rem;
@@ -2119,17 +2119,17 @@ header.navbar.boxed .navbar-toggle {
   transition: transform 0.25s var(--nt-ease-out);
 }
 
-.nistravel-faq__item[open] .nistravel-faq__question::after {
+.kehayov-faq__item[open] .kehayov-faq__question::after {
   transform: rotate(-135deg);
   margin-top: -0.15rem;
 }
 
-.nistravel-faq__answer {
+.kehayov-faq__answer {
   padding: 0 1.15rem 1.15rem;
   border-top: 1px solid rgba(15, 23, 42, 0.06);
 }
 
-.nistravel-faq__answer p {
+.kehayov-faq__answer p {
   margin: 0.85rem 0 0;
   font-size: 0.9375rem;
   line-height: 1.65;
@@ -2138,8 +2138,8 @@ header.navbar.boxed .navbar-toggle {
 
 /* --- Включено / не включено / допълнителни услуги (преизползваем блок)
    Същата сетка и ритъм като FAQ: .section + .container + .row.
-   Копирайте блока от partials/nistravel-inclusion-block.html или от project-detail.html. --- */
-.nistravel-inclusion-section {
+   Копирайте блока от partials/kehayov-inclusion-block.html или от project-detail.html. --- */
+.kehayov-inclusion-section {
   padding-top: clamp(2.75rem, 5.5vw, 4rem);
   padding-bottom: clamp(2.75rem, 5.5vw, 4rem);
   background-color: #f8fafc;
@@ -2147,7 +2147,7 @@ header.navbar.boxed .navbar-toggle {
   border-top: 1px solid rgba(15, 23, 42, 0.06);
 }
 
-.nistravel-inclusion-section__title {
+.kehayov-inclusion-section__title {
   margin: 0 0 0.5rem;
   font-size: clamp(1.5rem, 2.8vw, 2rem);
   font-weight: 700;
@@ -2155,7 +2155,7 @@ header.navbar.boxed .navbar-toggle {
   color: #0f172a;
 }
 
-.nistravel-inclusion-section__lead {
+.kehayov-inclusion-section__lead {
   margin: 0 auto 2rem;
   max-width: 40rem;
   font-size: 0.9375rem;
@@ -2163,36 +2163,36 @@ header.navbar.boxed .navbar-toggle {
   color: #64748b;
 }
 
-.nistravel-inclusion {
+.kehayov-inclusion {
   margin-top: 0.25rem;
 }
 
-.nistravel-inclusion > .col-md-4:not(:last-child) {
+.kehayov-inclusion > .col-md-4:not(:last-child) {
   margin-bottom: 1.5rem;
 }
 
 @media (min-width: 992px) {
-  .nistravel-inclusion > .col-md-4:not(:last-child) {
+  .kehayov-inclusion > .col-md-4:not(:last-child) {
     margin-bottom: 0;
   }
 
-  .nistravel-inclusion {
+  .kehayov-inclusion {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .nistravel-inclusion > .col-md-4 {
+  .kehayov-inclusion > .col-md-4 {
     display: flex;
     flex-direction: column;
   }
 
-  .nistravel-inclusion__panel {
+  .kehayov-inclusion__panel {
     flex: 1 1 auto;
     min-height: 100%;
   }
 }
 
-.nistravel-inclusion__panel {
+.kehayov-inclusion__panel {
   padding: 1.5rem 1.35rem 1.65rem;
   border-radius: var(--nt-card-radius);
   border: 1px solid rgba(15, 23, 42, 0.1);
@@ -2202,25 +2202,25 @@ header.navbar.boxed .navbar-toggle {
   flex-direction: column;
 }
 
-.nistravel-inclusion__panel--included {
+.kehayov-inclusion__panel--included {
   border-top: 3px solid var(--nt-orange);
 }
 
-.nistravel-inclusion__panel--excluded {
+.kehayov-inclusion__panel--excluded {
   border: 2px dashed rgba(100, 116, 139, 0.42);
   border-top: 3px solid rgba(71, 85, 105, 0.85);
   background: linear-gradient(180deg, #fafbfc 0%, #fff 38%);
   box-shadow: none;
 }
 
-.nistravel-inclusion__panel--additional {
+.kehayov-inclusion__panel--additional {
   border: 1px solid rgba(13, 148, 136, 0.28);
   border-top: 3px solid #0d9488;
   background: linear-gradient(180deg, #f7faf9 0%, #fff 42%);
   box-shadow: 0 1px 0 rgba(13, 148, 136, 0.06);
 }
 
-.nistravel-inclusion__heading {
+.kehayov-inclusion__heading {
   display: flex;
   align-items: center;
   gap: 0.65rem;
@@ -2231,7 +2231,7 @@ header.navbar.boxed .navbar-toggle {
   color: #0f172a;
 }
 
-.nistravel-inclusion__icon {
+.kehayov-inclusion__icon {
   flex-shrink: 0;
   display: inline-flex;
   align-items: center;
@@ -2243,29 +2243,29 @@ header.navbar.boxed .navbar-toggle {
   line-height: 1;
 }
 
-.nistravel-inclusion__icon--yes {
+.kehayov-inclusion__icon--yes {
   background: rgba(201, 226, 0, 0.16);
   color: var(--nt-accent-ink);
 }
 
-.nistravel-inclusion__icon--no {
+.kehayov-inclusion__icon--no {
   background: rgba(100, 116, 139, 0.18);
   color: #475569;
 }
 
-.nistravel-inclusion__icon--extra {
+.kehayov-inclusion__icon--extra {
   background: rgba(13, 148, 136, 0.14);
   color: #0f766e;
 }
 
-.nistravel-inclusion__panel-lead {
+.kehayov-inclusion__panel-lead {
   margin: -0.35rem 0 1rem;
   font-size: 0.875rem;
   line-height: 1.55;
   color: #64748b;
 }
 
-.nistravel-inclusion__subheading {
+.kehayov-inclusion__subheading {
   margin: 0 0 0.65rem;
   font-size: 0.9375rem;
   font-weight: 700;
@@ -2273,12 +2273,12 @@ header.navbar.boxed .navbar-toggle {
   color: #0f172a;
 }
 
-.nistravel-inclusion__icon .icon {
+.kehayov-inclusion__icon .icon {
   display: block;
   line-height: 1;
 }
 
-.nistravel-inclusion__list {
+.kehayov-inclusion__list {
   flex: 1 1 auto;
   margin: 0;
   padding-left: 1.15rem;
@@ -2287,12 +2287,12 @@ header.navbar.boxed .navbar-toggle {
   color: #334155;
 }
 
-.nistravel-inclusion__list li {
+.kehayov-inclusion__list li {
   margin: 0.45rem 0;
 }
 
 /* --- Важно: условия и документи (отделно от блока „включено в цената“) --- */
-.nistravel-travel-notice {
+.kehayov-travel-notice {
   position: relative;
   overflow: hidden;
   padding-top: clamp(2rem, 4vw, 3rem) !important;
@@ -2301,11 +2301,11 @@ header.navbar.boxed .navbar-toggle {
   scroll-margin-top: 5.5rem;
 }
 
-.nistravel-travel-notice .nistravel-travel-notice__bg.section-bg {
+.kehayov-travel-notice .kehayov-travel-notice__bg.section-bg {
   z-index: 0;
 }
 
-.nistravel-travel-notice__scrim {
+.kehayov-travel-notice__scrim {
   position: absolute;
   inset: 0;
   z-index: 0;
@@ -2318,12 +2318,12 @@ header.navbar.boxed .navbar-toggle {
   pointer-events: none;
 }
 
-.nistravel-travel-notice__inner {
+.kehayov-travel-notice__inner {
   position: relative;
   z-index: 1;
 }
 
-.nistravel-travel-notice__card {
+.kehayov-travel-notice__card {
   width: 100%;
   max-width: none;
   margin: 0;
@@ -2336,14 +2336,14 @@ header.navbar.boxed .navbar-toggle {
 }
 
 @supports (backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px)) {
-  .nistravel-travel-notice__card {
+  .kehayov-travel-notice__card {
     background: #fff;
     -webkit-backdrop-filter: none;
     backdrop-filter: none;
   }
 }
 
-.nistravel-travel-notice__title {
+.kehayov-travel-notice__title {
   display: flex;
   align-items: center;
   gap: 0.65rem;
@@ -2356,7 +2356,7 @@ header.navbar.boxed .navbar-toggle {
   color: #92400e;
 }
 
-.nistravel-travel-notice__icon {
+.kehayov-travel-notice__icon {
   flex-shrink: 0;
   display: inline-flex;
   align-items: center;
@@ -2370,27 +2370,27 @@ header.navbar.boxed .navbar-toggle {
   color: #b45309;
 }
 
-.nistravel-travel-notice__icon .icon {
+.kehayov-travel-notice__icon .icon {
   display: block;
   line-height: 1;
 }
 
-.nistravel-travel-notice__body {
+.kehayov-travel-notice__body {
   font-size: 0.9375rem;
   line-height: 1.65;
   color: #334155;
 }
 
-.nistravel-travel-notice__body p {
+.kehayov-travel-notice__body p {
   margin: 0 0 0.85rem;
 }
 
-.nistravel-travel-notice__body p:last-child {
+.kehayov-travel-notice__body p:last-child {
   margin-bottom: 0;
 }
 
 /* --- Section: Contact CTA banner --- */
-.nistravel-contact-cta-banner.section {
+.kehayov-contact-cta-banner.section {
   position: relative;
   overflow: hidden;
   margin: 0;
@@ -2399,11 +2399,11 @@ header.navbar.boxed .navbar-toggle {
   padding-bottom: var(--ks-section-y) !important;
 }
 
-.nistravel-contact-cta-banner .nistravel-contact-cta-banner__bg.section-bg {
+.kehayov-contact-cta-banner .kehayov-contact-cta-banner__bg.section-bg {
   z-index: 0;
 }
 
-.nistravel-contact-cta-banner__scrim {
+.kehayov-contact-cta-banner__scrim {
   position: absolute;
   inset: 0;
   z-index: 0;
@@ -2416,12 +2416,12 @@ header.navbar.boxed .navbar-toggle {
   pointer-events: none;
 }
 
-.nistravel-contact-cta-banner__inner {
+.kehayov-contact-cta-banner__inner {
   position: relative;
   z-index: 1;
 }
 
-.nistravel-contact-cta-banner__kicker {
+.kehayov-contact-cta-banner__kicker {
   margin: 0 0 0.65rem;
   font-size: 0.6875rem;
   font-weight: 700;
@@ -2430,7 +2430,7 @@ header.navbar.boxed .navbar-toggle {
   color: rgba(255, 255, 255, 0.72);
 }
 
-.nistravel-contact-cta-banner__title {
+.kehayov-contact-cta-banner__title {
   margin: 0 0 1rem;
   font-size: clamp(1.65rem, 3.2vw, 2.35rem);
   font-weight: 700;
@@ -2440,9 +2440,9 @@ header.navbar.boxed .navbar-toggle {
   max-width: 22em;
 }
 
-.nistravel-contact-cta-banner__text,
-.content .nistravel-contact-cta-banner__text,
-.ks-final-cta .nistravel-contact-cta-banner__text {
+.kehayov-contact-cta-banner__text,
+.content .kehayov-contact-cta-banner__text,
+.ks-final-cta .kehayov-contact-cta-banner__text {
   margin: 0;
   font-size: 1.0625rem;
   line-height: 1.6;
@@ -2450,11 +2450,11 @@ header.navbar.boxed .navbar-toggle {
   max-width: 38rem;
 }
 
-.nistravel-contact-cta-banner__actions {
+.kehayov-contact-cta-banner__actions {
   margin-top: 1.75rem;
 }
 
-.nistravel-contact-cta-banner__btn.btn {
+.kehayov-contact-cta-banner__btn.btn {
   margin: 0;
   padding: 0.72rem 1.65rem 0.68rem;
   min-height: 2.75rem;
@@ -2476,29 +2476,29 @@ header.navbar.boxed .navbar-toggle {
     transform var(--nt-btn-duration) var(--nt-btn-ease);
 }
 
-.nistravel-contact-cta-banner__btn.btn:hover,
-.nistravel-contact-cta-banner__btn.btn:focus {
+.kehayov-contact-cta-banner__btn.btn:hover,
+.kehayov-contact-cta-banner__btn.btn:focus {
   background: #fff !important;
   color: var(--nt-accent-ink) !important;
   transform: scale(1.02) translateY(-1px);
   box-shadow: var(--nt-btn-shadow-muted-hover);
 }
 
-.nistravel-contact-cta-banner__btn.btn:active {
+.kehayov-contact-cta-banner__btn.btn:active {
   transform: scale(0.98) translateY(0);
   box-shadow: var(--nt-btn-shadow);
   transition-duration: 0.12s;
 }
 
-.ks-final-cta .nistravel-contact-cta-banner__btn.btn-quiet {
+.ks-final-cta .kehayov-contact-cta-banner__btn.btn-quiet {
   background: transparent;
   color: #fff !important;
   border: 1px solid rgba(255, 255, 255, 0.7);
   box-shadow: none;
 }
 
-.ks-final-cta .nistravel-contact-cta-banner__btn.btn-quiet:hover,
-.ks-final-cta .nistravel-contact-cta-banner__btn.btn-quiet:focus {
+.ks-final-cta .kehayov-contact-cta-banner__btn.btn-quiet:hover,
+.ks-final-cta .kehayov-contact-cta-banner__btn.btn-quiet:focus {
   background: #fff !important;
   color: #1a1d21 !important;
   border-color: #fff;
@@ -2506,7 +2506,7 @@ header.navbar.boxed .navbar-toggle {
 }
 
 /* --- Section: Get in touch --- */
-.nistravel-get-in-touch.section-comments {
+.kehayov-get-in-touch.section-comments {
   margin-top: 0;
   padding-top: var(--ks-section-y);
   padding-bottom: var(--ks-section-y);
@@ -2515,7 +2515,7 @@ header.navbar.boxed .navbar-toggle {
   border-top: 1px solid rgba(15, 23, 42, 0.06);
 }
 
-.nistravel-get-in-touch__page-title.comment-reply-title {
+.kehayov-get-in-touch__page-title.comment-reply-title {
   margin: 0 0 0.65rem;
   font-size: clamp(1.25rem, 2.2vw, 1.65rem);
   font-weight: 700;
@@ -2525,7 +2525,7 @@ header.navbar.boxed .navbar-toggle {
   text-transform: none;
 }
 
-.nistravel-get-in-touch__lead {
+.kehayov-get-in-touch__lead {
   margin: 0 0 2rem;
   max-width: 40rem;
   font-size: 0.9375rem;
@@ -2533,43 +2533,43 @@ header.navbar.boxed .navbar-toggle {
   color: #64748b;
 }
 
-.nistravel-get-in-touch__lead a {
+.kehayov-get-in-touch__lead a {
   color: var(--nt-accent-ink);
   font-weight: 600;
   text-decoration: none;
 }
 
-.nistravel-get-in-touch__lead a:hover,
-.nistravel-get-in-touch__lead a:focus {
+.kehayov-get-in-touch__lead a:hover,
+.kehayov-get-in-touch__lead a:focus {
   color: var(--nt-orange-dark);
   text-decoration: underline;
 }
 
 /* Ред: полета + карта — еднаква височина; без Bootstrap row pseudo, за верен изчисляван височина */
-.nistravel-get-in-touch__fields-row.row::before,
-.nistravel-get-in-touch__fields-row.row::after {
+.kehayov-get-in-touch__fields-row.row::before,
+.kehayov-get-in-touch__fields-row.row::after {
   display: none !important;
   content: none !important;
 }
 
-.nistravel-get-in-touch__fields-row {
+.kehayov-get-in-touch__fields-row {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
 }
 
-.nistravel-get-in-touch__col {
+.kehayov-get-in-touch__col {
   display: flex;
   flex-direction: column;
   min-height: 0;
 }
 
 @media (min-width: 992px) {
-  .nistravel-get-in-touch__fields-row > .nistravel-get-in-touch__col:first-child {
+  .kehayov-get-in-touch__fields-row > .kehayov-get-in-touch__col:first-child {
     min-width: 0;
   }
 
-  .nistravel-get-in-touch__col--card {
+  .kehayov-get-in-touch__col--card {
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -2577,83 +2577,83 @@ header.navbar.boxed .navbar-toggle {
   }
 }
 
-.nistravel-get-in-touch__form-wrap,
-.nistravel-get-in-touch__form-wrap .comment-respond {
+.kehayov-get-in-touch__form-wrap,
+.kehayov-get-in-touch__form-wrap .comment-respond {
   width: 100%;
 }
 
-.nistravel-get-in-touch__actions {
+.kehayov-get-in-touch__actions {
   margin-top: 1.25rem;
 }
 
-.nistravel-get-in-touch__actions .btn {
+.kehayov-get-in-touch__actions .btn {
   margin-bottom: 0;
 }
 
-.nistravel-get-in-touch .comment-respond {
+.kehayov-get-in-touch .comment-respond {
   margin: 0;
 }
 
-.nistravel-touch-form .form-group {
+.kehayov-touch-form .form-group {
   margin-bottom: 1.5rem;
 }
 
-.nistravel-touch-form .form-group:last-of-type {
+.kehayov-touch-form .form-group:last-of-type {
   margin-bottom: 0;
 }
 
-.nistravel-touch-form input[type='text'],
-.nistravel-touch-form input[type='email'],
-.nistravel-touch-form textarea {
+.kehayov-touch-form input[type='text'],
+.kehayov-touch-form input[type='email'],
+.kehayov-touch-form textarea {
   border-radius: var(--nt-card-radius);
 }
 
-.nistravel-touch-form .btn {
+.kehayov-touch-form .btn {
   border-radius: var(--nt-btn-pill-radius);
 }
 
 @media (max-width: 991px) {
-  .nistravel-get-in-touch__fields-row .nistravel-get-in-touch__col + .nistravel-get-in-touch__col {
+  .kehayov-get-in-touch__fields-row .kehayov-get-in-touch__col + .kehayov-get-in-touch__col {
     margin-top: 2.25rem;
   }
 
-  .nistravel-get-in-touch__col--card {
+  .kehayov-get-in-touch__col--card {
     align-items: stretch;
   }
 }
 
 /* --- Section: Footer --- */
 /* Override .section { padding: 10.28rem 0 } — that + padding-bottom:0 caused huge top gap */
-.nistravel-footer.footer {
+.kehayov-footer.footer {
   border-top: 1px solid rgba(15, 23, 42, 0.12);
   padding-top: clamp(2.35rem, 4.5vw, 3.75rem);
   padding-bottom: clamp(1.25rem, 2.5vw, 1.85rem);
 }
 
-.nistravel-footer .footer-flex {
+.kehayov-footer .footer-flex {
   margin-top: 0;
   padding-top: 0;
   gap: 1.5rem 2rem;
   align-items: stretch;
 }
 
-.nistravel-footer .footer-flex .flex-item {
+.kehayov-footer .footer-flex .flex-item {
   margin-top: 0;
 }
 
-.nistravel-footer .footer-flex .flex-item:first-child {
+.kehayov-footer .footer-flex .flex-item:first-child {
   display: flex;
   align-items: stretch;
 }
 
-.nistravel-footer .brand.brand--logo-only {
+.kehayov-footer .brand.brand--logo-only {
   display: flex;
   align-items: center;
   height: 100%;
   align-self: stretch;
 }
 
-.nistravel-footer .brand.brand--logo-only img {
+.kehayov-footer .brand.brand--logo-only img {
   display: block;
   height: var(--ks-footer-logo);
   width: auto;
@@ -2664,13 +2664,13 @@ header.navbar.boxed .navbar-toggle {
   object-position: left center;
 }
 
-.nistravel-footer .nistravel-footer__list {
+.kehayov-footer .kehayov-footer__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.nistravel-footer__credit {
+.kehayov-footer__credit {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -2687,36 +2687,36 @@ header.navbar.boxed .navbar-toggle {
   color: #6b7280;
 }
 
-.boxed .nistravel-footer__credit {
+.boxed .kehayov-footer__credit {
   padding-left: clamp(1.25rem, 4vw, 4.2857rem);
   padding-right: clamp(1.25rem, 4vw, 4.2857rem);
   padding-top: 1.125rem;
   padding-bottom: 0.25rem;
 }
 
-.nistravel-footer__credit-sep {
+.kehayov-footer__credit-sep {
   opacity: 0.45;
 }
 
-.nistravel-footer__credit-brand {
+.kehayov-footer__credit-brand {
   color: var(--nt-accent-ink);
   font-weight: 600;
   text-decoration: none;
 }
 
-.nistravel-footer__credit-brand:hover,
-.nistravel-footer__credit-brand:focus {
+.kehayov-footer__credit-brand:hover,
+.kehayov-footer__credit-brand:focus {
   color: #1a1d21;
   text-decoration: underline;
 }
 
-.nistravel-footer__credit a:not(.nistravel-footer__credit-brand) {
+.kehayov-footer__credit a:not(.kehayov-footer__credit-brand) {
   color: inherit;
   text-decoration: none;
 }
 
-.nistravel-footer__credit a:not(.nistravel-footer__credit-brand):hover,
-.nistravel-footer__credit a:not(.nistravel-footer__credit-brand):focus {
+.kehayov-footer__credit a:not(.kehayov-footer__credit-brand):hover,
+.kehayov-footer__credit a:not(.kehayov-footer__credit-brand):focus {
   color: #1a1d21;
   text-decoration: underline;
 }
@@ -2976,13 +2976,13 @@ header.navbar.boxed .navbar-toggle {
 }
 
 /* --- Програма по дни (като news-listing card-row: по-малка снимка, повече текст) --- */
-.nistravel-trip-program.section {
+.kehayov-trip-program.section {
   padding-top: clamp(2rem, 4vw, 3.25rem);
   padding-bottom: clamp(2.5rem, 5vw, 4.25rem);
   scroll-margin-top: 5.5rem;
 }
 
-.nistravel-trip-program__headline {
+.kehayov-trip-program__headline {
   margin: 0 0 1.5rem;
   font-size: clamp(1.65rem, 3vw, 2.2rem);
   font-weight: 700;
@@ -2990,19 +2990,19 @@ header.navbar.boxed .navbar-toggle {
   color: #0f172a;
 }
 
-.nistravel-trip-program__row {
+.kehayov-trip-program__row {
   min-height: min(32rem, 78vh);
   margin-bottom: 0 !important;
   background: linear-gradient(165deg, #fdfbf7 0%, #f3f0e8 100%) !important;
   border: 1px solid rgba(15, 23, 42, 0.06);
 }
 
-.nistravel-trip-program__row .card-block {
+.kehayov-trip-program__row .card-block {
   padding-top: clamp(2rem, 4vw, 3rem);
   padding-bottom: clamp(2rem, 4vw, 3rem);
 }
 
-.nistravel-trip-program__tabs.nav-tabs {
+.kehayov-trip-program__tabs.nav-tabs {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
@@ -3011,12 +3011,12 @@ header.navbar.boxed .navbar-toggle {
   padding: 0;
 }
 
-.nistravel-trip-program__tabs.nav-tabs > li {
+.kehayov-trip-program__tabs.nav-tabs > li {
   float: none;
   margin-bottom: -1px;
 }
 
-.nistravel-trip-program__tabs > li > a {
+.kehayov-trip-program__tabs > li > a {
   margin-right: 0;
   border: 1px solid transparent !important;
   border-radius: var(--nt-btn-pill-radius) var(--nt-btn-pill-radius) 0 0;
@@ -3028,25 +3028,25 @@ header.navbar.boxed .navbar-toggle {
   background: rgba(255, 255, 255, 0.65);
 }
 
-.nistravel-trip-program__tabs > li > a:hover,
-.nistravel-trip-program__tabs > li > a:focus {
+.kehayov-trip-program__tabs > li > a:hover,
+.kehayov-trip-program__tabs > li > a:focus {
   color: var(--nt-accent-ink);
   background: #fff;
 }
 
-.nistravel-trip-program__tabs > li.active > a,
-.nistravel-trip-program__tabs > li.active > a:hover,
-.nistravel-trip-program__tabs > li.active > a:focus {
+.kehayov-trip-program__tabs > li.active > a,
+.kehayov-trip-program__tabs > li.active > a:hover,
+.kehayov-trip-program__tabs > li.active > a:focus {
   color: #1a1d21 !important;
   background-color: var(--nt-orange) !important;
   border-color: var(--nt-orange) !important;
 }
 
-.nistravel-trip-program__panes {
+.kehayov-trip-program__panes {
   min-height: 12rem;
 }
 
-.nistravel-trip-program__day-title {
+.kehayov-trip-program__day-title {
   margin: 0 0 1rem;
   font-size: 1.0625rem;
   font-weight: 700;
@@ -3054,7 +3054,7 @@ header.navbar.boxed .navbar-toggle {
   color: #0f172a;
 }
 
-.nistravel-trip-program__list {
+.kehayov-trip-program__list {
   margin: 0;
   padding-left: 1.15rem;
   color: #334155;
@@ -3062,11 +3062,11 @@ header.navbar.boxed .navbar-toggle {
   line-height: 1.55;
 }
 
-.nistravel-trip-program__list > li {
+.kehayov-trip-program__list > li {
   margin: 0.45rem 0;
 }
 
-.nistravel-trip-program__sublist {
+.kehayov-trip-program__sublist {
   margin: 0.5rem 0 0.35rem;
   padding-left: 1.1rem;
   list-style: disc;
@@ -3075,24 +3075,24 @@ header.navbar.boxed .navbar-toggle {
   line-height: 1.5;
 }
 
-.nistravel-trip-program__sublist li {
+.kehayov-trip-program__sublist li {
   margin: 0.3rem 0;
 }
 
-.nistravel-trip-program__img-mobile {
+.kehayov-trip-program__img-mobile {
   width: 100%;
   max-height: 14rem;
   object-fit: cover;
 }
 
 @media (max-width: 767px) {
-  .nistravel-trip-program__row {
+  .kehayov-trip-program__row {
     min-height: 0;
   }
 }
 
 /* --- Снимки от екскурзията: равномерна мрежа, еднакъв размер (4:3 като пейзажна плочка) --- */
-.nistravel-trip-gallery.section {
+.kehayov-trip-gallery.section {
   padding-top: clamp(2rem, 4vw, 3rem);
   padding-bottom: clamp(2.5rem, 5vw, 4rem);
   scroll-margin-top: 5.5rem;
@@ -3100,7 +3100,7 @@ header.navbar.boxed .navbar-toggle {
   border-top: 1px solid rgba(15, 23, 42, 0.06);
 }
 
-.nistravel-trip-gallery__title {
+.kehayov-trip-gallery__title {
   margin: 0 0 0.5rem;
   font-size: clamp(1.5rem, 2.8vw, 2rem);
   font-weight: 700;
@@ -3109,7 +3109,7 @@ header.navbar.boxed .navbar-toggle {
   text-align: left;
 }
 
-.nistravel-trip-gallery__lead {
+.kehayov-trip-gallery__lead {
   margin: 0 0 1.75rem;
   max-width: 42rem;
   font-size: 0.9375rem;
@@ -3117,7 +3117,7 @@ header.navbar.boxed .navbar-toggle {
   color: #64748b;
 }
 
-.nistravel-trip-gallery__grid {
+.kehayov-trip-gallery__grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: clamp(1rem, 2.5vw, 1.75rem);
@@ -3125,22 +3125,22 @@ header.navbar.boxed .navbar-toggle {
 }
 
 @media (min-width: 768px) {
-  .nistravel-trip-gallery__grid {
+  .kehayov-trip-gallery__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (min-width: 992px) {
-  .nistravel-trip-gallery__grid {
+  .kehayov-trip-gallery__grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
-.nistravel-trip-gallery__cell {
+.kehayov-trip-gallery__cell {
   min-width: 0;
 }
 
-.nistravel-trip-gallery__card.project-item {
+.kehayov-trip-gallery__card.project-item {
   position: relative;
   margin: 0;
   width: 100%;
@@ -3149,7 +3149,7 @@ header.navbar.boxed .navbar-toggle {
   overflow: hidden;
 }
 
-.nistravel-trip-gallery__card.project-item:hover {
+.kehayov-trip-gallery__card.project-item:hover {
   -webkit-transform: none;
   -ms-transform: none;
   -o-transform: none;
@@ -3157,14 +3157,14 @@ header.navbar.boxed .navbar-toggle {
   box-shadow: var(--nt-card-shadow);
 }
 
-.nistravel-trip-gallery__card.project-item:hover img {
+.kehayov-trip-gallery__card.project-item:hover img {
   -webkit-transform: none;
   -ms-transform: none;
   -o-transform: none;
   transform: none;
 }
 
-.nistravel-trip-gallery__link {
+.kehayov-trip-gallery__link {
   display: block;
   position: absolute;
   inset: 0;
@@ -3173,7 +3173,7 @@ header.navbar.boxed .navbar-toggle {
   outline: none;
 }
 
-.nistravel-trip-gallery__img {
+.kehayov-trip-gallery__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -3181,11 +3181,11 @@ header.navbar.boxed .navbar-toggle {
   display: block;
 }
 
-.nistravel-trip-gallery__link:focus-visible {
+.kehayov-trip-gallery__link:focus-visible {
   box-shadow: var(--ks-focus-lime-ring);
 }
 
-.nistravel-trip-gallery__zoom {
+.kehayov-trip-gallery__zoom {
   position: absolute;
   right: 0.85rem;
   bottom: 0.85rem;
@@ -3204,29 +3204,29 @@ header.navbar.boxed .navbar-toggle {
   box-shadow: 0 2px 10px rgba(15, 23, 42, 0.2);
 }
 
-.nistravel-trip-gallery__zoom .icon {
+.kehayov-trip-gallery__zoom .icon {
   display: block;
   line-height: 1;
 }
 
 /* --- Section: Legal pages hero --- */
-.nistravel-legal-hero-banner.nistravel-contact-cta-banner.section {
+.kehayov-legal-hero-banner.kehayov-contact-cta-banner.section {
   padding-top: var(--ks-section-y) !important;
   padding-bottom: var(--ks-section-y) !important;
 }
 
-.nistravel-legal-hero-banner + .page-content {
+.kehayov-legal-hero-banner + .page-content {
   margin-top: clamp(2.25rem, 4vw, 3.5rem);
 }
 
-.nistravel-legal-meta {
+.kehayov-legal-meta {
   margin-bottom: 1.25rem;
   font-size: 0.9rem;
   color: rgba(15, 23, 42, 0.55);
 }
 
 /* Правни страници: водещият абзац под датата — по-малък от глобалния .entry-content */
-.entry-content h3.entry-description.nistravel-legal-doc-lead {
+.entry-content h3.entry-description.kehayov-legal-doc-lead {
   font-size: 1.0625rem;
   line-height: 1.65;
   font-weight: 400;
@@ -3237,39 +3237,39 @@ header.navbar.boxed .navbar-toggle {
 }
 
 /* --- Section: Contact page --- */
-.nistravel-contact-page-info-map__col--intro {
+.kehayov-contact-page-info-map__col--intro {
   margin-bottom: clamp(1.5rem, 3vw, 2rem);
 }
 
 @media (min-width: 1200px) {
-  .nistravel-contact-page-info-map__row {
+  .kehayov-contact-page-info-map__row {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .nistravel-contact-page-info-map__row::before,
-  .nistravel-contact-page-info-map__row::after {
+  .kehayov-contact-page-info-map__row::before,
+  .kehayov-contact-page-info-map__row::after {
     display: none !important;
     content: none !important;
   }
 
-  .nistravel-contact-page-info-map__row > [class*='col-'] {
+  .kehayov-contact-page-info-map__row > [class*='col-'] {
     float: none !important;
     display: flex;
     flex-direction: column;
   }
 
-  .nistravel-contact-page-info-map__col--intro {
+  .kehayov-contact-page-info-map__col--intro {
     margin-bottom: 0;
     padding-right: 1.25rem;
   }
 
-  .nistravel-contact-page-info-map__col--map {
+  .kehayov-contact-page-info-map__col--map {
     padding-left: 1.25rem;
   }
 
   /* Еднаква височина: бялата карта и картата на Google */
-  .nistravel-contact-page-split-stack {
+  .kehayov-contact-page-split-stack {
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
@@ -3277,7 +3277,7 @@ header.navbar.boxed .navbar-toggle {
     min-height: 28rem;
   }
 
-  .nistravel-contact-page-intro--panel {
+  .kehayov-contact-page-intro--panel {
     flex: 1 1 auto;
     min-height: 0;
     display: flex;
@@ -3285,25 +3285,25 @@ header.navbar.boxed .navbar-toggle {
     justify-content: flex-start;
   }
 
-  .nistravel-contact-page-intro--panel .nistravel-contact-page-intro__list {
+  .kehayov-contact-page-intro--panel .kehayov-contact-page-intro__list {
     flex: 0 1 auto;
   }
 
-  .nistravel-contact-page-map--fill {
+  .kehayov-contact-page-map--fill {
     flex: 1 1 auto;
     min-height: 0;
     display: flex;
     flex-direction: column;
   }
 
-  .nistravel-contact-page-map--fill .nistravel-contact-page-map__frame {
+  .kehayov-contact-page-map--fill .kehayov-contact-page-map__frame {
     flex: 1 1 auto;
     width: 100%;
     min-height: 16rem;
     height: 1px;
   }
 
-  .nistravel-contact-page-split-stack__footer {
+  .kehayov-contact-page-split-stack__footer {
     flex-shrink: 0;
     min-height: 2.75rem;
     margin: 1rem 0 0;
@@ -3315,23 +3315,23 @@ header.navbar.boxed .navbar-toggle {
 }
 
 @media (max-width: 1199px) {
-  .nistravel-contact-page-split-stack__footer {
+  .kehayov-contact-page-split-stack__footer {
     display: none;
   }
 }
 
-.nistravel-contact-page-split-stack .nistravel-contact-page-map-section__lead {
+.kehayov-contact-page-split-stack .kehayov-contact-page-map-section__lead {
   max-width: none;
 }
 
-.nistravel-contact-page-intro__lead {
+.kehayov-contact-page-intro__lead {
   margin: 0 0 1.1rem;
   font-size: 0.9375rem;
   line-height: 1.55;
   color: #64748b;
 }
 
-.nistravel-contact-page-intro {
+.kehayov-contact-page-intro {
   margin-top: 0;
   margin-bottom: 0;
   padding: 1.6rem 1.75rem 1.75rem;
@@ -3341,7 +3341,7 @@ header.navbar.boxed .navbar-toggle {
   box-shadow: var(--nt-card-shadow);
 }
 
-.nistravel-contact-page-intro__list {
+.kehayov-contact-page-intro__list {
   margin: 0;
   padding-left: 1.2rem;
   font-size: 0.9375rem;
@@ -3349,31 +3349,31 @@ header.navbar.boxed .navbar-toggle {
   color: #334155;
 }
 
-.nistravel-contact-page-intro__list li {
+.kehayov-contact-page-intro__list li {
   margin: 0.5rem 0;
 }
 
-.nistravel-contact-page-intro__list li:first-child {
+.kehayov-contact-page-intro__list li:first-child {
   margin-top: 0;
 }
 
-.nistravel-contact-page-intro__list li:last-child {
+.kehayov-contact-page-intro__list li:last-child {
   margin-bottom: 0;
 }
 
-.nistravel-contact-page-intro__list a {
+.kehayov-contact-page-intro__list a {
   color: var(--nt-accent-ink);
   font-weight: 600;
   text-decoration: none;
 }
 
-.nistravel-contact-page-intro__list a:hover,
-.nistravel-contact-page-intro__list a:focus {
+.kehayov-contact-page-intro__list a:hover,
+.kehayov-contact-page-intro__list a:focus {
   color: var(--nt-orange-dark);
   text-decoration: underline;
 }
 
-.nistravel-contact-page-map-section {
+.kehayov-contact-page-map-section {
   padding-top: clamp(1rem, 2vw, 1.75rem);
   padding-bottom: clamp(2rem, 4vw, 3.25rem);
   scroll-margin-top: 5.5rem;
@@ -3381,7 +3381,7 @@ header.navbar.boxed .navbar-toggle {
   background: linear-gradient(180deg, #f8fafc 0%, #fff 45%);
 }
 
-.nistravel-contact-page-map-section__title {
+.kehayov-contact-page-map-section__title {
   margin: 0 0 0.5rem;
   font-size: clamp(1.35rem, 2.4vw, 1.75rem);
   font-weight: 700;
@@ -3389,7 +3389,7 @@ header.navbar.boxed .navbar-toggle {
   color: #0f172a;
 }
 
-.nistravel-contact-page-map-section__lead {
+.kehayov-contact-page-map-section__lead {
   margin: 0 0 1.25rem;
   max-width: 40rem;
   font-size: 0.9375rem;
@@ -3397,7 +3397,7 @@ header.navbar.boxed .navbar-toggle {
   color: #64748b;
 }
 
-.nistravel-contact-page-map {
+.kehayov-contact-page-map {
   position: relative;
   border-radius: var(--nt-card-radius);
   overflow: hidden;
@@ -3408,7 +3408,7 @@ header.navbar.boxed .navbar-toggle {
   background: #e2e8f0;
 }
 
-.nistravel-contact-page-map__frame {
+.kehayov-contact-page-map__frame {
   display: block;
   width: 100%;
   min-height: 20rem;
@@ -3416,39 +3416,39 @@ header.navbar.boxed .navbar-toggle {
   border: 0;
 }
 
-.nistravel-contact-page-map-section__link-wrap {
+.kehayov-contact-page-map-section__link-wrap {
   margin: 1rem 0 0;
   text-align: right;
 }
 
-.nistravel-contact-page-map-section__external {
+.kehayov-contact-page-map-section__external {
   font-size: 0.875rem;
   font-weight: 600;
   color: var(--nt-accent-ink);
   text-decoration: none;
 }
 
-.nistravel-contact-page-map-section__external:hover,
-.nistravel-contact-page-map-section__external:focus {
+.kehayov-contact-page-map-section__external:hover,
+.kehayov-contact-page-map-section__external:focus {
   color: var(--nt-orange-dark);
   text-decoration: underline;
 }
 
 /* About: gallery in Related Posts layout, static box cards (no hover motion) */
-.nistravel-about-gallery.related-posts {
+.kehayov-about-gallery.related-posts {
   padding-top: var(--ks-section-y);
   padding-bottom: var(--ks-section-y);
 }
 
-.nistravel-about-gallery .nistravel-about-gallery__carousel {
+.kehayov-about-gallery .kehayov-about-gallery__carousel {
   margin-top: 1.5rem;
 }
 
-.nistravel-about-gallery .nistravel-about-gallery__carousel .item {
+.kehayov-about-gallery .kehayov-about-gallery__carousel .item {
   padding: 0.35rem 0;
 }
 
-.nistravel-about-gallery .nistravel-about-gallery__card.card.nistravel-tour-card {
+.kehayov-about-gallery .kehayov-about-gallery__card.card.kehayov-tour-card {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -3460,7 +3460,7 @@ header.navbar.boxed .navbar-toggle {
   box-shadow: 0 16px 40px -28px rgba(15, 23, 42, 0.34);
 }
 
-.nistravel-about-gallery .nistravel-about-gallery__card .nistravel-tour-card__media {
+.kehayov-about-gallery .kehayov-about-gallery__card .kehayov-tour-card__media {
   position: relative;
   display: block;
   width: 100%;
@@ -3468,7 +3468,7 @@ header.navbar.boxed .navbar-toggle {
   overflow: hidden;
 }
 
-.nistravel-about-gallery .nistravel-about-gallery__card .nistravel-tour-card__media::after {
+.kehayov-about-gallery .kehayov-about-gallery__card .kehayov-tour-card__media::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -3476,21 +3476,21 @@ header.navbar.boxed .navbar-toggle {
   pointer-events: none;
 }
 
-.nistravel-about-gallery .nistravel-about-gallery__card .nistravel-tour-card__media img {
+.kehayov-about-gallery .kehayov-about-gallery__card .kehayov-tour-card__media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transform: none !important;
 }
 
-.nistravel-about-gallery .nistravel-about-gallery__card .card-block {
+.kehayov-about-gallery .kehayov-about-gallery__card .card-block {
   display: flex;
   flex-direction: column;
   min-height: 100%;
   padding: 1.2rem 1.15rem 1.25rem;
 }
 
-.nistravel-about-gallery .owl-nav {
+.kehayov-about-gallery .owl-nav {
   position: absolute !important;
   left: -2.75rem;
   right: -2.75rem;
@@ -3500,8 +3500,8 @@ header.navbar.boxed .navbar-toggle {
   width: auto;
 }
 
-.nistravel-about-gallery .owl-nav .owl-prev,
-.nistravel-about-gallery .owl-nav .owl-next {
+.kehayov-about-gallery .owl-nav .owl-prev,
+.kehayov-about-gallery .owl-nav .owl-next {
   position: absolute;
   width: 2.1rem;
   height: 2.1rem;
@@ -3516,34 +3516,34 @@ header.navbar.boxed .navbar-toggle {
   text-indent: 0;
 }
 
-.nistravel-about-gallery .owl-nav .owl-prev {
+.kehayov-about-gallery .owl-nav .owl-prev {
   left: 0 !important;
   right: auto !important;
 }
 
-.nistravel-about-gallery .owl-nav .owl-next {
+.kehayov-about-gallery .owl-nav .owl-next {
   right: 0 !important;
   left: auto !important;
 }
 
-.nistravel-about-gallery .owl-nav .owl-prev span,
-.nistravel-about-gallery .owl-nav .owl-next span {
+.kehayov-about-gallery .owl-nav .owl-prev span,
+.kehayov-about-gallery .owl-nav .owl-next span {
   display: none;
 }
 
 /* Премахва всички наследени икони от други owl стилове */
-.nistravel-about-gallery .owl-nav .owl-prev::before,
-.nistravel-about-gallery .owl-nav .owl-next::before {
+.kehayov-about-gallery .owl-nav .owl-prev::before,
+.kehayov-about-gallery .owl-nav .owl-next::before {
   content: none !important;
 }
 
-.nistravel-about-gallery .owl-nav .owl-prev::before,
-.nistravel-about-gallery .owl-nav .owl-next::before {
+.kehayov-about-gallery .owl-nav .owl-prev::before,
+.kehayov-about-gallery .owl-nav .owl-next::before {
   content: '' !important;
 }
 
-.nistravel-about-gallery .owl-nav .owl-prev::after,
-.nistravel-about-gallery .owl-nav .owl-next::after {
+.kehayov-about-gallery .owl-nav .owl-prev::after,
+.kehayov-about-gallery .owl-nav .owl-next::after {
   position: absolute;
   inset: 50% auto auto 50%;
   transform: translate(-50%, -50%);
@@ -3553,44 +3553,44 @@ header.navbar.boxed .navbar-toggle {
   line-height: 1;
 }
 
-.nistravel-about-gallery .owl-nav .owl-prev::after {
+.kehayov-about-gallery .owl-nav .owl-prev::after {
   content: '‹';
 }
 
-.nistravel-about-gallery .owl-nav .owl-next::after {
+.kehayov-about-gallery .owl-nav .owl-next::after {
   content: '›';
 }
 
-.nistravel-about-gallery .owl-nav .owl-prev:hover,
-.nistravel-about-gallery .owl-nav .owl-next:hover {
+.kehayov-about-gallery .owl-nav .owl-prev:hover,
+.kehayov-about-gallery .owl-nav .owl-next:hover {
   background: transparent !important;
   border-color: transparent !important;
   color: var(--nt-accent-ink) !important;
 }
 
-.nistravel-about-gallery .owl-dots {
+.kehayov-about-gallery .owl-dots {
   margin-top: 1rem;
   text-align: center;
 }
 
 @media (max-width: 991px) {
-  .nistravel-about-gallery .owl-nav {
+  .kehayov-about-gallery .owl-nav {
     left: 0.35rem;
     right: 0.35rem;
   }
 
-  .nistravel-about-gallery .owl-nav .owl-prev {
+  .kehayov-about-gallery .owl-nav .owl-prev {
     left: 0 !important;
   }
 
-  .nistravel-about-gallery .owl-nav .owl-next {
+  .kehayov-about-gallery .owl-nav .owl-next {
     right: 0 !important;
   }
 }
 
 /* ----- Начална страница: премиум движение при скрол и навигация (hero и тур-карти не се пипат) ----- */
 
-.nistravel-enter {
+.kehayov-enter {
   opacity: 0;
   transform: translate3d(0, var(--nt-enter-offset), 0);
   transition:
@@ -3598,12 +3598,12 @@ header.navbar.boxed .navbar-toggle {
     transform var(--nt-enter-duration) cubic-bezier(0.16, 1, 0.3, 1) var(--nt-enter-delay, 0ms);
 }
 
-.nistravel-enter.is-visible {
+.kehayov-enter.is-visible {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
 
-body.nistravel-motion .nistravel-reviews-flat .nistravel-enter {
+body.kehayov-motion .kehayov-reviews-flat .kehayov-enter {
   transform: translate3d(0, 1.15rem, 0);
 }
 
@@ -3646,35 +3646,35 @@ header.navbar.boxed .navbar-main > ul > li > a:focus-visible::after {
   }
 }
 
-body.nistravel-motion.menu-is-opened .menu.menu--with-brand .menu-list > li > a {
+body.kehayov-motion.menu-is-opened .menu.menu--with-brand .menu-list > li > a {
   animation: nt-menu-link-in 0.48s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
-body.nistravel-motion.menu-is-opened .menu.menu--with-brand .menu-list > li:nth-child(1) > a {
+body.kehayov-motion.menu-is-opened .menu.menu--with-brand .menu-list > li:nth-child(1) > a {
   animation-delay: 0.08s;
 }
-body.nistravel-motion.menu-is-opened .menu.menu--with-brand .menu-list > li:nth-child(2) > a {
+body.kehayov-motion.menu-is-opened .menu.menu--with-brand .menu-list > li:nth-child(2) > a {
   animation-delay: 0.12s;
 }
-body.nistravel-motion.menu-is-opened .menu.menu--with-brand .menu-list > li:nth-child(3) > a {
+body.kehayov-motion.menu-is-opened .menu.menu--with-brand .menu-list > li:nth-child(3) > a {
   animation-delay: 0.16s;
 }
-body.nistravel-motion.menu-is-opened .menu.menu--with-brand .menu-list > li:nth-child(4) > a {
+body.kehayov-motion.menu-is-opened .menu.menu--with-brand .menu-list > li:nth-child(4) > a {
   animation-delay: 0.2s;
 }
-body.nistravel-motion.menu-is-opened .menu.menu--with-brand .menu-list > li:nth-child(5) > a {
+body.kehayov-motion.menu-is-opened .menu.menu--with-brand .menu-list > li:nth-child(5) > a {
   animation-delay: 0.24s;
 }
-body.nistravel-motion.menu-is-opened .menu.menu--with-brand .menu-list > li:nth-child(6) > a {
+body.kehayov-motion.menu-is-opened .menu.menu--with-brand .menu-list > li:nth-child(6) > a {
   animation-delay: 0.28s;
 }
-body.nistravel-motion.menu-is-opened .menu.menu--with-brand .menu-list > li:nth-child(7) > a {
+body.kehayov-motion.menu-is-opened .menu.menu--with-brand .menu-list > li:nth-child(7) > a {
   animation-delay: 0.32s;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .nistravel-enter,
-  .nistravel-reveal {
+  .kehayov-enter,
+  .kehayov-reveal {
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;
@@ -3682,7 +3682,7 @@ body.nistravel-motion.menu-is-opened .menu.menu--with-brand .menu-list > li:nth-
     will-change: auto !important;
   }
 
-  body.nistravel-motion.menu-is-opened .menu.menu--with-brand .menu-list > li > a {
+  body.kehayov-motion.menu-is-opened .menu.menu--with-brand .menu-list > li > a {
     animation: none !important;
   }
 
@@ -3703,7 +3703,7 @@ body.nistravel-motion.menu-is-opened .menu.menu--with-brand .menu-list > li:nth-
   flex-direction: column;
   margin-bottom: 2rem;
 }
-.ks-card-grid .card.nistravel-tour-card {
+.ks-card-grid .card.kehayov-tour-card {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -3719,36 +3719,36 @@ body.nistravel-motion.menu-is-opened .menu.menu--with-brand .menu-list > li:nth-
     box-shadow var(--nt-motion-card-duration) ease,
     border-color 0.35s ease;
 }
-.ks-card-grid .card.nistravel-tour-card:hover {
+.ks-card-grid .card.kehayov-tour-card:hover {
   transform: var(--ks-lift);
   border-color: var(--ks-slate-14);
   box-shadow: var(--nt-card-shadow-hover);
 }
-.ks-card-grid .nistravel-tour-card__media {
+.ks-card-grid .kehayov-tour-card__media {
   position: relative;
   height: var(--nt-tour-media-height);
   flex-shrink: 0;
   overflow: hidden;
   background: var(--ks-color-ink);
 }
-.ks-card-grid .nistravel-tour-card__media::after {
+.ks-card-grid .kehayov-tour-card__media::after {
   content: '';
   position: absolute;
   inset: 0;
   background: linear-gradient(180deg, transparent 40%, var(--ks-slate-50) 100%);
   pointer-events: none;
 }
-.ks-card-grid .nistravel-tour-card__media img {
+.ks-card-grid .kehayov-tour-card__media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transform: scale(1.02);
   transition: transform var(--nt-motion-media-duration) var(--nt-motion-ease-premium);
 }
-.ks-card-grid .card.nistravel-tour-card:hover .nistravel-tour-card__media img {
+.ks-card-grid .card.kehayov-tour-card:hover .kehayov-tour-card__media img {
   transform: scale(1.07);
 }
-.ks-card-grid .card.nistravel-tour-card .card-block {
+.ks-card-grid .card.kehayov-tour-card .card-block {
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
@@ -3772,7 +3772,7 @@ body.nistravel-motion.menu-is-opened .menu.menu--with-brand .menu-list > li:nth-
 .ks-card-grid .ks-package-card__list {
   flex: 1 1 auto;
 }
-.ks-card-grid .nistravel-tour-card .nistravel-tour-card__cta.btn {
+.ks-card-grid .kehayov-tour-card .kehayov-tour-card__cta.btn {
   align-self: stretch;
   flex-shrink: 0;
   width: 100%;
@@ -3844,16 +3844,16 @@ body.nistravel-motion.menu-is-opened .menu.menu--with-brand .menu-list > li:nth-
 }
 
 /* Lime CTA on photo banners: dark text for contrast */
-.nistravel-contact-cta-banner__btn.btn {
+.kehayov-contact-cta-banner__btn.btn {
   color: #1a1d21 !important;
 }
-.nistravel-contact-cta-banner__btn.btn:hover,
-.nistravel-contact-cta-banner__btn.btn:focus {
+.kehayov-contact-cta-banner__btn.btn:hover,
+.kehayov-contact-cta-banner__btn.btn:focus {
   background: #fff !important;
   color: #1a1d21 !important;
 }
 
-.nistravel-contact-cta-banner .nistravel-contact-cta-banner__bg.section-bg {
+.kehayov-contact-cta-banner .kehayov-contact-cta-banner__bg.section-bg {
   background-size: cover;
   background-position: center;
 }
@@ -3942,22 +3942,22 @@ body.nistravel-motion.menu-is-opened .menu.menu--with-brand .menu-list > li:nth-
   transform: scale(1.06);
 }
 
-.ks-final-cta.nistravel-contact-cta-banner.section {
+.ks-final-cta.kehayov-contact-cta-banner.section {
   padding-top: var(--ks-section-y) !important;
   padding-bottom: var(--ks-section-y) !important;
 }
 
-.ks-final-cta .nistravel-contact-cta-banner__title,
-.ks-final-cta .nistravel-contact-cta-banner__text {
+.ks-final-cta .kehayov-contact-cta-banner__title,
+.ks-final-cta .kehayov-contact-cta-banner__text {
   margin-left: auto;
   margin-right: auto;
 }
 
-.ks-final-cta .nistravel-contact-cta-banner__title {
+.ks-final-cta .kehayov-contact-cta-banner__title {
   max-width: 18em;
 }
 
-.ks-final-cta .nistravel-contact-cta-banner__text {
+.ks-final-cta .kehayov-contact-cta-banner__text {
   max-width: 36rem;
 }
 
@@ -4153,7 +4153,7 @@ body.ks-services-hub .content .section {
   padding-bottom: var(--ks-section-y);
 }
 
-body.ks-services-hub .content .nistravel-booking-lead {
+body.ks-services-hub .content .kehayov-booking-lead {
   margin-left: 0;
   margin-right: 0;
   max-width: 40rem;
@@ -4438,7 +4438,7 @@ button.card.ks-inquiry-card:focus-visible {
   box-shadow: var(--nt-card-shadow-hover);
 }
 
-.ks-inquiry-card.is-active .nistravel-tour-card__cta {
+.ks-inquiry-card.is-active .kehayov-tour-card__cta {
   background: #1a1d21;
   color: #fff;
 }
@@ -4452,7 +4452,7 @@ body.ks-contact-page .content .section {
   padding-bottom: var(--ks-section-y);
 }
 
-body.ks-contact-page .nistravel-booking-lead {
+body.ks-contact-page .kehayov-booking-lead {
   margin: 0 0 1.35rem;
   max-width: none;
   text-align: left;
@@ -4771,7 +4771,7 @@ body.ks-contact-page .ks-contact-form-wrap .section-about-title {
   line-height: var(--nt-body-line);
 }
 
-body.ks-service-page .nistravel-faq-section {
+body.ks-service-page .kehayov-faq-section {
   padding-top: var(--ks-section-y);
   padding-bottom: var(--ks-section-y);
 }
@@ -4908,7 +4908,7 @@ body.ks-services-hub .ks-system-stage-wrap {
   color: var(--nt-body-color);
 }
 
-.ks-sys-card .nistravel-tour-card__cta.btn {
+.ks-sys-card .kehayov-tour-card__cta.btn {
   align-self: stretch;
   width: 100%;
   display: inline-flex;
@@ -5074,21 +5074,21 @@ body.ks-services-hub .ks-system-stage-wrap {
 }
 
 /* Photo + scrim: keep all copy light (overrides global .content p / body color) */
-.nistravel-contact-cta-banner .nistravel-contact-cta-banner__title,
-.nistravel-contact-cta-banner h1,
-.nistravel-contact-cta-banner h2,
-.content .nistravel-contact-cta-banner .nistravel-contact-cta-banner__title,
+.kehayov-contact-cta-banner .kehayov-contact-cta-banner__title,
+.kehayov-contact-cta-banner h1,
+.kehayov-contact-cta-banner h2,
+.content .kehayov-contact-cta-banner .kehayov-contact-cta-banner__title,
 .content .ks-editorial .ks-editorial__title,
 .ks-editorial .ks-editorial__title,
 .ks-editorial .title-uppercase {
   color: #fff;
 }
 
-.nistravel-contact-cta-banner p,
-.nistravel-contact-cta-banner .nistravel-contact-cta-banner__text,
-.nistravel-contact-cta-banner .nistravel-contact-cta-banner__kicker,
-.content .nistravel-contact-cta-banner p,
-.content .nistravel-contact-cta-banner .nistravel-contact-cta-banner__text,
+.kehayov-contact-cta-banner p,
+.kehayov-contact-cta-banner .kehayov-contact-cta-banner__text,
+.kehayov-contact-cta-banner .kehayov-contact-cta-banner__kicker,
+.content .kehayov-contact-cta-banner p,
+.content .kehayov-contact-cta-banner .kehayov-contact-cta-banner__text,
 .ks-editorial p,
 .ks-editorial .ks-editorial__body p,
 .content .ks-editorial p,
@@ -5517,7 +5517,7 @@ body.ks-services-hub .ks-system-stage-wrap {
   margin-top: 1rem;
 }
 
-.ks-offer__types .nistravel-tour-card__media {
+.ks-offer__types .kehayov-tour-card__media {
   height: 9.5rem;
 }
 
@@ -6003,26 +6003,26 @@ body.ks-services-hub .ks-system-stage-wrap {
   right: var(--ks-gutter);
 }
 
-.section:not(.footer):not(.nistravel-footer),
+.section:not(.footer):not(.kehayov-footer),
 .section-about,
 .content > section:not(.footer),
 .content > .section:not(.footer),
 .content > .section-about,
 .content > .ks-scope-section,
 .content > .ks-consult-band,
-.nistravel-contact-cta-banner.section,
-.ks-final-cta.nistravel-contact-cta-banner.section,
+.kehayov-contact-cta-banner.section,
+.ks-final-cta.kehayov-contact-cta-banner.section,
 .ks-editorial.section,
 .ks-scope-section,
 .ks-consult-band,
-.nistravel-faq-section,
-.nistravel-section-booking {
+.kehayov-faq-section,
+.kehayov-section-booking {
   padding-top: var(--ks-section-y);
   padding-bottom: var(--ks-section-y);
 }
 
-.nistravel-contact-cta-banner.section,
-.ks-final-cta.nistravel-contact-cta-banner.section {
+.kehayov-contact-cta-banner.section,
+.ks-final-cta.kehayov-contact-cta-banner.section {
   padding-top: var(--ks-section-y) !important;
   padding-bottom: var(--ks-section-y) !important;
 }
@@ -6032,7 +6032,7 @@ body.ks-services-hub .ks-system-stage-wrap {
   margin-bottom: var(--ks-stack);
 }
 
-.nistravel-booking-lead {
+.kehayov-booking-lead {
   margin-top: 0.25rem;
   margin-bottom: 0;
 }
@@ -6079,25 +6079,25 @@ body.ks-services-hub .ks-system-stage-wrap {
     margin-bottom: 1rem;
   }
 
-  .nistravel-contact-cta-banner__inner {
+  .kehayov-contact-cta-banner__inner {
     padding-left: 0.85rem;
     padding-right: 0.85rem;
   }
 
-  .nistravel-contact-cta-banner__title {
+  .kehayov-contact-cta-banner__title {
     font-size: clamp(1.55rem, 5.4vw, 2.1rem);
     margin-bottom: 0.75rem;
     max-width: 34rem;
   }
 
-  .nistravel-contact-cta-banner__text,
-  .content .nistravel-contact-cta-banner__text,
-  .ks-final-cta .nistravel-contact-cta-banner__text {
+  .kehayov-contact-cta-banner__text,
+  .content .kehayov-contact-cta-banner__text,
+  .ks-final-cta .kehayov-contact-cta-banner__text {
     font-size: 1rem;
     max-width: 34rem;
   }
 
-  .nistravel-contact-cta-banner__actions,
+  .kehayov-contact-cta-banner__actions,
   .ks-final-cta__actions {
     display: flex;
     flex-wrap: wrap;
@@ -6105,7 +6105,7 @@ body.ks-services-hub .ks-system-stage-wrap {
     margin-top: 1.25rem;
   }
 
-  .nistravel-contact-cta-banner__actions .btn,
+  .kehayov-contact-cta-banner__actions .btn,
   .ks-final-cta__actions .btn {
     width: auto;
     min-width: 11.5rem;
@@ -6120,11 +6120,11 @@ body.ks-services-hub .ks-system-stage-wrap {
     padding: 1.15rem 1.2rem;
   }
 
-  .ks-card-grid .card.nistravel-tour-card .card-block {
+  .ks-card-grid .card.kehayov-tour-card .card-block {
     padding: 1.15rem 1.15rem 1.25rem;
   }
 
-  .ks-card-grid .nistravel-tour-card .card-title {
+  .ks-card-grid .kehayov-tour-card .card-title {
     min-height: 0;
   }
 
@@ -6173,8 +6173,8 @@ body.ks-services-hub .ks-system-stage-wrap {
     max-width: 28rem;
   }
 
-  .nistravel-footer__credit,
-  .boxed .nistravel-footer__credit {
+  .kehayov-footer__credit,
+  .boxed .kehayov-footer__credit {
     padding-left: 0;
     padding-right: 0;
     margin-top: 1.15rem;
@@ -6185,7 +6185,7 @@ body.ks-services-hub .ks-system-stage-wrap {
     margin-top: 1.5rem;
   }
 
-  .nistravel-faq {
+  .kehayov-faq {
     margin-top: 1.5rem;
   }
 
@@ -6266,10 +6266,10 @@ body.ks-services-hub .ks-system-stage-wrap {
     margin-bottom: 1rem;
   }
 
-  .nistravel-contact-cta-banner__actions .btn,
+  .kehayov-contact-cta-banner__actions .btn,
   .ks-final-cta__actions .btn,
   .ks-consult-band__inner .btn,
-  .nistravel-contact-cta-banner__actions .link-arrow {
+  .kehayov-contact-cta-banner__actions .link-arrow {
     width: auto;
     min-width: 12rem;
     max-width: 100%;
@@ -6278,7 +6278,7 @@ body.ks-services-hub .ks-system-stage-wrap {
   }
 
   @media (max-width: 575px) {
-    .nistravel-contact-cta-banner__actions .btn,
+    .kehayov-contact-cta-banner__actions .btn,
     .ks-final-cta__actions .btn,
     .ks-consult-band__inner .btn {
       width: 100%;
@@ -6286,7 +6286,7 @@ body.ks-services-hub .ks-system-stage-wrap {
     }
   }
 
-  .ks-final-cta .nistravel-contact-cta-banner__title {
+  .ks-final-cta .kehayov-contact-cta-banner__title {
     max-width: none;
   }
 
@@ -6369,7 +6369,7 @@ body.ks-services-hub .ks-system-stage-wrap {
     margin-top: 1.5rem;
   }
 
-  .nistravel-legal-meta {
+  .kehayov-legal-meta {
     margin-bottom: 1rem;
   }
 
@@ -6389,7 +6389,7 @@ body.ks-services-hub .ks-system-stage-wrap {
 }
 
 @media (max-width: 479px) {
-  .nistravel-contact-cta-banner__title {
+  .kehayov-contact-cta-banner__title {
     font-size: 1.5rem;
   }
 
@@ -6403,8 +6403,8 @@ body.ks-services-hub .ks-system-stage-wrap {
     height: 6.5rem;
   }
 
-  .ks-card-grid .nistravel-tour-card__media,
-  .ks-offer__types .nistravel-tour-card__media {
+  .ks-card-grid .kehayov-tour-card__media,
+  .ks-offer__types .kehayov-tour-card__media {
     height: 10rem;
   }
 }
@@ -6443,7 +6443,7 @@ body.ks-services-hub .ks-system-stage-wrap {
   background: var(--nt-card-bg) !important;
 }
 
-.ks-package-card .nistravel-tour-card__media {
+.ks-package-card .kehayov-tour-card__media {
   position: relative;
   flex: 0 0 auto;
   overflow: hidden;
@@ -6451,7 +6451,7 @@ body.ks-services-hub .ks-system-stage-wrap {
   background: var(--ks-color-ink);
 }
 
-.ks-package-card .nistravel-tour-card__media::after {
+.ks-package-card .kehayov-tour-card__media::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -6589,7 +6589,7 @@ body.ks-services-hub .ks-system-stage-wrap {
   overflow: hidden;
 }
 
-.ks-packages-slider .nistravel-reveal {
+.ks-packages-slider .kehayov-reveal {
   opacity: 1;
   transform: none;
 }
@@ -6621,7 +6621,7 @@ body.ks-services-hub .ks-system-stage-wrap {
   margin: 0;
 }
 
-.ks-packages-slider .nistravel-tour-card__media {
+.ks-packages-slider .kehayov-tour-card__media {
   position: relative;
   height: 12rem;
   flex-shrink: 0;
@@ -6629,7 +6629,7 @@ body.ks-services-hub .ks-system-stage-wrap {
   background: #1a1d21;
 }
 
-.ks-packages-slider .nistravel-tour-card__media img {
+.ks-packages-slider .kehayov-tour-card__media img {
   display: block;
   width: 100%;
   height: 100%;
@@ -6714,7 +6714,7 @@ body.ks-services-hub .ks-system-stage-wrap {
 }
 
 @media (min-width: 1200px) {
-  .ks-packages-slider .nistravel-tour-card__media {
+  .ks-packages-slider .kehayov-tour-card__media {
     height: 11rem;
   }
 
@@ -6897,7 +6897,7 @@ body.ks-services-hub .ks-system-stage-wrap {
   line-height: 1.25;
 }
 
-.ks-package-related .nistravel-tour-card__cta.btn {
+.ks-package-related .kehayov-tour-card__cta.btn {
   margin-top: auto;
   width: 100%;
   align-self: stretch;
