@@ -52,11 +52,11 @@
 	$(".animsition").animsition({
 	   inClass: 'fade-in',
        outClass: 'fade-out',
-	   inDuration: 350,
-	   outDuration: 250,
+	   inDuration: 1000,
+	   outDuration: 700,
 	   linkElement: '.menu-list a',
 	   // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
-	   loading: false,
+	   loading: true,
 	   loadingParentElement: 'body', //animsition wrapper element
 	   loadingClass: 'spinner',
 	   loadingInner: '<div class="double-bounce1"></div><div class="double-bounce2"></div>', // e.g '<img src="loading.svg" />'

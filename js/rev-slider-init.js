@@ -9,8 +9,8 @@
       sliderType:"standard",
       sliderLayout:"fullscreen",
       dottedOverlay:"none",
-      delay:11000,
-      autoHeight: 'off',
+      delay:7000,
+      autoHeight: 'on',
       minHeight:380,
       navigation: {
         keyboardNavigation:"off",
@@ -37,7 +37,10 @@
       }
       },
       parallax: {
-        type:"off",
+        type:"scroll",
+        origo:"slidercenter",
+        speed:300,
+        levels:[5,10,15,20,25,30,35,40,45,50,47,48,49,50,51,55],
         disable_onmobile: 'on'
       },
       responsiveLevels:[2048,1600,1260, 992],
@@ -46,10 +49,10 @@
       lazyType:"none",
       shadow:0,
       spinner:"off",
-      stopLoop:"off",
-      stopAfterLoops:-1,
+      stopLoop:"on",
+      stopAfterLoops:0,
       shuffle:"off",
-      autoHeight:"off",
+      autoHeight:"on",
       fullScreenAlignForce:"off",
       fullScreenOffsetContainer: ".navbar",
       fullScreenOffset: "",
