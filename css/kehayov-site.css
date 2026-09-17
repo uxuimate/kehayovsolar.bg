@@ -5902,6 +5902,31 @@ body.ks-services-hub .ks-system-stage-wrap {
   margin-top: 1.35rem;
 }
 
+/* Shared end-of-section offer CTA on the homepage */
+.ks-section-cta {
+  margin-top: 1.85rem;
+  text-align: center;
+}
+
+.ks-section-cta--inline {
+  text-align: left;
+  margin-top: 1.5rem;
+}
+
+.ks-section-cta .btn + .btn,
+.ks-section-cta .btn + .link-arrow {
+  margin-left: 0.85rem;
+}
+
+@media (max-width: 575px) {
+  .ks-section-cta .btn + .btn,
+  .ks-section-cta .btn + .link-arrow {
+    display: inline-block;
+    margin-left: 0;
+    margin-top: 0.65rem;
+  }
+}
+
 @media (max-width: 767px) {
   .ks-proof__intro {
     grid-template-columns: 1fr;
